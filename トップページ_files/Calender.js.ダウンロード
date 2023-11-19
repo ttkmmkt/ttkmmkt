@@ -1,0 +1,232 @@
+/**
+ * Version 1.0.0
+ */
+/**
+ * Calender オブジェクトの生成、独自プロパティの追加
+ */
+(function(){
+	
+	/**
+	 * TERASOLUNAライブラリ（画面部品）が提供するカレンダー表示機能です。
+	 * 
+	 * @class
+	 * 
+	 * <p>
+	 * TERASOLUNAライブラリ（画面部品）が提供するカレンダー表示機能です。
+	 * </p>
+	 * 
+	 * <p>
+	 * テキストボックス(input type:text)に対し、class="Calender" を設定することで
+	 * jquery の DatePicker（日本語化対応済）を利用したカレンダーを表示します。
+	 * </p>
+	 * 
+	 * <p>
+	 * 表示されるカレンダーは、jquery の DatePicker のプロパティを設定することで
+	 * 表示内容のカスタマイズを行います。
+	 * </p>
+	 *
+	 * <pre>
+	 * 【例】画面単位でのカスタム設定
+	 * teralib.widget.Calender.defaults = {
+	 * 		"closeText": "X",
+	 * 		"showButtonPanel": true
+	 * };
+	 * </pre>
+	 *
+	 * <pre>
+	 * 【例】HTML 要素単位でのカスタム設定
+	 * teralib.widget.Calender.customs = [
+	　* 	{
+	 * 		"names" : ["input1"],
+	 * 		"properties" : {
+	 * 			"currentText": "Now",
+	 * 			"minDate" : "-1w",
+	 *			"maxDate" : "+3y"
+	 * 		}
+	 * };
+	 * </pre>
+	 * 
+	 * <p>
+	 * プロパティの詳細については、別途提供する「プロパティ一覧（jquery_datepicker）.xlsx」、
+	 * または、http://jqueryui.com/demos/datepicker/ をご確認ください。
+	 * </p>
+	 * 
+	 * @name teralib.widget.Calender
+	 */	
+	teralib.core.createObject("teralib.widget.Calender");
+	
+	/**
+	 * jquery の DatePicker を機能拡張するためのコールバック関数を格納する
+	 * private な名前空間です。
+	 * 
+	 * @namespace
+	 * 
+	 * <p>
+	 * jquery の DatePicker を機能拡張するためのコールバック関数を格納する
+	 * private な名前空間です。
+	 * </p>
+	 * 
+	 * @public
+	 * 
+	 * @name teralib.widget.Calender._callbacks
+	 */
+	teralib.widget.Calender._callbacks = {
+		
+		/** @scope teralib.widget.Calender._callbacks */
+			
+		/**
+		 * jquery の DatePicker が提供するコールバック関数です。
+		 * この関数に定義された処理は、DatePicker が表示される度に実行されます。
+		 * 
+		 * <p>
+		 * TERASOLUNAライブラリではこのコールバックを利用し、ロケールの動的変更を実現します。
+		 * 
+		 * コールバック関数を上書きすることで任意の処理を実現することができますが、
+		 * その場合、ロケールの動的変更が行われなくなります。
+		 * </p>
+		 * 
+		 * @param {dom} input DatePicker が適用されている input 要素
+		 * @param {object} inst　DatePicker のインスタンス
+		 */
+		beforeShow : function(input, inst) {
+			var calender = teralib.widget.Calender;
+			var locale = calender.locale || "ja";
+			
+			/* ロケール情報の設定 */
+			if ($.datepicker.regional[locale]) {
+				$.datepicker.setDefaults($.datepicker.regional[locale]);
+			}
+		},
+
+		/**
+		 * jquery の DatePicker が提供するコールバック関数です。
+		 * この関数に定義された処理は、DatePicker の各日付が生成される度に実行されます。
+		 * 
+		 * <p>
+		 * 一度に表示される日付の数だけコールバック関数が実行されるため、負荷の高い処理を行うと
+		 * カレンダーの表示に時間がかかる可能性があります。
+		 * 
+		 * TERASOLUNAライブラリではこのコールバックを利用し、土・日・祝日用の class 設定を行います。
+		 * 
+		 * コールバック関数を上書きすることで任意の処理を実現することができますが、
+		 * その場合、土・日・祝日用の class 設定が実行されなくなります。
+		 * </p>
+		 *
+		 * @param {Date} date Date インスタンス
+		 * 
+		 * @returns {array} date に対応する日付表示の状態を定義した配列
+		 *          [選択可否（true/false）, 設定する css class(string), 表示する tooltip(string)]
+		 */		
+		beforeShowDay : function(date) {
+			var calender = teralib.widget.Calender;
+			var label = "";
+			var className = "";
+			var locale = calender.locale || "ja";
+
+			/* 祝日のスタイルを設定 */
+			var holidays = calender.holidays ?	
+					calender.holidays[locale] : undefined;
+			if (holidays) {
+				var target = $.datepicker.formatDate("yy/mm/dd", date);
+				if (typeof(holidays[target]) !== "undefined") {
+					label = holidays[target];
+					className = "ui-datepicker-holiday";
+				}
+			}
+			
+			/* 週末のスタイルを設定 */
+			switch(date.getDay()) {
+					case 0:
+					return [true, "ui-datepicker-sunday", label];
+					break;
+				case 6:
+					return [true, "ui-datepicker-saturday", label];
+					break;
+				default:
+					return [true, className, label];
+					break;
+			}
+		}
+	};
+	
+	/** @scope teralib.widget.Calender */
+	
+	/**
+	 * 動的にロケールを変更するためのユーティリティです。
+	 * 
+	 * <p>
+	 * ロケールを指定することで、カレンダーの表示内容および休日情報を切り替えることができます。
+	 * </>
+	 * 
+	 * <p>
+	 * 引数に設定可能なロケールは、事前に読み込んだロケール情報の設定ファイルに依存します。
+	 * <ul>
+	 * <li>（例1） jquery.ui.datepicker-ja.js を読み込んでいる場合は、”ja” の指定が可能</li>
+	 * <li>（例2） jquery.ui.datepicker-en-GB.js を読み込んでいる場合は、”en-GB” の指定が可能</li>
+	 * </ul>
+	 * 
+	 * ロケールファイルを複数読み込むことで、任意のロケールに対応することが可能です。。
+	 * </p>
+	 * <p>
+	 * なお、文字列のデフォルト設定を行う設定ファイル（jquery.ui.datepicker-ja.js など）は、
+	 * 必要に応じて下記から取得する必要があります。
+	 * <ul>
+	 * <li>http://jquery-ui.googlecode.com/svn/trunk/ui/i18n/</li>
+	 * </ul>
+	 * </p>
+	 * 
+	 * <p>
+	 * 一方、読み込まれていないロケールを引数に設定した場合はエラーをスローします。
+	 * </p>
+	 * 
+	 * @param {string} locale 設定するロケールを特定するための文字列
+	 * 
+	 * @throws {error} ロケールの設定エラー
+	 */		
+	teralib.widget.Calender.setLocale = function(locale) {
+		if ($.datepicker.regional[locale]) {
+			teralib.widget.Calender.locale = locale;
+		} else {
+			throw new Error("ロケールに対応したリソースファイルが読み込まれていません。 locale : " + locale);
+		}
+	};
+
+	/**
+	 * 本部品を利用している画面におけるロケールのデフォルト値です。
+	 * 設定したロケールは、holidays にて設定されている休日情報の選定や
+	 * カレンダー表示のデフォルト設定の絞り込みにて利用されます。
+	 */
+	teralib.widget.Calender.locale = "ja";
+})();
+
+/**
+ * Calender 部品の生成
+ */
+$(function(){
+	if(!$.datepicker) {
+		throw Error("カレンダー表示に必要な jquery-ui-1.X.X.custom.js が読み込まれていません。");
+	}
+	var calender = teralib.widget.Calender;
+	var d_properties = calender._callbacks;
+	var defaults = calender.defaults || {};
+	var customs = calender.customs || {};
+	var className = calender.className || "Calender";
+	
+	for (var i in defaults) {
+		d_properties[i] = defaults[i];
+	}
+	
+	$("." + className).datepicker(d_properties);
+	
+	var m_customs = teralib.core.mergeCustoms(customs);
+	
+	for (var i in m_customs) {
+		var element = $("[name=" + i + "]");
+		if (element) {
+			var custom = m_customs[i];
+			for (var j in custom) {
+				element.datepicker("option", j, custom[j]);
+			}
+		}
+	}
+});	

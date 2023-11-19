@@ -1,0 +1,4846 @@
+@charset "Shift_JIS";
+.accountB02 .private-column-cardloan-info .private-column-title .item-listN01 .item-li04 span, .accountB02 .private-column-cardloan-info .private-column-title .item-listN01 .item-li05 span, .accountB01 .private-column-cardloan-info .private-column-title .item-listN01 .item-li04 span, .accountB01 .private-column-cardloan-info .private-column-title .item-listN01 .item-li05 span {
+  font-size: 114.28571%;
+  line-height: 1.3;
+  font-weight: 800; }
+
+.accountA01 .private-column-title .item-listN01 li h3, .accountA02 .private-column-title .item-listN01 li h3, .accountB01 .private-column-title .item-listN01 li h3, .accountB02 .private-column-title .item-listN01 li h3, .accountB02 .private-column-cardloan-info .private-column-title .item-listN01 li h3, .accountB01 .private-column-cardloan-info .private-column-title .item-listN01 li h3 {
+  font-size: 114.28571%;
+  line-height: 1.3;
+  font-weight: 800; }
+
+.accountA01 .private-column-title .item-listN01 .item-li02, .accountA02 .private-column-title .item-listN01 .item-li02, .accountB01 .private-column-title .item-listN01 .item-li02, .accountB02 .private-column-title .item-listN01 .item-li02, .accountB02 .private-column-cardloan-info .private-column-title .item-listN01 .item-li02, .accountB01 .private-column-cardloan-info .private-column-title .item-listN01 .item-li02 {
+  font-size: 114.28571%;
+  line-height: 1.3;
+  font-weight: 800; }
+
+.accountA01 .private-column-title .item-listN01 .item-li03, .accountA02 .private-column-title .item-listN01 .item-li03, .accountB01 .private-column-title .item-listN01 .item-li03, .accountB02 .private-column-title .item-listN01 .item-li03, .accountB02 .private-column-cardloan-info .private-column-title .item-listN01 .item-li03, .accountB01 .private-column-cardloan-info .private-column-title .item-listN01 .item-li03 {
+  font-size: 114.28571%;
+  line-height: 1.3;
+  font-weight: 800; }
+
+.loginA01 .private-section-guest h2, .loginA01 .private-section-user h2, .bankselectA01 .private-section-freeword h3,
+.bankselectA01 .private-section-recently h3,
+.bankselectA01 .private-section-kana h3 {
+  border-left: 0.25em solid #666666;
+  padding-left: 0.3em; }
+
+.mainaccount-blockA01 .maba1-item-list-wrapper01 .maba1-item-list {
+  *zoom: 1;
+  *zoom: 1;
+  width: 385px; }
+  .mainaccount-blockA01 .maba1-item-list-wrapper01 .maba1-item-list:after {
+    clear: both;
+    display: block;
+    content: ""; }
+  .mainaccount-blockA01 .maba1-item-list-wrapper01 .maba1-item-list:after {
+    clear: both;
+    display: block;
+    content: ""; }
+  .mainaccount-blockA01 .maba1-item-list-wrapper01 .maba1-item-list dt {
+    font-size: 100%;
+    line-height: 1.48571;
+    font-weight: 400;
+    margin-right: 10px;
+    float: left;
+    text-align: right;
+    clear: both;
+    width: 105px;
+    padding-left: 15px; }
+  .mainaccount-blockA01 .maba1-item-list-wrapper01 .maba1-item-list dd {
+    font-size: 114.28571%;
+    line-height: 1.3;
+    font-weight: 800;
+    margin-left: 0;
+    float: left;
+    text-align: left;
+    min-height: 20px;
+    width: 235px; }
+  .mainaccount-blockA01 .maba1-item-list-wrapper01 .maba1-item-list .item-ddstrong {
+    font-size: 114.28571%;
+    line-height: 1.3;
+    font-weight: 800; }
+  .mainaccount-blockA01 .maba1-item-list-wrapper01 .maba1-item-list .item-ddonly {
+    margin-left: 140px; }
+
+/* _commonstyle_phase2からコピー */
+/* =============================================================================
+   Original Component
+   ========================================================================== */
+/* ===============================
+ *        Abstract class
+ * =============================== */
+/* btn */
+.loginA01 .private-section-guest .func-guest button, .loginA01 .private-section-guest .func-guest input, .loginA01 .private-section-user .private-footer-login button, .loginA01 .private-section-user .private-footer-login input, .accountA02 .list-func button, .accountB01 .list-func button, .accountB02 .list-func button, .accountA02 .list-func input, .accountB01 .list-func input, .accountB02 .list-func input, .transfer-blockA01 .private-block-01 button, .transfer-blockA01 .private-block-01 input, .transfer-blockA01 .private-block-02 button, .inquiryB01 .private-footer .list-button button, .inquiryB01 .private-footer .list-button input, .inquiryB02 .private-footer .list-button button, .inquiryB02 .private-footer .list-button input, .assets-registry-tableA01 button, .assets-registry-tableA01 .data-cell-5 input, .inquiryA01 .private-footer button, .inquiryA01 .private-footer input,
+.inquiryA02 .private-footer button,
+.inquiryA02 .private-footer input, .registeredlinkA01 .private-block-logo button .button-text, .registeredlinkA01 .private-block-logo input .button-text, .registeredlinkA01 .list-button button, .registeredlinkA01 .list-button input, .bankselectA01 .private-section-freeword button, .bankselectA01 .private-section-kana .private-column-wrapper .private-column-btngrp button, .bankselectA01 .private-section-kana .private-column-wrapper .private-column-btngrp input, .loginA02 .private-block-func a, .softwarekeyboard .list-key button, .softwarekeyboard .list-key input, .sidebar-net-applicationA01 button, .sidebar-net-applicationA01 input, .softwarekeyboard .list-func .button-clear-all, .softwarekeyboard .list-func .button-clear-one, .softwarekeyboard .list-func .button-confirm, .sidebar-unsuspendA01 button, .sidebar-unsuspendA01 input {
+  font-family: "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", sans-serif;
+  display: block;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 1.35714em;
+  *overflow: visible;
+  /* IE 6-7 */
+  padding: 8px 8px 6px 8px;
+  _padding: 7px 8px 5px 8px;
+  margin: 0; }
+
+.loginA01 .private-section-guest .func-guest button.button-disabled, .loginA01 .private-section-guest .func-guest input.button-disabled, .loginA01 .private-section-user .private-footer-login button.button-disabled, .loginA01 .private-section-user .private-footer-login input.button-disabled, .accountA02 .list-func button.button-disabled, .accountB01 .list-func button.button-disabled, .accountB02 .list-func button.button-disabled, .accountA02 .list-func input.button-disabled, .accountB01 .list-func input.button-disabled, .accountB02 .list-func input.button-disabled, .transfer-blockA01 .private-block-01 button.button-disabled, .transfer-blockA01 .private-block-01 input.button-disabled, .transfer-blockA01 .private-block-02 button.button-disabled, .inquiryB01 .private-footer .list-button button.button-disabled, .inquiryB01 .private-footer .list-button input.button-disabled, .inquiryB02 .private-footer .list-button button.button-disabled, .inquiryB02 .private-footer .list-button input.button-disabled, .assets-registry-tableA01 button.button-disabled, .assets-registry-tableA01 .data-cell-5 input.button-disabled, .inquiryA01 .private-footer button.button-disabled, .inquiryA01 .private-footer input.button-disabled,
+.inquiryA02 .private-footer button.button-disabled,
+.inquiryA02 .private-footer input.button-disabled, .registeredlinkA01 .private-block-logo button .button-disabled.button-text, .registeredlinkA01 .private-block-logo input .button-disabled.button-text, .registeredlinkA01 .list-button button.button-disabled, .registeredlinkA01 .list-button input.button-disabled, .bankselectA01 .private-section-freeword button.button-disabled, .bankselectA01 .private-section-kana .private-column-wrapper .private-column-btngrp button.button-disabled, .bankselectA01 .private-section-kana .private-column-wrapper .private-column-btngrp input.button-disabled, .loginA02 .private-block-func a.button-disabled, .softwarekeyboard .list-key button.button-disabled, .softwarekeyboard .list-key input.button-disabled, .sidebar-net-applicationA01 button.button-disabled, .sidebar-net-applicationA01 input.button-disabled, .softwarekeyboard .list-func .button-disabled.button-clear-all, .loginA02 .private-button-area button.button-disabled, .loginA02 .private-button-area input.button-disabled, .sidebar-unsuspendA01 button.button-disabled, .sidebar-unsuspendA01 input.button-disabled {
+  background: #ebeff4 !important;
+  border-color: #c7c7c7 !important;
+  color: #666;
+  text-shadow: none;
+  box-shadow: none; }
+
+/* btn-blue @extend %btn */
+.loginA01 .private-section-guest .func-guest button, .loginA01 .private-section-guest .func-guest input, .loginA01 .private-section-user .private-footer-login button, .loginA01 .private-section-user .private-footer-login input, .accountA02 .list-func button, .accountB01 .list-func button, .accountB02 .list-func button, .accountA02 .list-func input, .accountB01 .list-func input, .accountB02 .list-func input, .transfer-blockA01 .private-block-01 button, .transfer-blockA01 .private-block-01 input, .transfer-blockA01 .private-block-02 button, .inquiryB01 .private-footer .list-button button, .inquiryB01 .private-footer .list-button input, .inquiryB02 .private-footer .list-button button, .inquiryB02 .private-footer .list-button input, .assets-registry-tableA01 button, .assets-registry-tableA01 .data-cell-5 input, .inquiryA01 .private-footer button, .inquiryA01 .private-footer input,
+.inquiryA02 .private-footer button,
+.inquiryA02 .private-footer input, .registeredlinkA01 .private-block-logo button .button-text, .registeredlinkA01 .private-block-logo input .button-text, .registeredlinkA01 .list-button button, .registeredlinkA01 .list-button input, .bankselectA01 .private-section-freeword button, .bankselectA01 .private-section-kana .private-column-wrapper .private-column-btngrp button, .bankselectA01 .private-section-kana .private-column-wrapper .private-column-btngrp input {
+  border: 1px solid #5595ed;
+  color: #fff;
+  text-shadow: 1px 1px 1px black;
+  background: url(../../images/2951/bg_btn_01.png) repeat-x top #093e92;
+  box-shadow: inset 0 -1px 1px #031128; }
+  .loginA01 .private-section-guest .func-guest button:hover, .loginA01 .private-section-guest .func-guest input:hover, .loginA01 .private-section-user .private-footer-login button:hover, .loginA01 .private-section-user .private-footer-login input:hover, .accountA02 .list-func button:hover, .accountB01 .list-func button:hover, .accountB02 .list-func button:hover, .accountA02 .list-func input:hover, .accountB01 .list-func input:hover, .accountB02 .list-func input:hover, .transfer-blockA01 .private-block-01 button:hover, .transfer-blockA01 .private-block-01 input:hover, .transfer-blockA01 .private-block-02 button:hover, .inquiryB01 .private-footer .list-button button:hover, .inquiryB01 .private-footer .list-button input:hover, .inquiryB02 .private-footer .list-button button:hover, .inquiryB02 .private-footer .list-button input:hover, .assets-registry-tableA01 button:hover, .assets-registry-tableA01 .data-cell-5 input:hover, .inquiryA01 .private-footer button:hover, .inquiryA01 .private-footer input:hover,
+  .inquiryA02 .private-footer button:hover,
+  .inquiryA02 .private-footer input:hover, .registeredlinkA01 .private-block-logo button .button-text:hover, .registeredlinkA01 .private-block-logo input .button-text:hover, .registeredlinkA01 .list-button button:hover, .registeredlinkA01 .list-button input:hover, .bankselectA01 .private-section-freeword button:hover, .bankselectA01 .private-section-kana .private-column-wrapper .private-column-btngrp button:hover, .bankselectA01 .private-section-kana .private-column-wrapper .private-column-btngrp input:hover, .loginA01 .private-section-guest .func-guest button:focus, .loginA01 .private-section-guest .func-guest input:focus, .loginA01 .private-section-user .private-footer-login button:focus, .loginA01 .private-section-user .private-footer-login input:focus, .accountA02 .list-func button:focus, .accountB01 .list-func button:focus, .accountB02 .list-func button:focus, .accountA02 .list-func input:focus, .accountB01 .list-func input:focus, .accountB02 .list-func input:focus, .transfer-blockA01 .private-block-01 button:focus, .transfer-blockA01 .private-block-01 input:focus, .transfer-blockA01 .private-block-02 button:focus, .inquiryB01 .private-footer .list-button button:focus, .inquiryB01 .private-footer .list-button input:focus, .inquiryB02 .private-footer .list-button button:focus, .inquiryB02 .private-footer .list-button input:focus, .assets-registry-tableA01 button:focus, .assets-registry-tableA01 .data-cell-5 input:focus, .inquiryA01 .private-footer button:focus, .inquiryA01 .private-footer input:focus,
+  .inquiryA02 .private-footer button:focus,
+  .inquiryA02 .private-footer input:focus, .registeredlinkA01 .private-block-logo button .button-text:focus, .registeredlinkA01 .private-block-logo input .button-text:focus, .registeredlinkA01 .list-button button:focus, .registeredlinkA01 .list-button input:focus, .bankselectA01 .private-section-freeword button:focus, .bankselectA01 .private-section-kana .private-column-wrapper .private-column-btngrp button:focus, .bankselectA01 .private-section-kana .private-column-wrapper .private-column-btngrp input:focus, .loginA01 .private-section-guest .func-guest button:active, .loginA01 .private-section-guest .func-guest input:active, .loginA01 .private-section-user .private-footer-login button:active, .loginA01 .private-section-user .private-footer-login input:active, .accountA02 .list-func button:active, .accountB01 .list-func button:active, .accountB02 .list-func button:active, .accountA02 .list-func input:active, .accountB01 .list-func input:active, .accountB02 .list-func input:active, .transfer-blockA01 .private-block-01 button:active, .transfer-blockA01 .private-block-01 input:active, .transfer-blockA01 .private-block-02 button:active, .inquiryB01 .private-footer .list-button button:active, .inquiryB01 .private-footer .list-button input:active, .inquiryB02 .private-footer .list-button button:active, .inquiryB02 .private-footer .list-button input:active, .assets-registry-tableA01 button:active, .assets-registry-tableA01 .data-cell-5 input:active, .inquiryA01 .private-footer button:active, .inquiryA01 .private-footer input:active,
+  .inquiryA02 .private-footer button:active,
+  .inquiryA02 .private-footer input:active, .registeredlinkA01 .private-block-logo button .button-text:active, .registeredlinkA01 .private-block-logo input .button-text:active, .registeredlinkA01 .list-button button:active, .registeredlinkA01 .list-button input:active, .bankselectA01 .private-section-freeword button:active, .bankselectA01 .private-section-kana .private-column-wrapper .private-column-btngrp button:active, .bankselectA01 .private-section-kana .private-column-wrapper .private-column-btngrp input:active {
+    background-image: url(../../images/2951/bg_btn_01_o.png);
+    background-color: #002156; }
+
+/* btn-yellow @extend %btn */
+.loginA02 .private-block-func a {
+  border: 1px solid #dfc82c;
+  color: #000;
+  text-shadow: 1px 1px 1px #b7a310;
+  background: url(../../images/2951/bg_btn_07.png) repeat-x top #d5bd13;
+  box-shadow: inset 0 -1px 1px #3b3406; }
+  .loginA02 .private-block-func a:hover, .loginA02 .private-block-func a:focus, .loginA02 .private-block-func a:active {
+    background-image: url(../../images/2951/bg_btn_07_o.png);
+    background-color: #f9da07; }
+
+/* btn-red @extend %btn */
+/* btn-gray @extend %btn */
+.softwarekeyboard .list-key button, .softwarekeyboard .list-key input, .sidebar-net-applicationA01 button, .sidebar-net-applicationA01 input {
+  border: 1px solid #bfbfbf;
+  color: #000;
+  text-shadow: 1px 1px 1px #939393;
+  background: url(../../images/2951/bg_btn_04.png) repeat-x top #a0a0a0;
+  box-shadow: inset 0 -1px 1px #2b2b2b; }
+  .softwarekeyboard .list-key button:hover, .softwarekeyboard .list-key input:hover, .sidebar-net-applicationA01 button:hover, .sidebar-net-applicationA01 input:hover, .softwarekeyboard .list-key button:focus, .softwarekeyboard .list-key input:focus, .sidebar-net-applicationA01 button:focus, .sidebar-net-applicationA01 input:focus, .softwarekeyboard .list-key button:active, .softwarekeyboard .list-key input:active, .sidebar-net-applicationA01 button:active, .sidebar-net-applicationA01 input:active {
+    background-image: url(../../images/2951/bg_btn_04_o.png);
+    background-color: #cecece; }
+
+/* btn-black @extend %btn */
+.softwarekeyboard .list-func .button-clear-all {
+  border: 1px solid #bfbfbf;
+  color: #fff;
+  text-shadow: 1px 1px 1px #3e3e3e;
+  background: url(../../images/2951/bg_btn_06.png) repeat-x top #434343;
+  box-shadow: inset 0 -1px 1px black; }
+  .softwarekeyboard .list-func .button-clear-all:hover, .softwarekeyboard .list-func .button-clear-all:focus, .softwarekeyboard .list-func .button-clear-all:active {
+    background-image: url(../../images/2951/bg_btn_06_o.png);
+    background-color: #040404; }
+
+/* block-roundcorner */
+.loginA01 .private-section-guest, .loginA01 .private-section-user, .loginA02, .transfer-blockA01 .private-block-01,
+.transfer-blockA01 .private-block-02, .inquiryB01, .inquiryB02, .inquiryA01,
+.inquiryA02, .registeredlinkA01, .bankselectA01, .mainaccount-blockA01 {
+  border-radius: 8px;
+  padding: 12px;
+  *zoom: 1; }
+  .loginA01 .private-section-guest:after, .loginA01 .private-section-user:after, .loginA02:after, .transfer-blockA01 .private-block-01:after,
+  .transfer-blockA01 .private-block-02:after, .inquiryB01:after, .inquiryB02:after, .inquiryA01:after,
+  .inquiryA02:after, .registeredlinkA01:after, .bankselectA01:after, .mainaccount-blockA01:after {
+    clear: both;
+    display: block;
+    content: ""; }
+
+/* block-roundcorner-blue @extend %block-roundcorner */
+.loginA01 .private-section-guest, .loginA01 .private-section-user, .loginA02, .transfer-blockA01 .private-block-01,
+.transfer-blockA01 .private-block-02, .inquiryB01, .inquiryB02, .inquiryA01,
+.inquiryA02, .registeredlinkA01, .bankselectA01 {
+  background-color: #ebeff4;
+  border: 2px solid #bdd5f4; }
+
+/* asideblock */
+.sidebar-pointA01, .sidebar-messageboxA01, .sidebar-loginhistoryA01, .sidebar-e-mailA01, .sidebar-unsuspendA01, .sidebar-net-applicationA01 {
+  margin-top: 0.71429em;
+  padding: 0 5px 10px 5px;
+  font-family: "Meiryo UI","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック",sans-serif; }
+  .sidebar-pointA01 h3, .sidebar-messageboxA01 h3, .sidebar-loginhistoryA01 h3, .sidebar-e-mailA01 h3, .sidebar-unsuspendA01 h3, .sidebar-net-applicationA01 h3 {
+    font-size: 100%;
+    font-weight: 800;
+    padding: 3px 5px 4px 5px;
+    margin-left: -5px;
+    margin-right: -5px; }
+  .sidebar-pointA01 ul, .sidebar-messageboxA01 ul, .sidebar-loginhistoryA01 ul, .sidebar-e-mailA01 ul, .sidebar-unsuspendA01 ul, .sidebar-net-applicationA01 ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 0.71429em; }
+  .sidebar-pointA01 li, .sidebar-messageboxA01 li, .sidebar-loginhistoryA01 li, .sidebar-e-mailA01 li, .sidebar-unsuspendA01 li, .sidebar-net-applicationA01 li {
+    font-size: 85.71429%;
+    font-weight: 400; }
+  .sidebar-pointA01 a, .sidebar-messageboxA01 a, .sidebar-loginhistoryA01 a, .sidebar-e-mailA01 a, .sidebar-unsuspendA01 a, .sidebar-net-applicationA01 a {
+    color: #074dac; }
+  .sidebar-pointA01 p, .sidebar-messageboxA01 p, .sidebar-loginhistoryA01 p, .sidebar-e-mailA01 p, .sidebar-unsuspendA01 p, .sidebar-net-applicationA01 p {
+    margin-top: 0.71429em; }
+
+.accountA01, .accountA02, .accountB01, .accountB02 {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+  .accountA01 .private-section, .accountA02 .private-section, .accountB01 .private-section, .accountB02 .private-section {
+    background-color: #f2f2f2;
+    padding: 5px 10px;
+    border-bottom: 1px solid #aaaaaa;
+    border-width: 0 0 1px 0; }
+  .accountA01 .private-section:first-child, .accountA02 .private-section:first-child, .accountB01 .private-section:first-child, .accountB02 .private-section:first-child {
+    border-top: 1px solid #aaaaaa;
+    margin-top: 5px; }
+  .accountA01 .private-column-title, .accountA02 .private-column-title, .accountB01 .private-column-title, .accountB02 .private-column-title {
+    margin-bottom: 5px;
+    *zoom: 1; }
+    .accountA01 .private-column-title:after, .accountA02 .private-column-title:after, .accountB01 .private-column-title:after, .accountB02 .private-column-title:after {
+      clear: both;
+      display: block;
+      content: ""; }
+    .accountA01 .private-column-title .item-listN01, .accountA02 .private-column-title .item-listN01, .accountB01 .private-column-title .item-listN01, .accountB02 .private-column-title .item-listN01 {
+      float: left; }
+      .accountA01 .private-column-title .item-listN01 li h3, .accountA02 .private-column-title .item-listN01 li h3, .accountB01 .private-column-title .item-listN01 li h3, .accountB02 .private-column-title .item-listN01 li h3 {
+        width: 176px;
+        margin-right: 15px; }
+      .accountA01 .private-column-title .item-listN01 .item-li02, .accountA02 .private-column-title .item-listN01 .item-li02, .accountB01 .private-column-title .item-listN01 .item-li02, .accountB02 .private-column-title .item-listN01 .item-li02 {
+        width: 100px;
+        margin-right: 15px; }
+      .accountA01 .private-column-title .item-listN01 .item-li03, .accountA02 .private-column-title .item-listN01 .item-li03, .accountB01 .private-column-title .item-listN01 .item-li03, .accountB02 .private-column-title .item-listN01 .item-li03 {
+        width: 100px;
+        margin-right: 15px; }
+      .accountA01 .private-column-title .item-listN01 .item-li04 dt, .accountA02 .private-column-title .item-listN01 .item-li04 dt, .accountB01 .private-column-title .item-listN01 .item-li04 dt, .accountB02 .private-column-title .item-listN01 .item-li04 dt, .accountA01 .private-column-title .item-listN01 .item-li05 dt, .accountA02 .private-column-title .item-listN01 .item-li05 dt, .accountB01 .private-column-title .item-listN01 .item-li05 dt, .accountB02 .private-column-title .item-listN01 .item-li05 dt {
+        margin-right: 10px; }
+      .accountA01 .private-column-title .item-listN01 .item-li04 dd, .accountA02 .private-column-title .item-listN01 .item-li04 dd, .accountB01 .private-column-title .item-listN01 .item-li04 dd, .accountB02 .private-column-title .item-listN01 .item-li04 dd, .accountA01 .private-column-title .item-listN01 .item-li05 dd, .accountA02 .private-column-title .item-listN01 .item-li05 dd, .accountB01 .private-column-title .item-listN01 .item-li05 dd, .accountB02 .private-column-title .item-listN01 .item-li05 dd {
+        margin-right: 15px; }
+      .accountA01 .private-column-title .item-listN01 li:last-child, .accountA02 .private-column-title .item-listN01 li:last-child, .accountB01 .private-column-title .item-listN01 li:last-child, .accountB02 .private-column-title .item-listN01 li:last-child, .accountA01 .private-column-title .item-listN01 li:last-child dd, .accountA02 .private-column-title .item-listN01 li:last-child dd, .accountB01 .private-column-title .item-listN01 li:last-child dd, .accountB02 .private-column-title .item-listN01 li:last-child dd {
+        margin-right: 0; }
+    .accountA01 .private-column-title .list-datetime, .accountA02 .private-column-title .list-datetime, .accountB01 .private-column-title .list-datetime, .accountB02 .private-column-title .list-datetime {
+      float: right; }
+  .accountA01 .private-column-balance, .accountA02 .private-column-balance, .accountB01 .private-column-balance, .accountB02 .private-column-balance {
+    float: right; }
+  .accountA01 .private-column-account, .accountA02 .private-column-account, .accountB01 .private-column-account, .accountB02 .private-column-account {
+    width: 425px;
+    float: left;
+    margin-bottom: 5px; }
+    .accountA01 .private-column-account .private-column-note, .accountA02 .private-column-account .private-column-note, .accountB01 .private-column-account .private-column-note, .accountB02 .private-column-account .private-column-note {
+      width: 100%; }
+      .accountA01 .private-column-account .private-column-note .list-info, .accountA02 .private-column-account .private-column-note .list-info, .accountB01 .private-column-account .private-column-note .list-info, .accountB02 .private-column-account .private-column-note .list-info {
+        width: 100%; }
+  .accountA01 .private-column-function, .accountA02 .private-column-function, .accountB01 .private-column-function, .accountB02 .private-column-function {
+    *zoom: 1;
+    clear: left;
+    *clear: both; }
+    .accountA01 .private-column-function:after, .accountA02 .private-column-function:after, .accountB01 .private-column-function:after, .accountB02 .private-column-function:after {
+      clear: both;
+      display: block;
+      content: ""; }
+  .accountA01 .list-datetime, .accountA02 .list-datetime, .accountB01 .list-datetime, .accountB02 .list-datetime {
+    clear: both; }
+    .accountA01 .list-datetime dt, .accountA02 .list-datetime dt, .accountB01 .list-datetime dt, .accountB02 .list-datetime dt, .accountA01 .list-datetime dd, .accountA02 .list-datetime dd, .accountB01 .list-datetime dd, .accountB02 .list-datetime dd {
+      float: left;
+      white-space: nowrap;
+      margin-top: 3px;
+      line-height: 1;
+      *padding-top: 3px;
+      *margin-top: -3px; }
+    .accountA01 .list-datetime dt:after, .accountA02 .list-datetime dt:after, .accountB01 .list-datetime dt:after, .accountB02 .list-datetime dt:after {
+      content: ' :'; }
+    .accountA01 .list-datetime dd, .accountA02 .list-datetime dd, .accountB01 .list-datetime dd, .accountB02 .list-datetime dd {
+      margin-left: 0.5em; }
+  .accountA01 .list-func, .accountA02 .list-func, .accountB01 .list-func, .accountB02 .list-func {
+    *zoom: 1;
+    float: left;
+    vertical-align: top;
+    margin-left: 0;
+    padding-left: 0; }
+    .accountA01 .list-func:after, .accountA02 .list-func:after, .accountB01 .list-func:after, .accountB02 .list-func:after {
+      clear: both;
+      display: block;
+      content: ""; }
+    .accountA01 .list-func li, .accountA02 .list-func li, .accountB01 .list-func li, .accountB02 .list-func li {
+      float: left;
+      list-style: none;
+      margin-right: 8px; }
+    .accountA01 .list-func button.button-disabled, .accountA02 .list-func button.button-disabled, .accountB01 .list-func button.button-disabled, .accountB02 .list-func button.button-disabled, .accountA01 .list-func input.button-disabled, .accountA02 .list-func input.button-disabled, .accountB01 .list-func input.button-disabled, .accountB02 .list-func input.button-disabled {
+      cursor: pointer; }
+  .accountA01 .list-info, .accountA02 .list-info, .accountB01 .list-info, .accountB02 .list-info {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0; }
+  .accountA01 .list-amount, .accountA02 .list-amount, .accountB01 .list-amount, .accountB02 .list-amount {
+    *zoom: 1; }
+    .accountA01 .list-amount:after, .accountA02 .list-amount:after, .accountB01 .list-amount:after, .accountB02 .list-amount:after {
+      clear: both;
+      display: block;
+      content: ""; }
+    .accountA01 .list-amount dt, .accountA02 .list-amount dt, .accountB01 .list-amount dt, .accountB02 .list-amount dt, .accountA01 .list-amount dd, .accountA02 .list-amount dd, .accountB01 .list-amount dd, .accountB02 .list-amount dd {
+      margin-left: 0; }
+    .accountA01 .list-amount dt, .accountA02 .list-amount dt, .accountB01 .list-amount dt, .accountB02 .list-amount dt {
+      float: right;
+      clear: both;
+      text-align: left;
+      font-size: 100%;
+      line-height: 1.67143;
+      font-weight: 400; }
+    .accountA01 .list-amount dd, .accountA02 .list-amount dd, .accountB01 .list-amount dd, .accountB02 .list-amount dd {
+      float: left;
+      text-align: right;
+      font-size: 128.57143%;
+      font-weight: 800; }
+  .accountA01 .text-secondary dl, .accountA02 .text-secondary dl, .accountB01 .text-secondary dl, .accountB02 .text-secondary dl {
+    *zoom: 1; }
+    .accountA01 .text-secondary dl:after, .accountA02 .text-secondary dl:after, .accountB01 .text-secondary dl:after, .accountB02 .text-secondary dl:after {
+      clear: both;
+      display: block;
+      content: ""; }
+  .accountA01 .text-secondary .item-dt01, .accountA02 .text-secondary .item-dt01, .accountB01 .text-secondary .item-dt01, .accountB02 .text-secondary .item-dt01 {
+    float: left;
+    margin-right: 10px;
+    font-size: 100%;
+    line-height: 1.48571;
+    font-weight: 400; }
+  .accountA01 .text-secondary .item-dd01, .accountA02 .text-secondary .item-dd01, .accountB01 .text-secondary .item-dd01, .accountB02 .text-secondary .item-dd01 {
+    float: left;
+    margin-left: 0;
+    font-size: 114.28571%;
+    font-weight: 800; }
+  .accountA01 .private-column-function .blockArrow01, .accountA02 .private-column-function .blockArrow01, .accountB01 .private-column-function .blockArrow01, .accountB02 .private-column-function .blockArrow01 {
+    float: left;
+    margin-top: 0px;
+    line-height: 100%;
+    background: #666666 url(../../images/2951/block_arrow_01.gif) no-repeat 100% 50%;
+    padding: 4px 12px 3px 5px;
+    margin: 0px 15px 6px 0;
+    color: #fff; }
+  .accountA01 .wrapper-changeaccount-buttonA01, .accountA02 .wrapper-changeaccount-buttonA01, .accountB01 .wrapper-changeaccount-buttonA01, .accountB02 .wrapper-changeaccount-buttonA01 {
+    font-size: 87.5%;
+    font-weight: 400;
+    display: inline;
+    margin-left: 0.5em; }
+    .accountA01 .wrapper-changeaccount-buttonA01 span:before, .accountA02 .wrapper-changeaccount-buttonA01 span:before, .accountB01 .wrapper-changeaccount-buttonA01 span:before, .accountB02 .wrapper-changeaccount-buttonA01 span:before {
+      content: '['; }
+    .accountA01 .wrapper-changeaccount-buttonA01 span:after, .accountA02 .wrapper-changeaccount-buttonA01 span:after, .accountB01 .wrapper-changeaccount-buttonA01 span:after, .accountB02 .wrapper-changeaccount-buttonA01 span:after {
+      content: ']'; }
+    .accountA01 .wrapper-changeaccount-buttonA01 span, .accountA02 .wrapper-changeaccount-buttonA01 span, .accountB01 .wrapper-changeaccount-buttonA01 span, .accountB02 .wrapper-changeaccount-buttonA01 span {
+      word-break: keep-all;
+      display: inline-block; }
+
+/* ===============================
+ *        Category style
+ * =============================== */
+/* =========== [ Side bar ] =========== */
+/* sidebar-leftcolumnA01 */
+.sidebar-leftcolumnA01 {
+  /* gnav h */
+  width: 730px;
+  float: left; }
+
+/* sidebar-leftcolumnB01 */
+.sidebar-leftcolumnB01 {
+  /* gnav h */
+  width: 700px;
+  float: left; }
+
+/* sidebar-rightcolumnA01 */
+.sidebar-rightcolumnA01 {
+  /* gnav h */
+  width: 230px;
+  float: right; }
+
+/* sidebar-rightcolumnB01 */
+.sidebar-rightcolumnB01 {
+  /* gnav h */
+  width: 260px;
+  float: right; }
+
+/* ===============================
+ *        Unique style
+ * =============================== */
+/* whatsnew-blockA01 */
+.whatsnew-blockA01 {
+  margin-top: 0.71429em; }
+  .whatsnew-blockA01:first-child {
+    margin-top: 0; }
+  .whatsnew-blockA01 h2 {
+    font-size: 100%;
+    font-weight: 400; }
+  .whatsnew-blockA01 textarea {
+    font-size: 100% !important;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #fff;
+    border: 1px solid #aaaaaa;
+    resize: none;
+    max-width: 99%;
+    padding: 8px 10px; }
+  .whatsnew-blockA01 ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+  .whatsnew-blockA01 li {
+    margin: 0;
+    padding: 0; }
+
+@-moz-document url-prefix() {
+  .whatsnew-blockA01 textarea {
+    padding: 0 0 0 10px; } }
+
+/* accountA01 */
+.accountA01 .private-column-account {
+  width: 402px; }
+.accountA01 .private-column-balance {
+  width: 300px;
+  margin-bottom: 5px; }
+  .accountA01 .private-column-balance .list-amount dt {
+    width: 115px; }
+  .accountA01 .private-column-balance .list-amount dd {
+    width: 175px; }
+.accountA01 .list-amount dt {
+  margin-top: 0px;
+  /* gnav h */
+  width: 165px; }
+.accountA01 .list-amount dd {
+  /* gnav h */
+  width: 590px;
+  *padding-top: 3px; }
+.accountA01 .private-column-title .item-listN01 .item-li03 {
+  width: 80px; }
+.accountA01 .list-func {
+  *margin-top: -4px; }
+  .accountA01 .list-func li {
+    *vertical-align: top;
+    /* IE 6-7 */ }
+  .accountA01 .list-func button, .accountA01 .list-func input {
+    border: none;
+    font-size: 114.28571%;
+    font-weight: 800;
+    font-size: 16px;
+    color: #074dac;
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+    background: none; }
+    .accountA01 .list-func button.button-disabled, .accountA01 .list-func input.button-disabled {
+      color: #666;
+      text-decoration: none; }
+
+/* mainaccount-blockA01 */
+.mainaccount-blockA01 {
+  background-color: #bdd5f4; }
+  .mainaccount-blockA01 dl {
+    margin: 0;
+    padding: 0;
+    *zoom: 1; }
+    .mainaccount-blockA01 dl:after {
+      clear: both;
+      display: block;
+      content: ""; }
+  .mainaccount-blockA01 dt {
+    font-size: 100%;
+    line-height: 1.48571;
+    font-weight: 400;
+    padding: 0;
+    float: left;
+    padding-right: 8px; }
+  .mainaccount-blockA01 dd {
+    font-size: 114.28571%;
+    line-height: 1.3;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+    float: left; }
+  .mainaccount-blockA01 .wrapper-changeaccount-buttonA01 {
+    font-size: 87.5%;
+    font-weight: 400;
+    display: inline;
+    margin-left: 0.5em; }
+    .mainaccount-blockA01 .wrapper-changeaccount-buttonA01 span:before {
+      content: '['; }
+    .mainaccount-blockA01 .wrapper-changeaccount-buttonA01 span:after {
+      content: ']'; }
+    .mainaccount-blockA01 .wrapper-changeaccount-buttonA01 span {
+      word-break: keep-all;
+      display: inline-block; }
+  .mainaccount-blockA01 .maba1-item-list-wrapper01 .maba1-item-list {
+    width: 365px; }
+    .mainaccount-blockA01 .maba1-item-list-wrapper01 .maba1-item-list dt {
+      width: 145px;
+      margin-right: 20px;
+      font-weight: 400;
+      font-size: 100%;
+      padding-right: 0; }
+    .mainaccount-blockA01 .maba1-item-list-wrapper01 .maba1-item-list dd {
+      width: 185px;
+      font-size: 115%; }
+      .mainaccount-blockA01 .maba1-item-list-wrapper01 .maba1-item-list dd .wrapper-changeaccount-buttonA01 {
+        font-size: 87.5%;
+        margin-left: 0.5em; }
+
+/* banner-blockA01 */
+.banner-blockA01 {
+  margin: 0;
+  padding: 0;
+  margin-top: 3.35714em;
+  margin-right: -10px;
+  list-style: none;
+  *zoom: 1; }
+  .banner-blockA01:after {
+    clear: both;
+    display: block;
+    content: ""; }
+  .banner-blockA01 li {
+    font-size: 85.71429%;
+    font-weight: 400;
+    width: 240px;
+    float: left;
+    margin-right: 5px;
+    text-align: center; }
+
+/* sidebar-accountA01 */
+.sidebar-accountA01 {
+  font-family: "Meiryo UI", "メイリオ", "Meiryo", "MS UI Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", sans-serif; }
+  .sidebar-accountA01 p span.text-user {
+    font-size: 128.57143%;
+    font-weight: 800;
+    display: block; }
+
+/* sidebar-pointA01 */
+.sidebar-pointA01 {
+  background-color: white; }
+  .sidebar-pointA01 h3 {
+    font-size: 100%;
+    font-weight: 800;
+    background-color: #bdd5f4; }
+
+/* sidebar-messageboxA01 */
+.sidebar-messageboxA01 {
+  background-color: #eaf3ff; }
+  .sidebar-messageboxA01 h3 {
+    font-size: 114.28571%;
+    font-weight: 800;
+    background-color: #bdd5f4;
+    background-image: url(../../images/2951/icon_04.png);
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    padding-left: 25px; }
+  .sidebar-messageboxA01 ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-top: 0.15385em; }
+  .sidebar-messageboxA01 li {
+    font-size: 100%;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    margin-top: 0.30769em; }
+    .sidebar-messageboxA01 li a {
+      padding-left: 14px;
+      zoom: 1; }
+    .sidebar-messageboxA01 li.list-user a {
+      background: url(../../images/2951/marker_01_user.png) no-repeat 0 5px; }
+    .sidebar-messageboxA01 li.list-bank a {
+      background: url(../../images/2951/marker_01_bank.png) no-repeat 0 5px; }
+    .sidebar-messageboxA01 li.list-user li a, .sidebar-messageboxA01 li.list-bank li a {
+      background: url(../../images/2951/marker_01_default.png) no-repeat 0 5px; }
+    .sidebar-messageboxA01 li li {
+      margin: 0;
+      padding: 0;
+      margin-top: 0.30769em;
+      font-weight: normal; }
+  .sidebar-messageboxA01 dd {
+    margin: 0;
+    padding: 0;
+    margin-top: 0.30769em; }
+    .sidebar-messageboxA01 dd a {
+      background: url(../../images/2951/marker_01_default.png) no-repeat 0 5px;
+      padding-left: 14px; }
+  .sidebar-messageboxA01 em {
+    background: url(../../images/2951/marker_01_default.png) no-repeat 0 5px;
+    padding-left: 14px; }
+    .sidebar-messageboxA01 em a {
+      background: none;
+      padding-left: 0; }
+
+/* sidebar-loginhistoryA01 */
+.sidebar-loginhistoryA01 {
+  background-color: #e6e6e6; }
+  .sidebar-loginhistoryA01 h3 {
+    background-color: #c7c7c7; }
+  .sidebar-loginhistoryA01 li {
+    font-size: 85.71429%;
+    font-weight: 400; }
+
+/* sidebar-e-mailA01 */
+.sidebar-e-mailA01 {
+  padding: 0; }
+  .sidebar-e-mailA01 h3 {
+    margin: 0;
+    padding: 0; }
+  .sidebar-e-mailA01 dl {
+    margin: 0;
+    padding: 0; }
+  .sidebar-e-mailA01 dt {
+    margin: 0;
+    padding: 0;
+    margin-top: 0.57143em;
+    font-weight: 600; }
+  .sidebar-e-mailA01 dd {
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word; }
+
+/* sidebar-banner-blockA01 */
+.sidebar-banner-blockA01 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 2.14286em; }
+  .sidebar-banner-blockA01 li {
+    margin-top: 0.71429em; }
+    .sidebar-banner-blockA01 li:first-child {
+      margin-top: 0; }
+    .sidebar-banner-blockA01 li img {
+      vertical-align: top; }
+
+/* loginA01 */
+.loginA01 .private-section-guest {
+  margin-top: 0.57143em; }
+  .loginA01 .private-section-guest h2 {
+    font-size: 142.85714%;
+    font-weight: 800;
+    margin-bottom: 5px; }
+  .loginA01 .private-section-guest p {
+    font-size: 85.71429%;
+    font-weight: 400; }
+  .loginA01 .private-section-guest .text-guest {
+    float: left;
+    width: 450px; }
+  .loginA01 .private-section-guest .func-guest {
+    float: right;
+    text-align: right;
+    width: 212px; }
+    .loginA01 .private-section-guest .func-guest button, .loginA01 .private-section-guest .func-guest input {
+      font-size: 128.57143%;
+      font-weight: 400;
+      font-size: 18px;
+      padding-top: 9px;
+      padding-bottom: 8px;
+      width: 212px; }
+    .loginA01 .private-section-guest .func-guest .sub-buttonA01 {
+      background: #a9c0df url(../../images/2951/bg_btn_03.png) repeat-x top;
+      border-top: 1px solid #bdd5f4;
+      border-left: 1px solid #bdd5f4;
+      border-right: 1px solid #bdd5f4;
+      border-bottom: 1px solid #75869a;
+      *border: none;
+      border-radius: 5px;
+      padding: 5px 16px 4px;
+      font-size: 114.28571%;
+      font-weight: 400;
+      color: #074dac;
+      text-decoration: none;
+      text-shadow: none; }
+      .loginA01 .private-section-guest .func-guest .sub-buttonA01:hover, .loginA01 .private-section-guest .func-guest .sub-buttonA01:focus, .loginA01 .private-section-guest .func-guest .sub-buttonA01:active {
+        background: #bcd9ff url(../../images/2951/bg_btn_03_o.png) repeat-x top;
+        color: #003173; }
+    .loginA01 .private-section-guest .func-guest ul {
+      margin: 0;
+      padding: 0;
+      margin-top: 0.14286em;
+      list-style: none;
+      text-align: center;
+      width: 194px; }
+      .loginA01 .private-section-guest .func-guest ul li {
+        font-size: 85.71429%;
+        font-weight: 400; }
+.loginA01 .private-section-user {
+  margin-top: 0.57143em; }
+  .loginA01 .private-section-user h2 {
+    font-size: 142.85714%;
+    font-weight: 800;
+    margin-bottom: 5px; }
+  .loginA01 .private-section-user p {
+    font-size: 85.71429%;
+    font-weight: 400; }
+  .loginA01 .private-section-user .private-block-form {
+    margin-top: 1em;
+    border-collapse: collapse; }
+    .loginA01 .private-section-user .private-block-form .form-item {
+      *zoom: 1;
+      margin-top: 5px;
+      *height: 40px;
+      *height: auto !important;
+      min-height: 40px; }
+      .loginA01 .private-section-user .private-block-form .form-item:after {
+        clear: both;
+        display: block;
+        content: ""; }
+    .loginA01 .private-section-user .private-block-form .form-label {
+      width: 182px;
+      text-align: left;
+      vertical-align: top;
+      float: left;
+      margin-top: 0.33333em;
+      display: block; }
+      .loginA01 .private-section-user .private-block-form .form-label label {
+        font-size: 114.28571%;
+        font-weight: 400; }
+      .loginA01 .private-section-user .private-block-form .form-label .list-annotation {
+        margin: 0;
+        padding: 0;
+        list-style: none; }
+        .loginA01 .private-section-user .private-block-form .form-label .list-annotation li {
+          font-size: 85.71429%;
+          font-weight: 400; }
+    .loginA01 .private-section-user .private-block-form .form-field {
+      width: 487px;
+      float: left; }
+    .loginA01 .private-section-user .private-block-form input:focus {
+      border: 3px solid black !important; }
+    .loginA01 .private-section-user .private-block-form input.input-id, .loginA01 .private-section-user .private-block-form input.input-password, .loginA01 .private-section-user .private-block-form input.input-yearA01, .loginA01 .private-section-user .private-block-form input.phoneA01, .loginA01 .private-section-user .private-block-form input.inputA01 {
+      font-size: 114.28571%;
+      font-weight: 400;
+      border: 3px solid #cccccc;
+      padding: 2px 4px; }
+    .loginA01 .private-section-user .private-block-form input.input-id, .loginA01 .private-section-user .private-block-form input.input-password {
+      width: 250px; }
+    .loginA01 .private-section-user .private-block-form .input-check-skb {
+      padding: 8px 10px 6px 10px;
+      margin-bottom: -1px;
+      display: inline-block;
+      border: 1px solid #8bb5d5;
+      vertical-align: top; }
+    .loginA01 .private-section-user .private-block-form .pseudo-checked .input-password {
+      border-color: #8bb5d5;
+      background: #e6e6e6; }
+      .loginA01 .private-section-user .private-block-form .pseudo-checked .input-password:focus {
+        border-color: #8bb5d5 !important; }
+    .loginA01 .private-section-user .private-block-form .pseudo-checked .input-check-skb {
+      background-color: #8bb5d5; }
+  .loginA01 .private-section-user .private-footer-login {
+    padding-left: 184px; }
+    .loginA01 .private-section-user .private-footer-login button, .loginA01 .private-section-user .private-footer-login input {
+      font-size: 128.57143%;
+      font-weight: 400;
+      font-size: 18px;
+      width: 212px;
+      margin: 10px 0;
+      padding-top: 17px;
+      padding-bottom: 15px; }
+    .loginA01 .private-section-user .private-footer-login .sub-buttonA01 {
+      background: #a9c0df url(../../images/2951/bg_btn_03.png) repeat-x top;
+      border-top: 1px solid #bdd5f4;
+      border-left: 1px solid #bdd5f4;
+      border-right: 1px solid #bdd5f4;
+      border-bottom: 1px solid #75869a;
+      *border: none;
+      border-radius: 5px;
+      padding: 5px 16px 4px;
+      font-size: 114.28571%;
+      font-weight: 400;
+      color: #074dac;
+      text-decoration: none;
+      text-shadow: none; }
+      .loginA01 .private-section-user .private-footer-login .sub-buttonA01:hover, .loginA01 .private-section-user .private-footer-login .sub-buttonA01:focus, .loginA01 .private-section-user .private-footer-login .sub-buttonA01:active {
+        background: #bcd9ff url(../../images/2951/bg_btn_03_o.png) repeat-x top;
+        color: #003173; }
+    .loginA01 .private-section-user .private-footer-login ul {
+      margin: 0;
+      padding: 0;
+      margin-top: 0.14286em;
+      list-style: none; }
+    .loginA01 .private-section-user .private-footer-login a {
+      color: #0a5ac6;
+      font-size: 85.71429%;
+      font-weight: 400; }
+
+/* softwarekeyboard */
+.softwarekeyboard {
+  margin-top: 9px;
+  background-color: #b3b3b3;
+  *zoom: 1;
+  border: 2px solid #b3b3b3;
+  border-radius: 5px;
+  width: 714px;
+  position: relative; }
+  .softwarekeyboard:after {
+    clear: both;
+    display: block;
+    content: ""; }
+  .softwarekeyboard:before {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 16px;
+    background: url(../../images/2951/bg_arrow_06.png) no-repeat center;
+    position: absolute;
+    left: 218px;
+    top: -16px;
+    z-index: 10; }
+  .softwarekeyboard ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+  .softwarekeyboard li {
+    margin: 0;
+    padding: 0; }
+  .softwarekeyboard .list-category {
+    width: 112px;
+    float: left;
+    padding-left: 9px; }
+    .softwarekeyboard .list-category li {
+      margin-top: 0.42857em; }
+      .softwarekeyboard .list-category li button, .softwarekeyboard .list-category li input {
+        width: 112px;
+        padding: 5px 4px;
+        text-align: center;
+        background-color: #666;
+        font-size: 128.57143%;
+        border-radius: 5px 0 0 5px;
+        color: #fff;
+        vertical-align: middle; }
+        .softwarekeyboard .list-category li button:hover, .softwarekeyboard .list-category li button:focus, .softwarekeyboard .list-category li button:active, .softwarekeyboard .list-category li input:hover, .softwarekeyboard .list-category li input:focus, .softwarekeyboard .list-category li input:active {
+          background-color: #000; }
+      .softwarekeyboard .list-category li.pseudo-selected button, .softwarekeyboard .list-category li.pseudo-selected input {
+        background-color: #e6e6e6;
+        color: #000; }
+  .softwarekeyboard .private-block-keygroup {
+    background-color: #e6e6e6;
+    *zoom: 1;
+    float: right;
+    width: 570px;
+    min-height: 160px;
+    *height: auto !important;
+    *height: 160px;
+    padding-left: 15px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    border-radius: 0 5px 5px 0;
+    position: relative; }
+    .softwarekeyboard .private-block-keygroup:after {
+      clear: both;
+      display: block;
+      content: ""; }
+  .softwarekeyboard .list-key {
+    float: left;
+    width: 440px; }
+    .softwarekeyboard .list-key ul {
+      *zoom: 1; }
+      .softwarekeyboard .list-key ul:after {
+        clear: both;
+        display: block;
+        content: ""; }
+    .softwarekeyboard .list-key li {
+      float: left;
+      margin-top: 0.42857em;
+      margin-right: 5px; }
+    .softwarekeyboard .list-key button, .softwarekeyboard .list-key input {
+      padding: 2px 8px;
+      width: 39px;
+      font-size: 142.85714%;
+      border-radius: 8px;
+      border: 1px solid #8c8c8c;
+      text-shadow: 1px 1px 1px #939393;
+      box-shadow: inset 0 -1px 1px #282828;
+      *height: 35px; }
+  .softwarekeyboard .list-func {
+    float: right; }
+    .softwarekeyboard .list-func li {
+      margin-top: 0.42857em; }
+    .softwarekeyboard .list-func .button-clear-one {
+      color: #fff;
+      background: url(../../images/2951/bg_btn_18.png) no-repeat top;
+      font-size: 114.28571%;
+      width: 121px;
+      height: 32px; }
+      .softwarekeyboard .list-func .button-clear-one:hover, .softwarekeyboard .list-func .button-clear-one:focus, .softwarekeyboard .list-func .button-clear-one:active {
+        background-image: url(../../images/2951/bg_btn_18_o.png); }
+    .softwarekeyboard .list-func .button-clear-all {
+      border-radius: 8px;
+      font-size: 114.28571%;
+      width: 121px;
+      padding: 5px; }
+    .softwarekeyboard .list-func .button-confirm {
+      color: #fff;
+      background: url(../../images/2951/btn_skb_02.png) no-repeat left top;
+      margin-left: -5px;
+      margin-right: -5px;
+      font-size: 114.28571%;
+      width: 132px;
+      height: 44px; }
+      .softwarekeyboard .list-func .button-confirm:hover, .softwarekeyboard .list-func .button-confirm:focus, .softwarekeyboard .list-func .button-confirm:active {
+        background-position: left bottom; }
+  .softwarekeyboard .button-close {
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    right: 2px;
+    bottom: 2px; }
+    .softwarekeyboard .button-close button, .softwarekeyboard .button-close input {
+      background: url(../../images/2951/btn_skb_01.png) no-repeat left top;
+      padding: 0;
+      margin: 0;
+      border: none;
+      width: 29px;
+      height: 29px;
+      text-indent: -999999px; }
+      .softwarekeyboard .button-close button:hover, .softwarekeyboard .button-close button:focus, .softwarekeyboard .button-close button:active, .softwarekeyboard .button-close input:hover, .softwarekeyboard .button-close input:focus, .softwarekeyboard .button-close input:active {
+        background-position: left bottom; }
+
+/* loginA02 */
+.loginA02 {
+  margin-top: 0.57143em; }
+  .loginA02 .private-block-form {
+    margin-top: 1em;
+    border-collapse: collapse; }
+    .loginA02 .private-block-form .form-item {
+      *zoom: 1;
+      margin-top: 1.28571em; }
+      .loginA02 .private-block-form .form-item:after {
+        clear: both;
+        display: block;
+        content: ""; }
+    .loginA02 .private-block-form .form-label {
+      width: 212px;
+      text-align: left;
+      float: left;
+      margin-top: 0.33333em;
+      line-height: 1.55556em;
+      display: block; }
+      .loginA02 .private-block-form .form-label label {
+        font-size: 114.28571%;
+        font-weight: 400; }
+      .loginA02 .private-block-form .form-label .requiredA01 {
+        font-weight: bold;
+        padding-right: 4px;
+        vertical-align: top; }
+      .loginA02 .private-block-form .form-label .list-annotation {
+        margin: 0;
+        padding: 0;
+        list-style: none; }
+        .loginA02 .private-block-form .form-label .list-annotation li {
+          font-size: 85.71429%;
+          font-weight: 400; }
+    .loginA02 .private-block-form .form-field {
+      width: 507px;
+      float: left; }
+    .loginA02 .private-block-form input {
+      border: 3px solid #cccccc;
+      width: 480px;
+      padding: 2px 4px;
+      font-size: 100%; }
+      .loginA02 .private-block-form input:focus {
+        border: 3px solid black; }
+      .loginA02 .private-block-form input.input-password {
+        width: 338px; }
+    .loginA02 .private-block-form #pswd001_check {
+      height: 13px;
+      width: 13px;
+      border: none; }
+  .loginA02 .private-block-func {
+    background-color: #f5edb8;
+    border: 2px solid #d3bb15;
+    border-radius: 6px;
+    padding: 10px;
+    margin-top: 0.57143em;
+    *zoom: 1;
+    position: relative; }
+    .loginA02 .private-block-func:after {
+      clear: both;
+      display: block;
+      content: ""; }
+    .loginA02 .private-block-func:before {
+      content: '';
+      display: block;
+      background: url(../../images/2951/bg_arrow_02.png) no-repeat;
+      width: 22px;
+      height: 16px;
+      position: absolute;
+      top: -18px;
+      left: 7px; }
+    .loginA02 .private-block-func a {
+      width: 230px;
+      float: left;
+      padding: 10px 6px;
+      margin-top: 0.42857em;
+      margin-right: 12px; }
+    .loginA02 .private-block-func p {
+      width: 254px;
+      float: right;
+      line-height: 1.28571em;
+      font-weight: 600;
+      font-family: "Meiryo UI","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック",sans-serif; }
+  .loginA02 .private-button-area {
+    padding-left: 214px;
+    padding-top: 20px;
+    *zoom: 1; }
+    .loginA02 .private-button-area:after {
+      clear: both;
+      display: block;
+      content: ""; }
+    .loginA02 .private-button-area ul {
+      list-style-type: none;
+      margin: 5px 0 0;
+      padding: 0;
+      font-family: "Meiryo UI", "メイリオ", "Meiryo", "MS UI Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", sans-serif;
+      text-align: center; }
+    .loginA02 .private-button-area .wrapper-main-buttonA01 {
+      float: left; }
+      .loginA02 .private-button-area .wrapper-main-buttonA01 .main-buttonA01 {
+        font-family: "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", sans-serif;
+        padding-bottom: 4px; }
+    .loginA02 .private-button-area .wrapper-cancel-buttonA01 {
+      margin-right: 10px;
+      float: left; }
+      .loginA02 .private-button-area .wrapper-cancel-buttonA01 .cancel-buttonA01 {
+        font-family: "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", sans-serif; }
+
+.sidebar-unsuspendA01, .sidebar-net-applicationA01 {
+  padding: 0 0 10px 0; }
+  .sidebar-unsuspendA01 h3, .sidebar-net-applicationA01 h3 {
+    margin: 0; }
+  .sidebar-unsuspendA01 p, .sidebar-net-applicationA01 p {
+    margin-left: 10px;
+    margin-right: 10px; }
+  .sidebar-unsuspendA01 button, .sidebar-net-applicationA01 button, .sidebar-unsuspendA01 input, .sidebar-net-applicationA01 input {
+    margin: 10px auto 0;
+    padding: 6px 6px;
+    width: 238px;
+    font-size: 100%;
+    line-height: 1.3;
+    font-weight: 400;
+    font-size: 14px; }
+
+/* sidebar-unsuspendA01 */
+.sidebar-unsuspendA01 {
+  border: 1px solid #991f1f;
+  background-color: #f5e8e8; }
+  .sidebar-unsuspendA01 h3 {
+    color: #fff;
+    background: #991f1f;
+    padding: 0 5px;
+    text-align: center; }
+    .sidebar-unsuspendA01 h3 span {
+      padding: 3px 0 4px 27px;
+      background: url(../../images/2951/icon_03.png) no-repeat 8px 4px #991f1f;
+      display: inline-block; }
+  .sidebar-unsuspendA01 button, .sidebar-unsuspendA01 input {
+    border: 1px solid #f84141;
+    text-shadow: 1px 1px 1px #890000;
+    box-shadow: inset 0 -1px 1px #890000;
+    background: url(../../images/2951/bg_btn_05.png) repeat-x top #9d0000;
+    color: #fff; }
+    .sidebar-unsuspendA01 button:hover, .sidebar-unsuspendA01 button:focus, .sidebar-unsuspendA01 button:active, .sidebar-unsuspendA01 input:hover, .sidebar-unsuspendA01 input:focus, .sidebar-unsuspendA01 input:active {
+      background: url(../../images/2951/bg_btn_05_o.png) repeat-x top #9d0000; }
+
+/* sidebar-net-applicationA01 */
+.sidebar-net-applicationA01 {
+  background-color: #e6e6e6; }
+  .sidebar-net-applicationA01 h3 {
+    background-color: #c7c7c7;
+    text-align: center; }
+  .sidebar-net-applicationA01 button, .sidebar-net-applicationA01 input {
+    text-shadow: none;
+    border-radius: 8px;
+    padding: 5px 0;
+    box-shadow: none; }
+
+.accountA02 .list-func button, .accountB01 .list-func button, .accountB02 .list-func button, .accountA02 .list-func input, .accountB01 .list-func input, .accountB02 .list-func input {
+  margin: 0;
+  *vertical-align: top;
+  /* IE 6-7 */
+  *padding-top: 0;
+  font-size: 85.71429%;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 5px; }
+.accountA02 .list-func .sub-buttonA01, .accountB01 .list-func .sub-buttonA01, .accountB02 .list-func .sub-buttonA01 {
+  background: #a9c0df url(../../images/2951/bg_btn_03.png) repeat-x top;
+  border-top: 1px solid #bdd5f4;
+  border-left: 1px solid #bdd5f4;
+  border-right: 1px solid #bdd5f4;
+  border-bottom: 1px solid #75869a;
+  *border: none;
+  border-radius: 5px;
+  padding: 5px 16px 4px;
+  font-size: 114.28571%;
+  font-weight: 400;
+  color: #074dac;
+  text-decoration: none;
+  text-shadow: none; }
+  .accountA02 .list-func .sub-buttonA01:hover, .accountB01 .list-func .sub-buttonA01:hover, .accountB02 .list-func .sub-buttonA01:hover, .accountA02 .list-func .sub-buttonA01:focus, .accountB01 .list-func .sub-buttonA01:focus, .accountB02 .list-func .sub-buttonA01:focus, .accountA02 .list-func .sub-buttonA01:active, .accountB01 .list-func .sub-buttonA01:active, .accountB02 .list-func .sub-buttonA01:active {
+    background: #bcd9ff url(../../images/2951/bg_btn_03_o.png) repeat-x top;
+    color: #003173; }
+.accountA02 .list-func em, .accountB01 .list-func em, .accountB02 .list-func em {
+  padding-left: 2px;
+  font-size: 133.33333%;
+  font-size: 16px;
+  line-height: 16px; }
+
+/* accountA02 */
+.accountA02 .private-column-balance {
+  width: 530px;
+  margin-bottom: 5px; }
+  .accountA02 .private-column-balance .list-amount dt {
+    width: 150px; }
+  .accountA02 .private-column-balance .list-amount dd {
+    width: 370px; }
+
+/* accountB01 */
+.accountB01 .private-column-balance {
+  width: 530px;
+  margin-bottom: 5px; }
+  .accountB01 .private-column-balance .list-amount dt {
+    width: 150px; }
+  .accountB01 .private-column-balance .list-amount dd {
+    width: 370px; }
+.accountB01 .private-column-note {
+  float: left;
+  width: 425px; }
+.accountB01 .private-column-function {
+  clear: both; }
+
+.accountB02 .private-column-balance {
+  width: 530px;
+  margin-bottom: 5px; }
+  .accountB02 .private-column-balance .list-amount dt {
+    width: 150px; }
+  .accountB02 .private-column-balance .list-amount dd {
+    width: 370px; }
+.accountB02 .private-column-cardloan-info {
+  margin-bottom: 0; }
+  .accountB02 .private-column-cardloan-info .private-column-title {
+    margin-bottom: 0; }
+    .accountB02 .private-column-cardloan-info .private-column-title .item-listN01 {
+      float: left; }
+      .accountB02 .private-column-cardloan-info .private-column-title .item-listN01 li h3 {
+        width: 176px;
+        margin-right: 15px; }
+      .accountB02 .private-column-cardloan-info .private-column-title .item-listN01 .item-li02 {
+        width: 100px;
+        margin-right: 15px; }
+      .accountB02 .private-column-cardloan-info .private-column-title .item-listN01 .item-li03 {
+        width: 100px;
+        margin-right: 15px; }
+      .accountB02 .private-column-cardloan-info .private-column-title .item-listN01 .item-li04 span, .accountB02 .private-column-cardloan-info .private-column-title .item-listN01 .item-li05 span {
+        width: 400px; }
+      .accountB02 .private-column-cardloan-info .private-column-title .item-listN01 .item-li04 dt, .accountB02 .private-column-cardloan-info .private-column-title .item-listN01 .item-li05 dt {
+        margin-right: 10px; }
+      .accountB02 .private-column-cardloan-info .private-column-title .item-listN01 .item-li04 dd, .accountB02 .private-column-cardloan-info .private-column-title .item-listN01 .item-li05 dd {
+        margin-right: 15px; }
+      .accountB02 .private-column-cardloan-info .private-column-title .item-listN01 li:last-child, .accountB02 .private-column-cardloan-info .private-column-title .item-listN01 li:last-child dd {
+        margin-right: 0; }
+.accountB02 .rivate-column-note {
+  display: none; }
+
+/* transfer-blockA01 */
+.transfer-blockA01 {
+  *zoom: 1;
+  margin-top: 0.57143em; }
+  .transfer-blockA01:after {
+    clear: both;
+    display: block;
+    content: ""; }
+  .transfer-blockA01 .heading-areaA02 {
+    line-height: 1;
+    *line-height: 1.3; }
+  .transfer-blockA01 .private-block-01 {
+    padding: 8px; }
+    .transfer-blockA01 .private-block-01 button, .transfer-blockA01 .private-block-01 input {
+      width: 130px;
+      margin-right: 10px;
+      float: left; }
+    .transfer-blockA01 .private-block-01 .sub-buttonA01 {
+      background: #a9c0df url(../../images/2951/bg_btn_03.png) repeat-x top;
+      border-top: 1px solid #bdd5f4;
+      border-left: 1px solid #bdd5f4;
+      border-right: 1px solid #bdd5f4;
+      border-bottom: 1px solid #75869a;
+      *border: none;
+      border-radius: 5px;
+      padding: 5px 16px 4px;
+      font-size: 114.28571%;
+      font-weight: 400;
+      color: #074dac;
+      text-decoration: none;
+      text-shadow: none; }
+      .transfer-blockA01 .private-block-01 .sub-buttonA01:hover, .transfer-blockA01 .private-block-01 .sub-buttonA01:focus, .transfer-blockA01 .private-block-01 .sub-buttonA01:active {
+        background: #bcd9ff url(../../images/2951/bg_btn_03_o.png) repeat-x top;
+        color: #003173; }
+    .transfer-blockA01 .private-block-01 p {
+      margin-top: 0.57143em;
+      line-height: 1.28571em;
+      float: left; }
+  .transfer-blockA01 .private-block-02 {
+    padding: 6px 8px; }
+    .transfer-blockA01 .private-block-02 p {
+      float: left;
+      margin-right: 8px;
+      line-height: 35px; }
+    .transfer-blockA01 .private-block-02 input {
+      font-size: 114.28571%;
+      font-weight: 400;
+      border: 3px solid #cccccc;
+      width: 94px;
+      margin-right: 8px;
+      padding: 2px 8px;
+      float: left;
+      margin-top: 4px; }
+      .transfer-blockA01 .private-block-02 input:focus {
+        border-color: black !important; }
+    .transfer-blockA01 .private-block-02 button {
+      float: left;
+      max-width: 220px;
+      margin-top: 2px; }
+    .transfer-blockA01 .private-block-02 .sub-buttonA01 {
+      background: #a9c0df url(../../images/2951/bg_btn_03.png) repeat-x top;
+      border-top: 1px solid #bdd5f4;
+      border-left: 1px solid #bdd5f4;
+      border-right: 1px solid #bdd5f4;
+      border-bottom: 1px solid #75869a;
+      *border: none;
+      border-radius: 5px;
+      padding: 5px 16px 4px;
+      font-size: 114.28571%;
+      font-weight: 400;
+      color: #074dac;
+      text-decoration: none;
+      text-shadow: none; }
+      .transfer-blockA01 .private-block-02 .sub-buttonA01:hover, .transfer-blockA01 .private-block-02 .sub-buttonA01:focus, .transfer-blockA01 .private-block-02 .sub-buttonA01:active {
+        background: #bcd9ff url(../../images/2951/bg_btn_03_o.png) repeat-x top;
+        color: #003173; }
+
+/* inquiryB01 */
+.inquiryB01, .inquiryB02 {
+  padding-bottom: 6px;
+  margin-top: 0.57143em; }
+  .inquiryB01 .private-header, .inquiryB02 .private-header {
+    background-color: #ebeff4;
+    padding-bottom: 12px;
+    *zoom: 1; }
+    .inquiryB01 .private-header:after, .inquiryB02 .private-header:after {
+      clear: both;
+      display: block;
+      content: ""; }
+    .inquiryB01 .private-header h2,
+    .inquiryB01 .private-header p, .inquiryB02 .private-header h2,
+    .inquiryB02 .private-header p {
+      float: left;
+      margin-right: 10px; }
+    .inquiryB01 .private-header h2, .inquiryB02 .private-header h2 {
+      font-size: 128.57143%;
+      line-height: 1.3;
+      font-weight: 400; }
+    .inquiryB01 .private-header p, .inquiryB02 .private-header p {
+      font-size: 100%;
+      line-height: 1.67143;
+      font-weight: 400; }
+  .inquiryB01 .private-content, .inquiryB02 .private-content {
+    background-color: #bdd5f4;
+    padding: 4px 12px;
+    margin: 0 -12px 0 -12px;
+    *padding-top: 16px; }
+    .inquiryB01 .private-content p, .inquiryB02 .private-content p {
+      font-size: 100%;
+      font-weight: 400;
+      text-align: right; }
+    .inquiryB01 .private-content ul, .inquiryB02 .private-content ul {
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+    .inquiryB01 .private-content li, .inquiryB02 .private-content li {
+      margin-top: 0.28571em; }
+      .inquiryB01 .private-content li:first-child, .inquiryB02 .private-content li:first-child {
+        margin-top: 0; }
+    .inquiryB01 .private-content dl, .inquiryB02 .private-content dl {
+      margin: 0;
+      padding: 0;
+      margin-top: 0.71429em;
+      *zoom: 1; }
+      .inquiryB01 .private-content dl:after, .inquiryB02 .private-content dl:after {
+        clear: both;
+        display: block;
+        content: ""; }
+    .inquiryB01 .private-content dt, .inquiryB02 .private-content dt {
+      font-size: 100%;
+      line-height: 1.48571;
+      font-weight: 400;
+      width: 80px;
+      float: left; }
+    .inquiryB01 .private-content dd, .inquiryB02 .private-content dd {
+      font-size: 114.28571%;
+      line-height: 1.3;
+      font-weight: 800;
+      margin: 0;
+      padding: 0;
+      float: left; }
+      .inquiryB01 .private-content dd dl, .inquiryB02 .private-content dd dl {
+        margin-top: 0.42857em; }
+      .inquiryB01 .private-content dd .list-option, .inquiryB02 .private-content dd .list-option {
+        margin-right: 4px; }
+        .inquiryB01 .private-content dd .list-option dd, .inquiryB02 .private-content dd .list-option dd {
+          margin-right: 10px; }
+      .inquiryB01 .private-content dd dt,
+      .inquiryB01 .private-content dd dd, .inquiryB02 .private-content dd dt,
+      .inquiryB02 .private-content dd dd {
+        font-size: 75%;
+        font-weight: 400; }
+      .inquiryB01 .private-content dd dt, .inquiryB02 .private-content dd dt {
+        width: auto; }
+        .inquiryB01 .private-content dd dt:before, .inquiryB02 .private-content dd dt:before {
+          content: "/ "; }
+        .inquiryB01 .private-content dd dt:after, .inquiryB02 .private-content dd dt:after {
+          content: ' :'; }
+        .inquiryB01 .private-content dd dt:first-child:before, .inquiryB02 .private-content dd dt:first-child:before {
+          display: none; }
+      .inquiryB01 .private-content dd dt, .inquiryB02 .private-content dd dt {
+        margin-right: 3px; }
+      .inquiryB01 .private-content dd dd, .inquiryB02 .private-content dd dd {
+        margin-left: 3px; }
+      .inquiryB01 .private-content dd h3, .inquiryB02 .private-content dd h3 {
+        font-size: 100%;
+        font-weight: 800;
+        margin: 0;
+        padding: 0; }
+      .inquiryB01 .private-content dd .text-mg-01, .inquiryB02 .private-content dd .text-mg-01 {
+        margin-left: 8px; }
+      .inquiryB01 .private-content dd .text-mg-02, .inquiryB02 .private-content dd .text-mg-02 {
+        margin-left: 16px; }
+  .inquiryB01 .private-footer, .inquiryB02 .private-footer {
+    background-color: #ebeff4;
+    *zoom: 1;
+    padding-top: 6px; }
+    .inquiryB01 .private-footer:after, .inquiryB02 .private-footer:after {
+      clear: both;
+      display: block;
+      content: ""; }
+    .inquiryB01 .private-footer a, .inquiryB02 .private-footer a {
+      color: #0a5ac6; }
+    .inquiryB01 .private-footer .list-edit, .inquiryB02 .private-footer .list-edit {
+      font-size: 114.28571%;
+      font-weight: 800;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      float: left;
+      margin-top: 0.22222em; }
+    .inquiryB01 .private-footer .list-button, .inquiryB02 .private-footer .list-button {
+      margin: 0;
+      padding: 0;
+      float: right;
+      list-style: none; }
+      .inquiryB01 .private-footer .list-button li, .inquiryB02 .private-footer .list-button li {
+        float: left; }
+      .inquiryB01 .private-footer .list-button button, .inquiryB01 .private-footer .list-button input, .inquiryB02 .private-footer .list-button button, .inquiryB02 .private-footer .list-button input {
+        font-size: 85.71429%;
+        font-weight: 400;
+        font-size: 12px;
+        width: 130px;
+        *width: auto;
+        margin: 0;
+        margin-left: 10px;
+        float: left; }
+        .inquiryB01 .private-footer .list-button button em, .inquiryB01 .private-footer .list-button input em, .inquiryB02 .private-footer .list-button button em, .inquiryB02 .private-footer .list-button input em {
+          font-size: 133.33333%;
+          font-size: 16px;
+          padding-left: 2px;
+          font-style: normal; }
+      .inquiryB01 .private-footer .list-button .sub-buttonA01, .inquiryB02 .private-footer .list-button .sub-buttonA01 {
+        background: #a9c0df url(../../images/2951/bg_btn_03.png) repeat-x top;
+        border-top: 1px solid #bdd5f4;
+        border-left: 1px solid #bdd5f4;
+        border-right: 1px solid #bdd5f4;
+        border-bottom: 1px solid #75869a;
+        *border: none;
+        border-radius: 5px;
+        padding: 5px 16px 4px;
+        font-size: 114.28571%;
+        font-weight: 400;
+        color: #074dac;
+        text-decoration: none;
+        text-shadow: none; }
+        .inquiryB01 .private-footer .list-button .sub-buttonA01:hover, .inquiryB01 .private-footer .list-button .sub-buttonA01:focus, .inquiryB01 .private-footer .list-button .sub-buttonA01:active, .inquiryB02 .private-footer .list-button .sub-buttonA01:hover, .inquiryB02 .private-footer .list-button .sub-buttonA01:focus, .inquiryB02 .private-footer .list-button .sub-buttonA01:active {
+          background: #bcd9ff url(../../images/2951/bg_btn_03_o.png) repeat-x top;
+          color: #003173; }
+
+/* message-headingA01 */
+.message-headingA01 h1 {
+  text-align: center; }
+.message-headingA01 + .textA01 {
+  width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+.message-headingA01 + .textA01 + .textA01 {
+  width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+.message-headingA01 + .textA01 + .textA01 + .textA01 {
+  width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+
+/* message-titleA01 */
+.message-titleA01 h2 {
+  font-size: 100%;
+  margin-top: 15px; }
+  .message-titleA01 h2 span {
+    font-size: 142.85714%;
+    line-height: 1.3;
+    font-weight: 800; }
+  .message-titleA01 h2 .text-label {
+    font-size: 114.28571%;
+    font-weight: 800;
+    line-height: 1;
+    background: #bdd5f4;
+    margin-right: 5px;
+    padding: 3px 6px 0; }
+
+/* message-blockA01 */
+.message-blockA01 {
+  width: 610px;
+  border: 5px solid #bdd5f4;
+  margin: 20px auto 0;
+  padding: 15px; }
+
+/* message-headerA01 */
+.message-headerA01 {
+  font-size: 85.71429%;
+  font-weight: 400;
+  *zoom: 1;
+  padding-bottom: 5px;
+  background: #bdd5f4;
+  margin-top: -15px;
+  margin-left: -15px;
+  margin-right: -15px; }
+  .message-headerA01:after {
+    clear: both;
+    display: block;
+    content: ""; }
+  .message-headerA01 .text-num {
+    width: 5em;
+    float: left; }
+  .message-headerA01 dl {
+    float: right;
+    width: 550px;
+    text-align: right; }
+    .message-headerA01 dl dt {
+      display: inline;
+      margin-left: 10px; }
+    .message-headerA01 dl dd {
+      display: inline;
+      margin: 0; }
+
+/* message-textA01 */
+.message-textA01 p {
+  font-size: 114.28571%;
+  font-weight: 400;
+  line-height: 1.6em;
+  margin-top: 16px; }
+
+/* message-textA01 */
+.wrapper-message-buttonA01 {
+  text-align: right;
+  margin: 20px 0 10px; }
+  .wrapper-message-buttonA01 a.message-buttonA01 {
+    background: #a9c0df url(../../images/2951/bg_btn_03.png) repeat-x top;
+    border-top: 1px solid #bdd5f4;
+    border-left: 1px solid #bdd5f4;
+    border-right: 1px solid #bdd5f4;
+    border-bottom: 1px solid #75869a;
+    *border: none;
+    border-radius: 5px;
+    padding: 5px 16px 4px;
+    font-size: 114.28571%;
+    font-weight: 400;
+    color: #074dac;
+    text-decoration: none; }
+    .wrapper-message-buttonA01 a.message-buttonA01:hover, .wrapper-message-buttonA01 a.message-buttonA01:focus, .wrapper-message-buttonA01 a.message-buttonA01:active {
+      background: #bcd9ff url(../../images/2951/bg_btn_03_o.png) repeat-x top;
+      color: #003173; }
+
+.message-main-buttonA01 {
+  text-align: center;
+  margin: 20px 0 0; }
+  .message-main-buttonA01 button, .message-main-buttonA01 input {
+    border: none;
+    font-size: 142.85714%;
+    font-weight: 400;
+    font-size: 20px;
+    background: white url(../../images/2951/bg_btn_02.png) no-repeat top;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 11px 13px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    width: 286px;
+    text-decoration: none; }
+    .message-main-buttonA01 button:hover, .message-main-buttonA01 input:hover {
+      background: white url(../../images/2951/bg_btn_02_o.png) no-repeat top; }
+
+.wrapper-message-buttonA01 {
+  text-align: right;
+  margin: 20px 0 10px; }
+  .wrapper-message-buttonA01 span.message-buttonA01 a {
+    background: #a9c0df url(../../images/2951/bg_btn_03.png) repeat-x top;
+    border-top: 1px solid #bdd5f4;
+    border-left: 1px solid #bdd5f4;
+    border-right: 1px solid #bdd5f4;
+    border-bottom: 1px solid #75869a;
+    *border: none;
+    border-radius: 5px;
+    padding: 5px 16px 4px;
+    color: #074dac;
+    text-decoration: none; }
+    .wrapper-message-buttonA01 span.message-buttonA01 a:hover, .wrapper-message-buttonA01 span.message-buttonA01 a:focus, .wrapper-message-buttonA01 span.message-buttonA01 a:active {
+      background: #bcd9ff url(../../images/2951/bg_btn_03_o.png) repeat-x top;
+      color: #003173; }
+
+/* assets-registry-tableA01 */
+.assets-registry-tableA01 {
+  border-collapse: collapse;
+  width: 980px;
+  border-bottom: 1px solid black; }
+  .assets-registry-tableA01 input {
+    border: 3px solid #cccccc;
+    padding: 2px 5px;
+    vertical-align: middle;
+    zoom: 1; }
+    .assets-registry-tableA01 input:focus {
+      border-color: #000; }
+  .assets-registry-tableA01 select {
+    font-size: 100%;
+    font-weight: 400; }
+  .assets-registry-tableA01 th,
+  .assets-registry-tableA01 td {
+    border-left: 1px solid white;
+    padding: 8px; }
+  .assets-registry-tableA01 th {
+    font-weight: normal;
+    padding: 5px 16px; }
+  .assets-registry-tableA01 th {
+    vertical-align: middle;
+    border-bottom: 1px solid black !important;
+    background-color: #fff; }
+  .assets-registry-tableA01 .text-required {
+    margin-right: 4px; }
+  .assets-registry-tableA01 .header-cell-1 {
+    text-align: left; }
+  .assets-registry-tableA01 .header-cell-2 {
+    text-align: left; }
+  .assets-registry-tableA01 .header-cell-3 {
+    text-align: right; }
+  .assets-registry-tableA01 .header-cell-4 {
+    text-align: left; }
+  .assets-registry-tableA01 .header-cell-6 {
+    text-align: center; }
+  .assets-registry-tableA01 .header-cell-7 {
+    text-align: center; }
+  .assets-registry-tableA01 .header-cell-8 {
+    text-align: center; }
+  .assets-registry-tableA01 .header-cell-9 {
+    text-align: center; }
+  .assets-registry-tableA01 .header-cell-10 {
+    height: 30px;
+    vertical-align: bottom;
+    text-align: left; }
+  .assets-registry-tableA01 .header-cell-11 {
+    height: 30px;
+    vertical-align: bottom;
+    text-align: left; }
+  .assets-registry-tableA01 .header-cell-12 {
+    height: 30px;
+    vertical-align: bottom;
+    text-align: right; }
+  .assets-registry-tableA01 .header-cell-13 {
+    height: 30px;
+    vertical-align: bottom;
+    text-align: center; }
+  .assets-registry-tableA01 .header-cell-14 {
+    height: 30px;
+    vertical-align: bottom;
+    text-align: center; }
+  .assets-registry-tableA01 .header-cell-15 {
+    text-align: left; }
+  .assets-registry-tableA01 .header-cell-16 {
+    text-align: left; }
+  .assets-registry-tableA01 .header-cell-17 {
+    text-align: center; }
+  .assets-registry-tableA01 .data-cell-16 div {
+    margin-right: 30px;
+    position: relative; }
+  .assets-registry-tableA01 .ui-datepicker-trigger {
+    position: absolute;
+    top: 2px;
+    left: 135px; }
+  .assets-registry-tableA01 td {
+    border-top: 1px solid #afb6bf; }
+  .assets-registry-tableA01 td.data-cell-1 {
+    text-align: center;
+    width: 16.53061%; }
+    .assets-registry-tableA01 td.data-cell-1 input {
+      /* gnav h */
+      width: 180px;
+      font-size: 100%;
+      padding: 2px 5px; }
+  .assets-registry-tableA01 td.data-cell-2 {
+    text-align: center;
+    width: 15.81633%; }
+    .assets-registry-tableA01 td.data-cell-2 select {
+      /* gnav h */
+      width: 190px; }
+  .assets-registry-tableA01 td.data-cell-3 {
+    text-align: center;
+    width: 14.4898%; }
+    .assets-registry-tableA01 td.data-cell-3 input {
+      /* gnav h */
+      width: 114px;
+      margin-right: 4px;
+      text-align: right;
+      font-size: 100%;
+      padding: 2px 5px; }
+  .assets-registry-tableA01 td.data-cell-4 {
+    text-align: center;
+    width: 16.83673%; }
+    .assets-registry-tableA01 td.data-cell-4 input {
+      /* gnav h */
+      width: 184px;
+      font-size: 100%;
+      padding: 2px 5px; }
+  .assets-registry-tableA01 td.data-cell-5 {
+    text-align: center;
+    width: 8.36735%; }
+  .assets-registry-tableA01 td.data-cell-6 {
+    text-align: left;
+    width: 30%; }
+    .assets-registry-tableA01 td.data-cell-6 input {
+      width: 180px;
+      font-size: 100%; }
+  .assets-registry-tableA01 td.data-cell-7 {
+    text-align: left;
+    width: 40%; }
+    .assets-registry-tableA01 td.data-cell-7 select {
+      width: 190px; }
+  .assets-registry-tableA01 td.data-cell-8 {
+    text-align: right;
+    width: 20%; }
+    .assets-registry-tableA01 td.data-cell-8 input {
+      width: 114px;
+      margin-right: 4px;
+      text-align: right;
+      font-size: 100%; }
+  .assets-registry-tableA01 td.data-cell-9 {
+    text-align: center;
+    width: 10%; }
+    .assets-registry-tableA01 td.data-cell-9 input {
+      width: 114px;
+      font-size: 100%; }
+  .assets-registry-tableA01 td.data-cell-10 {
+    text-align: left; }
+    .assets-registry-tableA01 td.data-cell-10 select {
+      height: 32px; }
+  .assets-registry-tableA01 td.data-cell-11 {
+    text-align: center; }
+    .assets-registry-tableA01 td.data-cell-11 select {
+      height: 32px; }
+  .assets-registry-tableA01 td.data-cell-12 {
+    text-align: right; }
+    .assets-registry-tableA01 td.data-cell-12 select {
+      height: 22px;
+      text-align: right; }
+    .assets-registry-tableA01 td.data-cell-12 input {
+      height: 22px;
+      text-align: right; }
+  .assets-registry-tableA01 td.data-cell-13 {
+    text-align: left; }
+  .assets-registry-tableA01 td.data-cell-13 select {
+    height: 32px; }
+  .assets-registry-tableA01 td.data-cell-14 {
+    text-align: left; }
+  .assets-registry-tableA01 td.data-cell-14 select {
+    height: 32px; }
+  .assets-registry-tableA01 td.data-cell-15 {
+    text-align: right; }
+  .assets-registry-tableA01 td.data-cell-15 select {
+    height: 22px;
+    text-align: right; }
+  .assets-registry-tableA01 td.data-cell-15 input {
+    height: 22px;
+    text-align: right; }
+  .assets-registry-tableA01 td.data-cell-16 {
+    text-align: center; }
+  .assets-registry-tableA01 td.data-cell-16 select {
+    height: 32px; }
+  .assets-registry-tableA01 td.data-cell-17 {
+    text-align: center; }
+  .assets-registry-tableA01 td.data-cell-17 select {
+    height: 32px; }
+  .assets-registry-tableA01 td.data-cell-18 {
+    text-align: left; }
+  .assets-registry-tableA01 td.data-cell-18 select {
+    height: 32px; }
+  .assets-registry-tableA01 td.data-cell-19 {
+    text-align: left; }
+  .assets-registry-tableA01 td.data-cell-19 select {
+    height: 32px; }
+  .assets-registry-tableA01 td.data-cell-20 {
+    text-align: center; }
+  .assets-registry-tableA01 td.data-cell-20 select {
+    height: 32px; }
+  .assets-registry-tableA01 td.data-cell-21 {
+    text-align: left; }
+  .assets-registry-tableA01 td.data-cell-21 select {
+    height: 32px; }
+  .assets-registry-tableA01 td.data-cell-22 {
+    text-align: left; }
+  .assets-registry-tableA01 td.data-cell-22 select {
+    height: 32px; }
+  .assets-registry-tableA01 td.data-cell-23 {
+    text-align: center; }
+  .assets-registry-tableA01 td.data-cell-23 select {
+    height: 32px; }
+  .assets-registry-tableA01 td.data-cell-24 {
+    width: 182px;
+    font-weight: 800;
+    text-align: center; }
+  .assets-registry-tableA01 td.data-cell-24 select {
+    height: 32px; }
+  .assets-registry-tableA01 button, .assets-registry-tableA01 .data-cell-5 input {
+    margin: 0 auto;
+    padding: 7px 10px 5px 10px; }
+  .assets-registry-tableA01 .sub-buttonA01 {
+    background: #a9c0df url(../../images/2951/bg_btn_03.png) repeat-x top;
+    border-top: 1px solid #bdd5f4;
+    border-left: 1px solid #bdd5f4;
+    border-right: 1px solid #bdd5f4;
+    border-bottom: 1px solid #75869a;
+    *border: none;
+    border-radius: 5px;
+    padding: 5px 16px 4px;
+    font-size: 114.28571%;
+    font-weight: 400;
+    color: #074dac;
+    text-decoration: none;
+    text-shadow: none; }
+    .assets-registry-tableA01 .sub-buttonA01:hover, .assets-registry-tableA01 .sub-buttonA01:focus, .assets-registry-tableA01 .sub-buttonA01:active {
+      background: #bcd9ff url(../../images/2951/bg_btn_03_o.png) repeat-x top;
+      color: #003173; }
+
+/* data-tableB01 */
+/* data-tableB02 */
+.data-tableB01, .data-tableA01-yb,
+.data-tableB02 {
+  border-collapse: collapse;
+  width: 100%; }
+  .data-tableB01 th, .data-tableA01-yb th,
+  .data-tableB01 td,
+  .data-tableA01-yb td,
+  .data-tableB02 th,
+  .data-tableB02 td {
+    border-left: 1px solid white;
+    border-bottom: 1px solid #aeb6be;
+    padding: 8px;
+    text-align: left;
+    font-weight: normal; }
+    .data-tableB01 th.data-cell-amount, .data-tableA01-yb th.data-cell-amount,
+    .data-tableB01 td.data-cell-amount,
+    .data-tableA01-yb td.data-cell-amount,
+    .data-tableB02 th.data-cell-amount,
+    .data-tableB02 td.data-cell-amount {
+      text-align: right; }
+    .data-tableB01 th.data-cell-num, .data-tableA01-yb th.data-cell-num,
+    .data-tableB01 td.data-cell-num,
+    .data-tableA01-yb td.data-cell-num,
+    .data-tableB02 th.data-cell-num,
+    .data-tableB02 td.data-cell-num {
+      text-align: center; }
+    .data-tableB01 th.sort-header-left.tablesorter-headerAsc a, .data-tableA01-yb th.sort-header-left.tablesorter-headerAsc a, .data-tableB01 th.sort-header-left.tablesorter-headerDesc a, .data-tableA01-yb th.sort-header-left.tablesorter-headerDesc a, .data-tableB01 th.sort-header-right.tablesorter-headerAsc a, .data-tableA01-yb th.sort-header-right.tablesorter-headerAsc a, .data-tableB01 th.sort-header-right.tablesorter-headerDesc a, .data-tableA01-yb th.sort-header-right.tablesorter-headerDesc a,
+    .data-tableB01 td.sort-header-left.tablesorter-headerAsc a,
+    .data-tableA01-yb td.sort-header-left.tablesorter-headerAsc a,
+    .data-tableB01 td.sort-header-left.tablesorter-headerDesc a,
+    .data-tableA01-yb td.sort-header-left.tablesorter-headerDesc a,
+    .data-tableB01 td.sort-header-right.tablesorter-headerAsc a,
+    .data-tableA01-yb td.sort-header-right.tablesorter-headerAsc a,
+    .data-tableB01 td.sort-header-right.tablesorter-headerDesc a,
+    .data-tableA01-yb td.sort-header-right.tablesorter-headerDesc a,
+    .data-tableB02 th.sort-header-left.tablesorter-headerAsc a,
+    .data-tableB02 th.sort-header-left.tablesorter-headerDesc a,
+    .data-tableB02 th.sort-header-right.tablesorter-headerAsc a,
+    .data-tableB02 th.sort-header-right.tablesorter-headerDesc a,
+    .data-tableB02 td.sort-header-left.tablesorter-headerAsc a,
+    .data-tableB02 td.sort-header-left.tablesorter-headerDesc a,
+    .data-tableB02 td.sort-header-right.tablesorter-headerAsc a,
+    .data-tableB02 td.sort-header-right.tablesorter-headerDesc a {
+      padding: 0 15px 0 5px;
+      text-decoration: none;
+      color: black;
+      cursor: default; }
+    .data-tableB01 th.sort-header-left.tablesorter-headerAsc a, .data-tableA01-yb th.sort-header-left.tablesorter-headerAsc a,
+    .data-tableB01 td.sort-header-left.tablesorter-headerAsc a,
+    .data-tableA01-yb td.sort-header-left.tablesorter-headerAsc a,
+    .data-tableB02 th.sort-header-left.tablesorter-headerAsc a,
+    .data-tableB02 td.sort-header-left.tablesorter-headerAsc a {
+      background: #eaf3ff url(../../images/2951/bg_arrow_04_o.png) no-repeat right center; }
+    .data-tableB01 th.sort-header-left.tablesorter-headerDesc a, .data-tableA01-yb th.sort-header-left.tablesorter-headerDesc a,
+    .data-tableB01 td.sort-header-left.tablesorter-headerDesc a,
+    .data-tableA01-yb td.sort-header-left.tablesorter-headerDesc a,
+    .data-tableB02 th.sort-header-left.tablesorter-headerDesc a,
+    .data-tableB02 td.sort-header-left.tablesorter-headerDesc a {
+      background: #eaf3ff url(../../images/2951/bg_arrow_07_o.png) no-repeat right center; }
+    .data-tableB01 th.sort-header-right.tablesorter-headerAsc a, .data-tableA01-yb th.sort-header-right.tablesorter-headerAsc a,
+    .data-tableB01 td.sort-header-right.tablesorter-headerAsc a,
+    .data-tableA01-yb td.sort-header-right.tablesorter-headerAsc a,
+    .data-tableB02 th.sort-header-right.tablesorter-headerAsc a,
+    .data-tableB02 td.sort-header-right.tablesorter-headerAsc a {
+      background: #eaf3ff url(../../images/2951/bg_arrow_07_o.png) no-repeat right center; }
+    .data-tableB01 th.sort-header-right.tablesorter-headerDesc a, .data-tableA01-yb th.sort-header-right.tablesorter-headerDesc a,
+    .data-tableB01 td.sort-header-right.tablesorter-headerDesc a,
+    .data-tableA01-yb td.sort-header-right.tablesorter-headerDesc a,
+    .data-tableB02 th.sort-header-right.tablesorter-headerDesc a,
+    .data-tableB02 td.sort-header-right.tablesorter-headerDesc a {
+      background: #eaf3ff url(../../images/2951/bg_arrow_04_o.png) no-repeat right center; }
+  .data-tableB01 .header-cell, .data-tableA01-yb .header-cell,
+  .data-tableB01 .header-cell-amount,
+  .data-tableA01-yb .header-cell-amount,
+  .data-tableB01 .header-cell-num,
+  .data-tableA01-yb .header-cell-num,
+  .data-tableB02 .header-cell,
+  .data-tableB02 .header-cell-amount,
+  .data-tableB02 .header-cell-num {
+    background: #fff;
+    border-bottom: 1px solid black;
+    padding-bottom: 4px; }
+  .data-tableB01 .data-cell-date, .data-tableA01-yb .data-cell-date,
+  .data-tableB02 .data-cell-date {
+    font-size: 86%; }
+  .data-tableB01 .data-cell-amount span, .data-tableA01-yb .data-cell-amount span,
+  .data-tableB02 .data-cell-amount span {
+    margin-left: 8px; }
+    .data-tableB01 .data-cell-amount span:first-child, .data-tableA01-yb .data-cell-amount span:first-child,
+    .data-tableB02 .data-cell-amount span:first-child {
+      margin-left: 0; }
+  .data-tableB01 .data-cell-amount span.no-margin, .data-tableA01-yb .data-cell-amount span.no-margin,
+  .data-tableB02 .data-cell-amount span.no-margin {
+    margin-left: 0; }
+  .data-tableB01 .row-summary th, .data-tableA01-yb .row-summary th, .data-tableB01 .row-summary td, .data-tableA01-yb .row-summary td,
+  .data-tableB02 .row-summary th,
+  .data-tableB02 .row-summary td {
+    border-bottom: 1px solid black; }
+  .data-tableB01 .row-summary th, .data-tableA01-yb .row-summary th,
+  .data-tableB02 .row-summary th {
+    font-weight: 800;
+    font-size: 114.28571%; }
+  .data-tableB01 .row-summary span, .data-tableA01-yb .row-summary span,
+  .data-tableB02 .row-summary span {
+    display: block; }
+  .data-tableB01 .header-cell-amount, .data-tableA01-yb .header-cell-amount,
+  .data-tableB02 .header-cell-amount {
+    text-align: right; }
+  .data-tableB01 .data-cell-amount, .data-tableA01-yb .data-cell-amount,
+  .data-tableB02 .data-cell-amount {
+    font-weight: bold;
+    font-size: 114.28571%; }
+  .data-tableB01 .header-cell-num, .data-tableA01-yb .header-cell-num,
+  .data-tableB02 .header-cell-num {
+    text-align: center; }
+  .data-tableB01 .data-cell-num, .data-tableA01-yb .data-cell-num,
+  .data-tableB02 .data-cell-num {
+    text-align: center; }
+  .data-tableB01 td.data-cell-date .date-part, .data-tableA01-yb td.data-cell-date .date-part,
+  .data-tableB02 td.data-cell-date .date-part {
+    width: 110px; }
+
+.data-tableB02 .active a {
+  background: #eaf3ff url(../../images/2951/bg_arrow_04_o.png) no-repeat right center;
+  padding: 0 15px 0 5px;
+  text-decoration: none;
+  color: black;
+  cursor: default; }
+
+/* data-tableA01-yb */
+.data-tableA01-yb th {
+  background: #fff;
+  border-bottom: 1px solid black;
+  padding-bottom: 4px; }
+.data-tableA01-yb .header-cell-rate,
+.data-tableA01-yb .header-cell-fix-money {
+  text-align: right; }
+.data-tableA01-yb .data-cell-rate,
+.data-tableA01-yb .data-cell-fix-money {
+  text-align: right;
+  font-weight: bold;
+  font-size: 114.28571%; }
+.data-tableA01-yb .data-cell-select {
+  text-align: center; }
+
+/* message-tabA01 */
+.message-tabA01 {
+  margin: 0;
+  padding: 0 0 0 20px;
+  margin: 0.71429em 0;
+  list-style-type: none;
+  border-bottom: 2px solid #7d7d7d;
+  *zoom: 1; }
+  .message-tabA01:after {
+    clear: both;
+    display: block;
+    content: ""; }
+  .message-tabA01 li {
+    float: left;
+    margin-right: 10px;
+    *margin-bottom: -4px; }
+  .message-tabA01 .button-message-tabA01,
+  .message-tabA01 .button-message-tabA02 {
+    font-size: 128.57143%;
+    font-weight: 800;
+    padding: 8px 0 6px;
+    width: 225px;
+    color: #074dac;
+    border-radius: 7px 7px 0px 0px;
+    margin: 0;
+    border: none; }
+  .message-tabA01 .button-message-tabA01 {
+    background: #deeafa url(../../images/2951/bg_message_tab-01.png) repeat-x bottom; }
+    .message-tabA01 .button-message-tabA01:hover {
+      background: #edf5ff url(../../images/2951/bg_message_tab-02.png) repeat-x bottom;
+      color: #003173; }
+  .message-tabA01 .button-message-tabA02 {
+    background: #7d7d7d;
+    color: white; }
+
+.message-result-statsA01 {
+  font-weight: 800;
+  margin-left: 7px; }
+
+/* inquiryA01 */
+.inquiryA01,
+.inquiryA02 {
+  margin-top: 0.71429em;
+  padding-bottom: 16px; }
+  .inquiryA01 dl,
+  .inquiryA02 dl {
+    margin: 0;
+    padding: 0; }
+  .inquiryA01 dt,
+  .inquiryA02 dt {
+    margin: 0;
+    padding: 0; }
+  .inquiryA01 dd,
+  .inquiryA02 dd {
+    margin: 0;
+    padding: 0; }
+  .inquiryA01 ul,
+  .inquiryA02 ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+  .inquiryA01 .private-header,
+  .inquiryA02 .private-header {
+    padding-bottom: 12px; }
+  .inquiryA01 .private-content,
+  .inquiryA02 .private-content {
+    background-color: #bdd5f4;
+    margin-left: -12px;
+    margin-right: -12px;
+    padding-left: 23px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    position: relative; }
+    .inquiryA01 .private-content:after,
+    .inquiryA02 .private-content:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 16px;
+      background: url(../../images/2951/bg_arrow_05.png) no-repeat center;
+      position: absolute;
+      left: 0;
+      bottom: -16px; }
+  .inquiryA01 .private-footer,
+  .inquiryA02 .private-footer {
+    display: block; }
+    .inquiryA01 .private-footer button, .inquiryA01 .private-footer input,
+    .inquiryA02 .private-footer button,
+    .inquiryA02 .private-footer input {
+      font-size: 142.85714%;
+      font-weight: 400;
+      font-size: 20px;
+      width: 223px;
+      margin-top: 1em;
+      margin-left: auto;
+      margin-right: auto; }
+    .inquiryA01 .private-footer .sub-buttonA01,
+    .inquiryA02 .private-footer .sub-buttonA01 {
+      background: #a9c0df url(../../images/2951/bg_btn_03.png) repeat-x top;
+      border-top: 1px solid #bdd5f4;
+      border-left: 1px solid #bdd5f4;
+      border-right: 1px solid #bdd5f4;
+      border-bottom: 1px solid #75869a;
+      *border: none;
+      border-radius: 5px;
+      padding: 5px 16px 4px;
+      font-size: 114.28571%;
+      font-weight: 400;
+      color: #074dac;
+      text-decoration: none;
+      text-shadow: none;
+      padding: 5px 10px;
+      font-size: 20px; }
+      .inquiryA01 .private-footer .sub-buttonA01:hover, .inquiryA01 .private-footer .sub-buttonA01:focus, .inquiryA01 .private-footer .sub-buttonA01:active,
+      .inquiryA02 .private-footer .sub-buttonA01:hover,
+      .inquiryA02 .private-footer .sub-buttonA01:focus,
+      .inquiryA02 .private-footer .sub-buttonA01:active {
+        background: #bcd9ff url(../../images/2951/bg_btn_03_o.png) repeat-x top;
+        color: #003173; }
+  .inquiryA01 span.text-wavedash,
+  .inquiryA02 span.text-wavedash {
+    display: inline-block;
+    *display: inline;
+    font-weight: bold;
+    font-size: 185.71429%;
+    *font-size: 100%;
+    line-height: 1.15385em; }
+  .inquiryA01 table th,
+  .inquiryA02 table th {
+    font-size: 100%;
+    line-height: 1.48571;
+    font-weight: 400;
+    width: 130px;
+    vertical-align: top;
+    padding-top: 10px;
+    padding-right: 10px;
+    text-align: right; }
+  .inquiryA01 table td,
+  .inquiryA02 table td {
+    padding-top: 15px; }
+  .inquiryA01 table tr:first-child td,
+  .inquiryA02 table tr:first-child td {
+    padding-top: 0; }
+  .inquiryA01 table tr:first-child th,
+  .inquiryA02 table tr:first-child th {
+    padding-top: 4px; }
+  .inquiryA01 table tr td.confirm,
+  .inquiryA02 table tr td.confirm {
+    font-size: 114.28571%;
+    font-weight: 800;
+    *line-height: 1.5; }
+    .inquiryA01 table tr td.confirm .account-branch-name,
+    .inquiryA01 table tr td.confirm .account-item,
+    .inquiryA01 table tr td.confirm .account-number,
+    .inquiryA01 table tr td.confirm .account-bn,
+    .inquiryA02 table tr td.confirm .account-branch-name,
+    .inquiryA02 table tr td.confirm .account-item,
+    .inquiryA02 table tr td.confirm .account-number,
+    .inquiryA02 table tr td.confirm .account-bn {
+      margin-right: 1em; }
+  .inquiryA01 table tr th.confirm,
+  .inquiryA02 table tr th.confirm {
+    padding-top: 0px;
+    font-size: 100%;
+    line-height: 1.48571;
+    font-weight: 400; }
+  .inquiryA01 table tr.confirm td,
+  .inquiryA02 table tr.confirm td {
+    font-size: 114.28571%;
+    font-weight: 800;
+    *line-height: 1.5; }
+    .inquiryA01 table tr.confirm td .account-branch-name,
+    .inquiryA01 table tr.confirm td .account-item,
+    .inquiryA01 table tr.confirm td .account-number,
+    .inquiryA01 table tr.confirm td .account-bn,
+    .inquiryA02 table tr.confirm td .account-branch-name,
+    .inquiryA02 table tr.confirm td .account-item,
+    .inquiryA02 table tr.confirm td .account-number,
+    .inquiryA02 table tr.confirm td .account-bn {
+      margin-right: 1em; }
+  .inquiryA01 table th .requiredA01,
+  .inquiryA02 table th .requiredA01 {
+    font-weight: 800;
+    vertical-align: middle;
+    line-height: 2.18182em;
+    padding-right: 6px; }
+  .inquiryA01 table td p,
+  .inquiryA02 table td p {
+    margin-bottom: 4px; }
+  .inquiryA01 table td ul,
+  .inquiryA02 table td ul {
+    *zoom: 1; }
+    .inquiryA01 table td ul:after,
+    .inquiryA02 table td ul:after {
+      clear: both;
+      display: block;
+      content: ""; }
+  .inquiryA01 table td li,
+  .inquiryA02 table td li {
+    border: 2px solid #8bb5d5;
+    padding: 6px 6px 5px 6px;
+    margin-right: 4px;
+    margin-bottom: 10px;
+    float: left; }
+  .inquiryA01 table td label,
+  .inquiryA02 table td label {
+    font-size: 114.28571%;
+    font-weight: 400; }
+  .inquiryA01 table td select,
+  .inquiryA02 table td select {
+    font-size: 114.28571%;
+    font-weight: 400;
+    vertical-align: top; }
+  .inquiryA01 table td > select,
+  .inquiryA02 table td > select {
+    margin-left: 0; }
+  .inquiryA01 table td .input-text-01,
+  .inquiryA01 table td .input-text-02,
+  .inquiryA02 table td .input-text-01,
+  .inquiryA02 table td .input-text-02 {
+    font-size: 114.28571%;
+    font-weight: 400;
+    border: 3px solid #cccccc;
+    padding: 2px 4px;
+    vertical-align: top; }
+    .inquiryA01 table td .input-text-01:focus,
+    .inquiryA01 table td .input-text-02:focus,
+    .inquiryA02 table td .input-text-01:focus,
+    .inquiryA02 table td .input-text-02:focus {
+      border: 3px solid black; }
+  .inquiryA01 table td .input-text-01,
+  .inquiryA02 table td .input-text-01 {
+    width: 214px; }
+  .inquiryA01 table td .input-text-02,
+  .inquiryA02 table td .input-text-02 {
+    width: 77px; }
+  .inquiryA01 table td li.pseudo-selected,
+  .inquiryA02 table td li.pseudo-selected {
+    background-color: #f5f9ff; }
+  .inquiryA01 table td li.input-date,
+  .inquiryA02 table td li.input-date {
+    float: none;
+    clear: both;
+    *zoom: 1; }
+    .inquiryA01 table td li.input-date:after,
+    .inquiryA02 table td li.input-date:after {
+      clear: both;
+      display: block;
+      content: ""; }
+    .inquiryA01 table td li.input-date dt,
+    .inquiryA02 table td li.input-date dt {
+      zoom: 1;
+      display: block;
+      vertical-align: top; }
+      .inquiryA01 table td li.input-date dt input,
+      .inquiryA02 table td li.input-date dt input {
+        vertical-align: top; }
+    .inquiryA01 table td li.input-date dd,
+    .inquiryA02 table td li.input-date dd {
+      display: block;
+      margin: 0;
+      padding: 0;
+      vertical-align: top;
+      line-height: 2.14286em; }
+      .inquiryA01 table td li.input-date dd a.icon-calendar,
+      .inquiryA02 table td li.input-date dd a.icon-calendar {
+        vertical-align: top;
+        margin-top: 4px;
+        display: inline-block;
+        *display: inline; }
+    .inquiryA01 table td li.input-date li,
+    .inquiryA02 table td li.input-date li {
+      border: none;
+      margin: 0;
+      padding: 0; }
+  .inquiryA01 table td .input-level2 dt,
+  .inquiryA02 table td .input-level2 dt {
+    float: left;
+    margin-right: 8px;
+    margin-top: 6px; }
+    .inquiryA01 table td .input-level2 dt .text-optional,
+    .inquiryA02 table td .input-level2 dt .text-optional {
+      font-weight: 800;
+      vertical-align: middle;
+      padding-right: 4px; }
+  .inquiryA01 table td .input-level2 dd,
+  .inquiryA02 table td .input-level2 dd {
+    float: left; }
+
+/* registeredlinkA01 */
+.registeredlinkA01 {
+  *zoom: 1; }
+  .registeredlinkA01:after {
+    clear: both;
+    display: block;
+    content: ""; }
+  .registeredlinkA01 .private-block-logo {
+    width: 350px;
+    float: left;
+    margin-right: 16px; }
+    .registeredlinkA01 .private-block-logo button, .registeredlinkA01 .private-block-logo input {
+      background: none;
+      border: none;
+      overflow: visible; }
+      .registeredlinkA01 .private-block-logo button .button-image, .registeredlinkA01 .private-block-logo input .button-image {
+        width: 348px;
+        text-align: center;
+        display: block; }
+      .registeredlinkA01 .private-block-logo button .button-text, .registeredlinkA01 .private-block-logo input .button-text {
+        margin-top: 0.35714em;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        display: inline-block;
+        *display: block;
+        min-width: 185px;
+        padding-top: 10px;
+        padding-bottom: 10px; }
+  .registeredlinkA01 .list-button {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: right;
+    margin-right: -8px;
+    /* gnav h */
+    width: 593px; }
+    .registeredlinkA01 .list-button button, .registeredlinkA01 .list-button input {
+      min-width: 185px;
+      padding: 10px 0; }
+    .registeredlinkA01 .list-button .sub-buttonA01 {
+      background: #a9c0df url(../../images/2951/bg_btn_03.png) repeat-x top;
+      border-top: 1px solid #bdd5f4;
+      border-left: 1px solid #bdd5f4;
+      border-right: 1px solid #bdd5f4;
+      border-bottom: 1px solid #75869a;
+      *border: none;
+      border-radius: 5px;
+      padding: 5px 16px 4px;
+      font-size: 114.28571%;
+      font-weight: 400;
+      color: #074dac;
+      text-decoration: none;
+      text-shadow: none; }
+      .registeredlinkA01 .list-button .sub-buttonA01:hover, .registeredlinkA01 .list-button .sub-buttonA01:focus, .registeredlinkA01 .list-button .sub-buttonA01:active {
+        background: #bcd9ff url(../../images/2951/bg_btn_03_o.png) repeat-x top;
+        color: #003173; }
+    .registeredlinkA01 .list-button li {
+      float: left;
+      margin-right: 8px;
+      margin-bottom: 0.42857em; }
+
+/* bankselectA01 */
+.bankselectA01 {
+  padding-top: 0; }
+  .bankselectA01 .private-section-freeword h3,
+  .bankselectA01 .private-section-recently h3,
+  .bankselectA01 .private-section-kana h3 {
+    font-size: 128.57143%;
+    margin-bottom: 5px; }
+  .bankselectA01 .private-section-freeword {
+    margin-top: 0.85714em;
+    *zoom: 1; }
+    .bankselectA01 .private-section-freeword:after {
+      clear: both;
+      display: block;
+      content: ""; }
+    .bankselectA01 .private-section-freeword input {
+      font-size: 128.57143%;
+      font-weight: 400;
+      height: 30px;
+      width: 309px;
+      margin-right: 18px;
+      border: 3px solid #cccccc;
+      float: left;
+      padding: 0 8px; }
+      .bankselectA01 .private-section-freeword input:focus {
+        border-color: black; }
+    .bankselectA01 .private-section-freeword button {
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      float: left; }
+    .bankselectA01 .private-section-freeword .sub-buttonA01 {
+      background: #a9c0df url(../../images/2951/bg_btn_03.png) repeat-x top;
+      border-top: 1px solid #bdd5f4;
+      border-left: 1px solid #bdd5f4;
+      border-right: 1px solid #bdd5f4;
+      border-bottom: 1px solid #75869a;
+      *border: none;
+      border-radius: 5px;
+      padding: 5px 16px 4px;
+      font-size: 114.28571%;
+      font-weight: 400;
+      color: #074dac;
+      text-decoration: none;
+      text-shadow: none; }
+      .bankselectA01 .private-section-freeword .sub-buttonA01:hover, .bankselectA01 .private-section-freeword .sub-buttonA01:focus, .bankselectA01 .private-section-freeword .sub-buttonA01:active {
+        background: #bcd9ff url(../../images/2951/bg_btn_03_o.png) repeat-x top;
+        color: #003173; }
+  .bankselectA01 .private-section-recently {
+    margin-top: 2.14286em; }
+    .bankselectA01 .private-section-recently:first-child {
+      margin-top: 0.85714em; }
+    .bankselectA01 .private-section-recently ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      *zoom: 1; }
+      .bankselectA01 .private-section-recently ul:after {
+        clear: both;
+        display: block;
+        content: ""; }
+      .bankselectA01 .private-section-recently ul li {
+        font-size: 114.28571%;
+        font-weight: 400;
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 4px; }
+      .bankselectA01 .private-section-recently ul a {
+        text-decoration: underline; }
+        .bankselectA01 .private-section-recently ul a:hover {
+          text-decoration: none; }
+  .bankselectA01 .private-section-kana {
+    margin-top: 2.14286em; }
+    .bankselectA01 .private-section-kana:first-child {
+      margin-top: 0.85714em; }
+    .bankselectA01 .private-section-kana .private-column-wrapper {
+      *zoom: 1; }
+      .bankselectA01 .private-section-kana .private-column-wrapper:after {
+        clear: both;
+        display: block;
+        content: ""; }
+      .bankselectA01 .private-section-kana .private-column-wrapper .private-column-catgrp {
+        float: left;
+        width: 150px; }
+        .bankselectA01 .private-section-kana .private-column-wrapper .private-column-catgrp ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0; }
+        .bankselectA01 .private-section-kana .private-column-wrapper .private-column-catgrp li {
+          font-size: 114.28571%;
+          font-weight: 400;
+          margin-top: 4px;
+          line-height: 1.44444em; }
+        .bankselectA01 .private-section-kana .private-column-wrapper .private-column-catgrp label {
+          margin-left: 10px; }
+      .bankselectA01 .private-section-kana .private-column-wrapper .private-column-btngrp {
+        float: left; }
+        .bankselectA01 .private-section-kana .private-column-wrapper .private-column-btngrp ul {
+          margin: -5px 5px 0 0;
+          padding: 0;
+          list-style-type: none;
+          float: left;
+          font-size: 0; }
+          .bankselectA01 .private-section-kana .private-column-wrapper .private-column-btngrp ul li {
+            margin-top: 5px;
+            *vertical-align: bottom; }
+        .bankselectA01 .private-section-kana .private-column-wrapper .private-column-btngrp button, .bankselectA01 .private-section-kana .private-column-wrapper .private-column-btngrp input {
+          font-size: 142.85714%;
+          font-weight: 400;
+          font-size: 20px;
+          font-family: "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", sans-serif;
+          width: 52px;
+          height: 42px;
+          border-radius: 4px;
+          overflow: visible;
+          *vertical-align: bottom; }
+        .bankselectA01 .private-section-kana .private-column-wrapper .private-column-btngrp .sub-buttonA01 {
+          background: #a9c0df url(../../images/2951/bg_btn_03.png) repeat-x top;
+          border-top: 1px solid #bdd5f4;
+          border-left: 1px solid #bdd5f4;
+          border-right: 1px solid #bdd5f4;
+          border-bottom: 1px solid #75869a;
+          *border: none;
+          border-radius: 5px;
+          padding: 5px 16px 4px;
+          font-size: 114.28571%;
+          font-weight: 400;
+          color: #074dac;
+          text-decoration: none;
+          text-shadow: none; }
+          .bankselectA01 .private-section-kana .private-column-wrapper .private-column-btngrp .sub-buttonA01:hover, .bankselectA01 .private-section-kana .private-column-wrapper .private-column-btngrp .sub-buttonA01:focus, .bankselectA01 .private-section-kana .private-column-wrapper .private-column-btngrp .sub-buttonA01:active {
+            background: #bcd9ff url(../../images/2951/bg_btn_03_o.png) repeat-x top;
+            color: #003173; }
+        .bankselectA01 .private-section-kana .private-column-wrapper .private-column-btngrp .button-space {
+          width: 51px;
+          *width: 50px;
+          display: block;
+          height: 40px;
+          border: 1px solid #c7c7c7;
+          border-radius: 4px;
+          *margin-bottom: 5px; }
+
+.wrapper-btn-smartphonelinkA01 .btn-smartphonelinkA01 {
+  display: block;
+  background: #a9c0df url(../../images/2951/bg_btn_03.png) repeat-x top;
+  border-top: 1px solid #bdd5f4;
+  border-left: 1px solid #bdd5f4;
+  border-right: 1px solid #bdd5f4;
+  border-bottom: 1px solid #75869a;
+  text-align: center;
+  border-radius: 15px;
+  padding: 15px 10px;
+  color: #000;
+  font-size: 42px;
+  font-weight: 800;
+  text-decoration: none; }
+
+.accountC01 {
+  background: #f2f2f2;
+  border-top: 1px solid #aaaaaa;
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none; }
+  .accountC01 .ac1-item-account {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #aaaaaa; }
+  .accountC01 .ac1-primary-list {
+    list-style: none;
+    margin: 0;
+    padding: 0 10px 0;
+    *zoom: 1; }
+    .accountC01 .ac1-primary-list:after {
+      clear: both;
+      display: block;
+      content: ""; }
+    .accountC01 .ac1-primary-list .item-li01, .accountC01 .ac1-primary-list .item-li02, .accountC01 .ac1-primary-list .item-li03, .accountC01 .ac1-primary-list .item-li04 {
+      float: left;
+      line-height: 30px; }
+    .accountC01 .ac1-primary-list .item-li01 {
+      font-size: 114.28571%;
+      font-weight: 800;
+      width: 176px;
+      margin-right: 15px; }
+    .accountC01 .ac1-primary-list .item-li02 {
+      font-size: 114.28571%;
+      font-weight: 800;
+      width: 120px;
+      margin-right: 15px; }
+    .accountC01 .ac1-primary-list .item-li03 {
+      font-size: 114.28571%;
+      font-weight: 800;
+      width: 80px;
+      margin-right: 15px; }
+    .accountC01 .ac1-primary-list .item-li04, .accountC01 .ac1-primary-list .item-li05 {
+      font-size: 114.28571%;
+      font-weight: 800; }
+  .accountC01 .ac1-balance-wrapper {
+    margin: 0 10px; }
+  .accountC01 .ac1-balance {
+    *zoom: 1;
+    border-top: 1px solid #dddddd;
+    padding: 0;
+    margin-bottom: 10px; }
+    .accountC01 .ac1-balance:after {
+      clear: both;
+      display: block;
+      content: ""; }
+  .accountC01 .ac1-balance-header {
+    float: left; }
+  .accountC01 .ac1-balance-amount {
+    float: right;
+    width: 380px; }
+    .accountC01 .ac1-balance-amount dt, .accountC01 .ac1-balance-amount dd {
+      margin: 0;
+      padding: 0; }
+    .accountC01 .ac1-balance-amount dt {
+      float: right;
+      text-align: left;
+      width: 150px;
+      font-size: 100%;
+      line-height: 1.48571;
+      font-weight: 400; }
+    .accountC01 .ac1-balance-amount dd {
+      float: left;
+      text-align: right;
+      width: 220px;
+      font-size: 114.28571%;
+      line-height: 1.3;
+      font-weight: 800; }
+
+.investment-trust-menuA01 {
+  *zoom: 1; }
+  .investment-trust-menuA01:after {
+    clear: both;
+    display: block;
+    content: """"; }
+  .investment-trust-menuA01 .itma1-menu-area-wrapper01, .investment-trust-menuA01 .itma1-menu-area-wrapper02 {
+    width: 49.5%; }
+  .investment-trust-menuA01 .itma1-menu-area-wrapper01 {
+    float: left; }
+  .investment-trust-menuA01 .itma1-menu-area-wrapper02 {
+    float: right; }
+  .investment-trust-menuA01 .itma1-menu-area {
+    border: 2px solid #dddddd;
+    padding: 10px;
+    border-radius: 0px;
+    margin-bottom: 10px; }
+    .investment-trust-menuA01 .itma1-menu-area.itma1-menu-area-top {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      margin-bottom: 0;
+      border-radius: 0px; }
+    .investment-trust-menuA01 .itma1-menu-area.itma1-menu-area-middle {
+      border-top: none;
+      border-radius: 0;
+      margin-bottom: 0;
+      border-radius: 0px; }
+    .investment-trust-menuA01 .itma1-menu-area.itma1-menu-area-bottom {
+      border-top: none;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border-radius: 0px; }
+  .investment-trust-menuA01 .itma1-menu-title {
+    font-size: 143%;
+    font-weight: 800; }
+  .investment-trust-menuA01 .itma1-menu-table .item-td01 {
+    width: 130px; }
+  .investment-trust-menuA01 .itma1-menu-table .item-td02 {
+    padding-left: 10px; }
+  .investment-trust-menuA01 .investment-trust-menu-buttonA01 {
+    text-align: center;
+    background: #093e92 url(../../images/2951/bg_btn_01.png) repeat-x top;
+    border-bottom: 1px solid black;
+    border-top: 1px solid #5595ed;
+    border-left: 1px solid #5595ed;
+    border-right: 1px solid #5595ed;
+    *border: none;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    text-decoration: none;
+    width: 130px;
+    min-height: 37px;
+    border-radius: 5px; }
+    .investment-trust-menuA01 .investment-trust-menu-buttonA01:hover {
+      background: #002156 url(../../images/2951/bg_btn_01_o.png) repeat-x top; }
+    .investment-trust-menuA01 .investment-trust-menu-buttonA01 span {
+      padding: 7px 0;
+      /*ボタン文字サイズ指定*/
+      font-size: 16px;
+      width: 130px;
+      *zoom: 1; }
+  .investment-trust-menuA01 .investment-trust-menu-buttonA02 {
+    background: #ebeff4;
+    font-size: 100%;
+    border-radius: 5px;
+    text-decoration: underline;
+    font-weight: 500;
+    color: #074dac;
+    width: 130px;
+    min-height: 37px;
+    padding-bottom: 4px; }
+    .investment-trust-menuA01 .investment-trust-menu-buttonA02:hover {
+      color: #003173;
+      text-decoration: none; }
+    .investment-trust-menuA01 .investment-trust-menu-buttonA02 span {
+      padding: 5px 0 4px;
+      width: 130px;
+      *zoom: 1; }
+
+.mainaccount-blockA01 .maba1-item-list-wrapper01 .maba1-item-list {
+  width: 365px; }
+  .mainaccount-blockA01 .maba1-item-list-wrapper01 .maba1-item-list dt {
+    width: 145px;
+    margin-right: 20px;
+    font-weight: 400;
+    font-size: 100%;
+    padding-right: 0; }
+  .mainaccount-blockA01 .maba1-item-list-wrapper01 .maba1-item-list dd {
+    width: 185px;
+    font-weight: 400;
+    font-size: 115%; }
+    .mainaccount-blockA01 .maba1-item-list-wrapper01 .maba1-item-list dd .wrapper-changeaccount-buttonA01 {
+      font-size: 87.5%;
+      margin-left: 0.5em; }
+
+.mainaccount-blockA01 .maba1-item-list-wrapper01 .maba1-item-list {
+  *zoom: 1;
+  *zoom: 1;
+  width: 385px; }
+  .mainaccount-blockA01 .maba1-item-list-wrapper01 .maba1-item-list:after {
+    clear: both;
+    display: block;
+    content: "";
+    clear: both;
+    display: block;
+    content: ""; }
+  .mainaccount-blockA01 .maba1-item-list-wrapper01 .maba1-item-list dt {
+    font-size: 100%;
+    line-height: 1.48571;
+    font-weight: 400;
+    margin-right: 10px;
+    float: left;
+    text-align: right;
+    clear: both;
+    width: 105px;
+    padding-left: 15px; }
+  .mainaccount-blockA01 .maba1-item-list-wrapper01 .maba1-item-list dd {
+    font-size: 114.28571%;
+    line-height: 1.3;
+    font-weight: 800;
+    margin-left: 0;
+    float: left;
+    text-align: left;
+    min-height: 20px;
+    width: 235px; }
+  .mainaccount-blockA01 .maba1-item-list-wrapper01 .maba1-item-list .item-ddstrong {
+    font-size: 114.28571%;
+    line-height: 1.3;
+    font-weight: 800; }
+  .mainaccount-blockA01 .maba1-item-list-wrapper01 .maba1-item-list .item-ddonly {
+    margin-left: 140px; }
+
+.accountA01 .private-column-title .item-listN01 .item-li03, .accountA02 .private-column-title .item-listN01 .item-li03, .accountB01 .private-column-title .item-listN01 .item-li03, .accountB02 .private-column-title .item-listN01 .item-li03 {
+  width: auto; }
+
+/* 5版積定条件変更開始 */
+.selective-listA03:after {
+  clear: both;
+  display: block;
+  content: ""; }
+
+/* 5版積定条件変更終了 */
+/* sidebar-underspace */
+.sidebar-underspace {
+  margin-bottom: 20px; }
+
+/* under-floatObject */
+.under-floatObject {
+  clear: both; }
+
+/* word-wrap */
+.word-wrap {
+  word-break: break-all; }
+
+/* banner-blockY01 */
+.banner-blockY01 {
+  margin: 0;
+  padding: 0;
+  margin-top: 3.35714em;
+  list-style: none;
+  text-align: center;
+  *zoom: 1; }
+  .banner-blockY01:after {
+    clear: both;
+    display: block;
+    content: ""; }
+  .banner-blockY01 li {
+    font-size: 85.71429%;
+    font-weight: 400;
+    width: 240px;
+    display: inline-block;
+    *display: inline;
+    text-align: center; }
+
+/* 7版スマホ化対応 開始 */
+.inquiryA01 .private-footer .sub-buttonA03, .inquiryA01 .private-footer input.sub-buttonA03 {
+  background: #a9c0df url(../../images/2951/bg_btn_03.png) repeat-x top;
+  border-top: 1px solid #bdd5f4;
+  border-left: 1px solid #bdd5f4;
+  border-right: 1px solid #bdd5f4;
+  border-bottom: 1px solid #75869a;
+  *border: none;
+  color: #074dac;
+  text-decoration: none;
+  text-shadow: none; }
+
+.inquiryA01 .private-footer button.sub-buttonA03:hover, .inquiryA01 .private-footer input.sub-buttonA03:hover,
+.inquiryA01 .private-footer button.sub-buttonA03:focus, .inquiryA01 .private-footer input.sub-buttonA03:focus,
+.inquiryA01 .private-footer button.sub-buttonA03:active, .inquiryA01 .private-footer input.sub-buttonA03:active {
+  background: #bcd9ff url(../../images/2951/bg_btn_03_o.png) repeat-x top;
+  color: #003173; }
+
+.selective-listA01-disabled .informationF03 .lisa-primary-listF01 li, .selective-listA01-disabled .informationF03 .lisa-secondary-listF01 li, .selective-listA01-disabled .informationF03 .lisa-primary-listF03 li {
+  margin: 0px;
+  float: left;
+  clear: none;
+  list-style: none;
+  font-weight: 800; }
+
+.selective-listA01-disabled-disabled .informationF04 .lisa-primary-listF01 li, .selective-listA01-disabled .informationF04 .lisa-secondary-listF01 li {
+  margin: 0px;
+  float: left;
+  clear: none;
+  list-style: none;
+  font-weight: 800; }
+
+/* 7版スマホ化対応 終了 */
+/* 9版検討追記 開始 */
+.wrapper-changeaccount-buttonA01 button.buttonlink-disabled, .wrapper-changeaccount-buttonA01 input.buttonlink-disabled {
+  cursor: pointer;
+  color: #666;
+  text-decoration: none; }
+
+/* 9版検討追記 終了 */
+/* 12版追記（口座番号ログイン） 開始 */
+.private-block-form-loginid-account-smart {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #FFFFFF; }
+
+.loginid-account-img_position-smart {
+  padding-top: 5%;
+  width: 100px;
+  margin: auto; }
+
+.private-block-form-loginid-account {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  background-color: #FFFFFF;
+  width: 265px;
+  padding: 10px;
+  height: 220px;
+  vertical-align: middle; }
+
+.loginA01 .private-section-user .private-block-form-loginid-account .form-label label {
+  font-size: 114.28571%;
+  font-weight: 400; }
+
+.loginA01 .private-section-user .private-block-form-loginid-account .form-label .list-annotation {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.loginA01 .private-section-user .private-block-form-loginid-account .form-label .list-annotation li {
+  font-size: 85.71429%;
+  font-weight: 400; }
+
+.loginA01 .private-section-user .private-block-form-loginid-account input.input-id {
+  width: 245px;
+  font-size: 114.28571%;
+  font-weight: 400;
+  border: 3px solid #cccccc;
+  padding: 2px 4px; }
+
+.loginA01 .private-section-user .loginid-account-arrow_down_position {
+  padding-top: 10px;
+  padding-left: 285px;
+  padding-bottom: 10px; }
+
+/*12版検討追記（口座番号ログイン）終了*/
+/* PSL_OP_465 BCL001のレイアウト崩れ対応 開始 */
+.accountB01 .private-column-balance {
+  width: 530px;
+  margin-bottom: 5px; }
+  .accountB01 .private-column-balance .list-amount dt {
+    width: 150px; }
+  .accountB01 .private-column-balance .list-amount dd {
+    width: 370px; }
+.accountB01 .private-column-cardloan-info {
+  margin-bottom: 0; }
+  .accountB01 .private-column-cardloan-info .private-column-title {
+    margin-bottom: 0; }
+    .accountB01 .private-column-cardloan-info .private-column-title .item-listN01 {
+      float: left; }
+      .accountB01 .private-column-cardloan-info .private-column-title .item-listN01 li h3 {
+        width: 176px;
+        margin-right: 15px; }
+      .accountB01 .private-column-cardloan-info .private-column-title .item-listN01 .item-li02 {
+        width: 100px;
+        margin-right: 15px; }
+      .accountB01 .private-column-cardloan-info .private-column-title .item-listN01 .item-li03 {
+        width: 100px;
+        margin-right: 15px; }
+      .accountB01 .private-column-cardloan-info .private-column-title .item-listN01 .item-li04 span, .accountB01 .private-column-cardloan-info .private-column-title .item-listN01 .item-li05 span {
+        width: 400px; }
+      .accountB01 .private-column-cardloan-info .private-column-title .item-listN01 .item-li04 dt, .accountB01 .private-column-cardloan-info .private-column-title .item-listN01 .item-li05 dt {
+        margin-right: 10px; }
+      .accountB01 .private-column-cardloan-info .private-column-title .item-listN01 .item-li04 dd, .accountB01 .private-column-cardloan-info .private-column-title .item-listN01 .item-li05 dd {
+        margin-right: 15px; }
+      .accountB01 .private-column-cardloan-info .private-column-title .item-listN01 li:last-child, .accountB01 .private-column-cardloan-info .private-column-title .item-listN01 li:last-child dd {
+        margin-right: 0; }
+.accountB01 .rivate-column-note {
+  display: none; }
+
+/* PSL_OP_465 BCL001のレイアウト崩れ対応 終了 */
+/* ろうきん対応 開始/
+/* accountA02 */
+.accountA02 .private-column-balance2 {
+  width: 420px;
+  float: right;
+  margin-bottom: 5px; }
+
+.accountA02 .private-column-balance2 .list-amount dt {
+  width: 150px; }
+
+.accountA02 .private-column-balance2 .list-amount dd {
+  width: 260px; }
+
+/* ろうきん対応 終了 */
+/*
+	 投信G style.cssここから
+*/
+.inquiryF01:after, .inquiryF02:after, .inquiryF03:after, .prospectusF01:after, .informationF01:after, .searchresultsF01:after, .listitem-ISA01:after, .listitem-ISA02:after, .informationF02:after, .informationF04:after, .Contract_listF01:after, .newslinkF01:after, .tab_boxF01:after, .TotaltableF01:after, .TotaltableF02:after, .Fundtable08:after, .tab_boxF02:after, .function-blockF01:after, .investment-trust-menuA01:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.inquiryF01, .inquiryF02, .inquiryF03, .prospectusF01, .informationF01, .searchresultsF01, .listitem-ISA01, .listitem-ISA02, .informationF02, .informationF04, .Contract_listF01, .newslinkF01, .tab_boxF01, .TotaltableF01, .TotaltableF02, .Fundtable08, .tab_boxF02, .function-blockF01, .investment-trust-menuA01 {
+  *zoom: 1; }
+
+/* inquiryF01照会条件指定ここから　*/
+.inquiryF01 {
+  background-color: #ebeff4;
+  border: 2px solid #bdd5f4;
+  border-radius: 8px;
+  margin-top: 0.71429em;
+  margin-bottom: 15px;
+  padding-bottom: 7px;
+  overflow: hidden !important;
+  overflow: visible;
+  font-size: 15px;
+  position: relative;
+  min-height: 150px;
+  height: auto !important;
+  height: 150px; }
+
+.inquiryF01_table {
+  width: 79%;
+  float: left;
+  margin: 20px 0 0 5px; }
+  .inquiryF01_table th, .inquiryF01_table td {
+    padding: 5px; }
+
+.inquiryF01_th1 {
+  white-space: nowrap; }
+
+.inquiryF01_td_date1, .inquiryF01_td_date2 {
+  white-space: nowrap;
+  display: inline; }
+
+.inquiryF01_table select {
+  font-size: 114.28571%; }
+.inquiryF01_table .inquiryF01_checkbox1 span {
+  white-space: nowrap; }
+
+.inquiryF01_th1 {
+  width: 12%;
+  font-weight: normal;
+  text-align: right; }
+
+.inquiryF01_thtop {
+  vertical-align: top; }
+
+.inquiryF01_checkbox1 {
+  margin: 0;
+  padding: 0 3px;
+  display: inline-block; }
+
+.inquiryF01_longspace {
+  width: 86%; }
+
+.inquiryF01_table li {
+  float: left;
+  list-style-type: none;
+  border: 2px solid #8bb5d5;
+  margin-right: 6px;
+  margin-bottom: 10px;
+  padding-right: 5px;
+  padding: 4px 10px 4px 5px;
+  white-space: nowrap;
+  font-size: 16px; }
+.inquiryF01_table .inqF01_table_inner1, .inquiryF01_table .inqF01_table_inner2 {
+  white-space: nowrap;
+  display: inline; }
+
+/* カレンダー画像縦揃え */
+.inquiryF01 .ui-datepicker-trigger {
+  vertical-align: middle; }
+
+/* inquiryF01照会条件指定ここまで　*/
+/* inquiryF02全共通項目 */
+.inquiryF02 {
+  background-color: #ebeff4;
+  border: 2px solid #bdd5f4;
+  border-radius: 8px;
+  padding: 15px 15px 15px 20px;
+  font-size: 15px;
+  margin-bottom: 15px; }
+
+/* inquiryF02全共通項目 ボタン */
+.inquiryF02-buttonA02 {
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 9px 45px;
+  background: #093e92 url(../../images/2951/bg_btn_01.png) repeat-x top;
+  border-bottom: 1px solid black;
+  border-top: 1px solid #5595ed;
+  border-left: 1px solid #5595ed;
+  border-right: 1px solid #5595ed;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  text-decoration: none;
+  margin-left: 15px; }
+  .inquiryF02-buttonA02:hover {
+    background: #002156 url(../../images/2951/bg_btn_01_o.png) repeat-x top; }
+
+.inqF02_co1_inner1, .inqF02_co1_inner2 {
+  white-space: nowrap;
+  display: inline-block;
+  *white-space: normal;
+  *display: inline; }
+
+.inqF02_co1_inner3, .inner1_titile, .inquiryF02_inner_date {
+  float: left; }
+
+.inquiryF02_contents1_box {
+  float: left;
+  margin-top: 5px; }
+
+.inquiryF02_contents1_th {
+  font-weight: normal;
+  text-align: right;
+  white-space: nowrap; }
+
+.inquiryF02_longspace {
+  width: 38%; }
+
+/* カレンダー画像縦揃え */
+.inquiryF02_contents1 .ui-datepicker-trigger {
+  vertical-align: middle; }
+
+.displayperiod, .fund_n {
+  padding: 5px;
+  white-space: nowrap; }
+
+/* BPR109inquiryF02項目 */
+/* inquiryF03ファンド検索フォームここから */
+.inquiryF03 {
+  background-color: #ebeff4;
+  border: 2px solid #bdd5f4;
+  border-radius: 8px 8px 4px 4px;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 15px; }
+
+.inquiryF03_content {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 93%;
+  min-height: 130px;
+  height: auto !important;
+  height: 130px; }
+  .inquiryF03_content:after {
+    content: "";
+    clear: both;
+    height: 0;
+    display: block;
+    visibility: hidden; }
+
+.inquiryF03_table {
+  float: left;
+  width: 74%;
+  padding-top: 6px;
+  *width: 75%; }
+  .inquiryF03_table th, .inquiryF03_table .inquiryF03_list {
+    padding: 0;
+    margin: 10px 0; }
+
+.inquiryF03 .inquiryF03_th1, .inquiryF03 .inquiryF03_th2 {
+  width: 15%;
+  font-weight: normal;
+  text-align: right;
+  white-space: nowrap;
+  padding-top: 15px; }
+.inquiryF03 .inquiryF03_th3 {
+  font-weight: normal;
+  vertical-align: top;
+  text-align: right;
+  white-space: nowrap;
+  padding-top: 23px; }
+.inquiryF03 .inquiryF03_td2 {
+  padding-bottom: 15px; }
+.inquiryF03 .inquiryF03_loop {
+  padding-top: 3px; }
+
+.inquiryF03_table td {
+  padding: 10px 5px 0 15px; }
+.inquiryF03_table select {
+  font-size: 114.28571%; }
+
+.inquiryF03_loopt .inquiryF03_longspace1 {
+  width: 99%;
+  height: 31px;
+  line-height: 31px;
+  padding: 0;
+  border: 3px solid #cccccc;
+  *float: left; }
+  .inquiryF03_loopt .inquiryF03_longspace1:focus {
+    border: 3px solid black;
+    background: #FFFFFF; }
+.inquiryF03_loopt .inquiryF03_longspace2 {
+  width: 100%;
+  height: 37px;
+  margin-top: 10px;
+  margin-left: 0;
+  *float: left; }
+
+.inquiryF03_table li {
+  float: left;
+  list-style-type: none;
+  border: 2px solid #8bb5d5;
+  margin-right: 6px;
+  margin-bottom: 10px;
+  padding: 4px 10px 4px 5px;
+  font-size: 16px;
+  white-space: nowrap; }
+
+.inquiryF03-btn_box {
+  float: left;
+  height: 130px;
+  position: absolute;
+  right: 10px;
+  bottom: 0px; }
+
+.inquiryF03_thgroup1 {
+  margin-top: 5px;
+  margin-bottom: 17px; }
+
+.inquiryF03_thgroup {
+  *width: auto !important;
+  width: 680px;
+  overflow: hidden; }
+
+.inquiryF03_title {
+  float: left;
+  width: 105px;
+  margin-top: 19px;
+  text-align: right; }
+
+.inquiryF03_titletopt {
+  margin-top: 12px; }
+
+.inquiryF03 .inquiryF03_loopt {
+  margin-left: 130px; }
+
+.inquiryF03_loopt select, .inquiryF03_loopt input, .inquiryF03_loopt .inquiryF03_list {
+  display: inline-block;
+  margin-bottom: 0; }
+
+/* inquiryF01inquiryF03照会するボタン */
+.inquiryF01 .inquiryF01_btn_box {
+  position: absolute;
+  bottom: 32px;
+  right: 30px; }
+
+.inquiryF01_btn_box .submitbtn, .inquiryF03-btn_box .submitbtn {
+  font-size: 20px;
+  border: 1px solid #5595ed;
+  color: #fff;
+  text-shadow: 1px 1px 1px black;
+  background: url(../../images/2951/bg_btn_01.png) repeat-x top #093e92;
+  font-family: "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", sans-serif;
+  display: block;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 1.35714em;
+  height: 67px;
+  width: 175px; }
+
+.inquiryF01_btn_box .submitbtn:hover, .inquiryF03-btn_box .submitbtn:hover {
+  background-image: url(../../images/2951/bg_btn_01_o.png);
+  background-color: #002156; }
+
+/* inquiryF01inquiryF03照会条件クリアボタン*/
+.inquiryF01_btn_box .clearbtn, .inquiryF03-btn_box .clearbtn {
+  font-size: 14px;
+  height: 31px;
+  border-radius: 8px;
+  box-shadow: none;
+  width: 175px;
+  border: 1px solid #bfbfbf;
+  color: #000;
+  background: url(../../images/2951/bg_btn_04.png) repeat-x top #a0a0a0;
+  text-shadow: none;
+  margin-top: 13px;
+  line-height: 25px; }
+
+.inquiryF01_btn_box .clearbtn:hover, .inquiryF03-btn_box .clearbtn:hover {
+  background-image: url(../../images/2951/bg_btn_04_o.png);
+  background-color: #002156; }
+
+/* inquiryF03詳細条件を追加するボタン*/
+.inquiryF03_fandselect_btn {
+  clear: both;
+  height: 40px;
+  text-align: center;
+  background-image: url(../../images/2951/gnav_bg_no_01.png);
+  background-repeat: repeat-x;
+  border-radius: 4px;
+  border: 1px solid #bfbfbf;
+  width: 100%;
+  cursor: pointer; }
+  .inquiryF03_fandselect_btn:hover {
+    background-image: url(../../images/2951/gnav_bg_01.png);
+    background-repeat: repeat-x;
+    border-radius: 4px; }
+
+.inquiryF03btn_inner1:hover, .inquiryF03btn_inner2:hover {
+  color: #003173;
+  text-decoration: none; }
+
+.inquiryF03btn_inner1 {
+  background: transparent url(../../images/2951/icon-news1.png) no-repeat 0px center;
+  color: #074dac;
+  text-decoration: underline;
+  padding: 8px 0px 8px 23px;
+  *padding: 8px 0px 8px 5px;
+  background-size: 15px 15px; }
+
+.inquiryF03btn_inner2 {
+  background: transparent url(../../images/2951/icon-news2.png) no-repeat 0px center;
+  color: #074dac;
+  text-decoration: underline;
+  padding: 8px 0px 8px 23px;
+  *padding: 8px 0px 8px 5px;
+  background-size: 15px 15px; }
+
+/* 3.ファンド検索フォームここまで */
+/*Fundtableここから*/
+.Fundtable01, .Fundtable02, .Fundtable03, .Fundtable04, .Fundtable05, .Fundtable06, .Fundtable07, .Fundtable09, .Fundtable10, .Fundtable11, .Fundtable12, .Fundtable13 {
+  width: 100%;
+  font-size: 100%;
+  border-collapse: collapse; }
+
+.Fundtable01 th, .Fundtable02 th, .Fundtable03 th, .Fundtable05 th, .Fundtable06 th, .Fundtable07 th, .Fundtable09 th {
+  text-align: center;
+  border-bottom: 1px solid #333333;
+  border-right: 1px solid white;
+  font-weight: normal;
+  background: #fff;
+  color: black;
+  padding: 5px;
+  white-space: nowrap; }
+
+.Fundtable10 th, .Fundtable11 th, .Fundtable12 th {
+  text-align: center;
+  border-bottom: 1px solid #333333;
+  border-right: 1px solid white;
+  font-weight: normal;
+  background: #fff;
+  color: black;
+  padding: 5px 15px 5px 5px;
+  white-space: nowrap; }
+
+.Fundtable04 th, .Fundtable09 th, .Fundtable13 th {
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid white;
+  font-weight: normal;
+  background: #fff;
+  color: black;
+  padding: 5px;
+  white-space: nowrap; }
+
+.Fundtable01 td, .Fundtable02 td, .Fundtable03 td, .Fundtable05 td, .Fundtable06 td, .Fundtable07 td, .Fundtable09 td, .Fundtable13 td {
+  padding: 5px;
+  border-right: 1px solid white;
+  border-bottom: 1px solid #aeb6be; }
+
+.Fundtable04 td {
+  text-align: left;
+  white-space: nowrap;
+  padding: 3px 5px;
+  border-right: 1px solid white;
+  border-bottom: 1px solid #aeb6be; }
+
+.Fundtable10 td, .Fundtable11 td, .Fundtable12 td {
+  padding: 5px 15px 5px 5px;
+  border-right: 1px solid white;
+  border-bottom: 1px solid #aeb6be;
+  white-space: nowrap; }
+
+.contract_td, .contract_program_day, .application_date, .contract_day, .account_day, .investment_period, .distribution_td, .individual_catital {
+  white-space: nowrap; }
+
+/* ParaSOL4.0版対応R009_通算損益拡大にて変更 開始 */
+.Fundtable01 .yen, .Fundtable02 .yen, .Fundtable03 .yen, .Fundtable04 .yen, .Fundtable05 .yen, .Fundtable06 .yen, .Fundtable07 .yen, .Fundtable09 .yen, .Fundtable10 .yen, .Fundtable11 .yen, .Fundtable12 .yen, .Fundtable13 .yen {
+  text-align: right;
+  white-space: nowrap; }
+
+.Fundtable04 .yen, .Fundtable12 .yen {
+  white-space: normal; }
+
+/* ParaSOL4.0版対応R009_通算損益拡大にて変更 終了 */
+.Fundtable02 .transaction_buy {
+  text-align: center; }
+
+.Fundtable03 .transaction_buy, .Fundtable03 .deposits_part {
+  text-align: center; }
+
+.Fundtable09 .accrued_s, .Fundtable06 .investment_period, .isa_year, .Fundtable12 .share_return, .isa_begin_day, .isa_end_day, .delete_isa, .isa_day, .item_class_name, .Fundtable04 .item_class_name {
+  text-align: center; }
+
+.Fundtable12 .item_class_name, .Fundtable04 .item_class_name {
+  white-space: normal; }
+
+.Fundtable02 .header_cellF02_01 {
+  text-align: left; }
+
+.Fundtable03 .header_cellF03_01, .Fundtable03 .header_cellF03_02, .Fundtable03 .contract_program_day, .Fundtable03 .application_date {
+  text-align: left; }
+
+.Fundtable04 .header_cellF04_01, .Fundtable04 .header_cellF04_02 {
+  text-align: left; }
+
+.Fundtable05 .header-cell-date, .Fundtable07 .header_cellF07_01 {
+  text-align: left; }
+
+.Fundtable09 .header_cellF09_02, .Fundtable09 .header_cellF09_03, .Fundtable09 .header_cellF09_06 {
+  text-align: left; }
+
+.Fundtable12 .header_cellF12_01, .Fundtable12 .header_cellF12_02 {
+  text-align: left; }
+
+.Fundtable01 .header_cellF01_02, .Fundtable01 .header_cellF01_03, .Fundtable01 .header_cellF01_04, .Fundtable01 .header_cellF01_05, .Fundtable01 .header_cellF01_06 {
+  text-align: right; }
+
+.Fundtable02 .header_cellF02_04, .Fundtable02 .header_cellF02_05, .Fundtable02 .header_cellF02_06, .Fundtable02 .header_cellF02_07 {
+  text-align: right; }
+
+.Fundtable03 .header_cellF03_06 {
+  text-align: right; }
+
+.Fundtable04 .header_cellF04_03, .Fundtable04 .header_cellF04_04, .Fundtable04 .header_cellF04_05, .Fundtable04 .header_cellF04_06 {
+  text-align: right; }
+.Fundtable04 .header_cellF04_07 {
+  text-align: center; }
+
+.Fundtable05 .header_cellF05_02, .Fundtable05 .header_cellF05_03, .Fundtable05 .header_cellF05_04, .Fundtable05 .header_cellF05_05, .Fundtable05 .header_cellF05_06 {
+  text-align: right; }
+
+.Fundtable06 .header_cellF06_03, .Fundtable06 .header_cellF06_04, .Fundtable06 .header_cellF06_05 {
+  text-align: right; }
+
+.Fundtable07 .header_cellF07_03, .Fundtable07 .header_cellF07_04, .Fundtable07 .header_cellF07_05, .Fundtable07 .header_cellF07_06, .Fundtable07 .header_cellF07_07 {
+  text-align: right; }
+
+.Fundtable09 .header_cellF09_05, .Fundtable10 .header_cellF10_03 {
+  text-align: right; }
+
+.Fundtable11 .header_cellF11_02, .Fundtable11 .header_cellF11_03 {
+  text-align: right; }
+
+.Fundtable12 .header_cellF12_03, .Fundtable12 .header_cellF12_04 {
+  text-align: right; }
+.Fundtable12 .header_cellF12_07 {
+  text-align: center; }
+
+/*マイナス時赤字設定*/
+.loss_minus {
+  color: #F00;
+  white-space: nowrap; }
+
+/*文字強弱設定*/
+.transfer_loss, .total_transfer_loss, .withholding, .return, .fundname, .valuation_sum, .valuation_loss, .promise_p, .delivery, .purchase, .share_unit, .share, .receipt, .investment, .invest_loss, .isa_year, .credit_limit, .using_expense, .Fundtable10 .possession, .isa_begin_day, .isa_end_day, .delete_isa, .isa_day {
+  font-size: 115%;
+  font-weight: 800; }
+
+.possession, .standard_price, .individual_catital, .surrender_value, .transaction_unit, .promise_units, .acquisition_unitprice, .premium, .income_tax, .transaction, .transaction_unitprice {
+  font-size: 110%;
+  font-weight: 400; }
+
+/*Fundtableテーブル見出し幅設定*/
+.Fundtable01 .header_cellF01_01 {
+  width: 28%; }
+.Fundtable01 .header_cellF01_02, .Fundtable01 .header_cellF01_03, .Fundtable01 .header_cellF01_04, .Fundtable01 .header_cellF01_05, .Fundtable01 .header_cellF01_06 {
+  width: 12%; }
+
+.Fundtable02 .header_cellF02_04, .Fundtable02 .header_cellF02_05, .Fundtable02 .header_cellF02_07 {
+  width: 12%; }
+
+.Fundtable05 .header_cellF05_02, .Fundtable05 .header_cellF05_03, .Fundtable05 .header_cellF05_04, .Fundtable05 .header_cellF05_05, .Fundtable05 .header_cellF05_06 {
+  width: 12%; }
+
+.Fundtable06 .header_cellF06_03, .Fundtable06 .header_cellF06_04, .Fundtable06 .header_cellF06_05 {
+  width: 12%; }
+
+.Fundtable07 .header_cellF07_03, .Fundtable07 .header_cellF07_04, .Fundtable07 .header_cellF07_05, .Fundtable07 .header_cellF07_06, .Fundtable07 .header_cellF07_07 {
+  width: 12%; }
+
+.Fundtable02 .header_cellF02_01 {
+  width: 10%; }
+.Fundtable02 .header_cellF02_02 {
+  width: 11%; }
+.Fundtable02 .header_cellF02_06 {
+  width: 9%; }
+
+.Fundtable03 .header_cellF03_01 {
+  width: 12%; }
+.Fundtable03 .header_cellF03_02 {
+  width: 8%; }
+.Fundtable03 .header_cellF03_03 {
+  width: 9%; }
+.Fundtable03 .header_cellF03_05 {
+  width: 10%; }
+.Fundtable03 .header_cellF03_06 {
+  width: 22%; }
+.Fundtable03 .header_cell_date7 {
+  width: 14%; }
+.Fundtable03 .header_cell_fundname7 {
+  width: 28%; }
+.Fundtable03 .header_cell_yen7 {
+  width: 10%; }
+
+.Fundtable10 .header_cellF10_02 {
+  width: 35%; }
+.Fundtable10 .header_cellF10_03 {
+  width: 40%; }
+
+.Fundtable11 .header_cellF11_02 {
+  width: 27%; }
+.Fundtable11 .header_cellF11_03 {
+  width: 32%; }
+
+.Fundtable12 .header_cellF12_03, .Fundtable12 .header_cellF12_04 {
+  width: 25%; }
+.Fundtable12 .header_cellF12_05 {
+  width: 15%; }
+.Fundtable12 .header_cellF12_07 {
+  width: 5%; }
+
+.Fundtable04 .header_cellF04_07 {
+  width: 5%; }
+
+/* Fundtable01Fundtable09購入ボタン */
+.Fundtable01 .buy-buttonF01, .Fundtable09 .buy-buttonF09 {
+  font-size: 14px;
+  border-radius: 4px;
+  height: 31px;
+  width: 62px;
+  background: #093e92 url(../../images/2951/bg_btn_01.png) repeat-x top;
+  border-bottom: 1px solid black;
+  border-top: 1px solid #5595ed;
+  border-left: 1px solid #5595ed;
+  border-right: 1px solid #5595ed;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  text-decoration: none;
+  margin: 5px auto;
+  display: block; }
+
+.buy-buttonF01:hover, .buy-buttonF09:hover {
+  background: #002156 url(../../images/2951/bg_btn_01_o.png) repeat-x top; }
+
+/* Fundtable01売却ボタン */
+.Fundtable01 .sell-buttonF01 {
+  font-size: 14px;
+  border-radius: 4px;
+  height: 31px;
+  width: 62px;
+  border-bottom: 1px solid #75869a;
+  border-top: 1px solid #bdd5f4;
+  border-left: 1px solid #bdd5f4;
+  border-right: 1px solid #bdd5f4;
+  color: #074dac;
+  text-decoration: none;
+  background: url(../../images/2951/bg_btn_03.png) repeat-x top;
+  margin: 5px auto;
+  display: block; }
+
+.sell-buttonF01:hover {
+  background: #002156 url(../../images/2951/bg_btn_03_o.png) repeat-x top; }
+
+.Fundtable01 .trade-btn {
+  text-align: center; }
+
+/* Fundtable01 Fundtable09休場ボタン非活性 */
+.selectlist-disabled-buttonF01, .selectlist-disabled-buttonF02 {
+  border-radius: 4px;
+  color: #666;
+  border: 1px solid #c7c7c7;
+  width: 60px;
+  padding: 5px 0;
+  text-align: center;
+  text-decoration: none;
+  background: #F5F5F5;
+  display: block;
+  margin: 5px auto;
+  font-size: 14px; }
+
+/* Fundtable01のボタンスペース */
+.btnspace {
+  height: 31px; }
+
+/* 累投ブルーアイコン画像設定 */
+.fname_icon01 {
+  background-image: url(../../images/2951/icon_fname_01.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 25px;
+  width: 59px;
+  text-align: center;
+  display: inline-block; }
+  .fname_icon01 .iconinner {
+    line-height: 26px;
+    font-weight: normal;
+    font-size: 14px; }
+
+/* 一般グリーンアイコン画像設定 */
+.fname_icon02 {
+  background-image: url(../../images/2951/icon_fname_02.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 25px;
+  width: 59px;
+  text-align: center;
+  display: inline-block; }
+  .fname_icon02 .iconinner {
+    line-height: 26px;
+    font-weight: normal;
+    font-size: 14px; }
+
+/* 再投資紫アイコン */
+.fname_icon03 {
+  background-image: url(../../images/2951/icon_fname_03.png);
+  background-repeat: no-repeat;
+  width: 59px;
+  height: 25px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+  .fname_icon03 .iconinner {
+    line-height: 25px;
+    font-size: 14px;
+    white-space: nowrap; }
+
+/* 受入対象黄アイコン */
+.fname_icon04 {
+  background-image: url(../../images/2951/icon_fname_04.png);
+  background-repeat: no-repeat;
+  height: 25px;
+  width: 71px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+  .fname_icon04 .iconinner {
+    line-height: 26px;
+    font-size: 14px;
+    white-space: nowrap; }
+
+/* キャンペーン手数料率アイコン（ブラウザ） */
+.fname_icon05 {
+  background-image: url(../../images/2951/icon_fname_05.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 25px;
+  width: 250px;
+  text-align: center;
+  display: inline-block; }
+
+.fname_icon05 .iconinner {
+  line-height: 26px;
+  font-weight: normal;
+  font-size: 12px; }
+
+/* キャンペーン手数料率アイコン（スマホ） */
+.smfname_icon05 {
+  background-image: url(../../images/2951/sm_icon_fname_05.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 40px;
+  width: 175px;
+  text-align: center;
+  display: inline-block; }
+
+.smfname_icon05 .iconinner {
+  line-height: 18px;
+  font-weight: normal;
+  font-size: 12px; }
+
+.iconinner {
+  line-height: 26px;
+  font-weight: normal;
+  font-size: 12px; }
+
+/* Fundtable08譲渡損益累計および受入配当所得　テーブルここから*/
+.Fundtable08 {
+  padding: 10px;
+  background: #F2F2F2;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black; }
+
+.Fundtable08-wrapper {
+  clear: both;
+  padding-top: 10px;
+  width: 93%;
+  margin: 0 auto; }
+
+.F08_list {
+  list-style: none; }
+
+.F08-table {
+  border-collapse: collapse;
+  border-top: 1px solid #aeb6be;
+  width: 100%; }
+  .F08-table th, .F08-table td {
+    border-bottom: 1px solid #aeb6be; }
+  .F08-table th {
+    text-align: left;
+    font-weight: 400;
+    white-space: nowrap; }
+  .F08-table .yen {
+    font-weight: 800;
+    font-size: 115%;
+    text-align: right;
+    white-space: nowrap; }
+
+.Fundtable08 .F08_list {
+  font-size: 115%;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.F08_list .F08-li01, .F08_list .F08-li02 {
+  display: inline; }
+.F08_list .F08-li01 dl {
+  margin-left: 10px; }
+.F08_list .F08-li01 .F08-dt01 {
+  float: left; }
+.F08_list .F08-li02 .F08-dt02 {
+  float: left; }
+.F08_list .F08-li01 .F08-dd01, .F08_list .F08-li02 .F08-dd02 {
+  font-weight: 800;
+  float: left;
+  margin-right: 15px;
+  margin-left: 5px; }
+
+.Fundtable08-wrapper01, .Fundtable08-wrapper02 {
+  width: 48%;
+  float: left; }
+
+.Fundtable08-wrapper01 {
+  margin-right: 30px; }
+
+.F08-li02 .F08-dd02 span {
+  margin-right: 10px; }
+
+/* Fundtable08譲渡損益累計および受入配当所得　テーブルここまで*/
+/* Fundtable09購入ボタン幅調節 */
+.Fundtable09 .header_cellF09_01 {
+  width: 9%; }
+.Fundtable09 .header_cellF09_02 {
+  width: 27%; }
+.Fundtable09 .header_cellF09_03 {
+  width: 18%; }
+.Fundtable09 .F09_date {
+  font-size: 85%;
+  white-space: nowrap; }
+.Fundtable09 .premium {
+  white-space: nowrap; }
+
+/* TotaltableF01TotaltableF02合計テーブルここから */
+.TotaltableF01, .TotaltableF02 {
+  background-color: #ccc;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  font-weight: 800;
+  overflow: hidden;
+  padding-bottom: 10px; }
+
+.TotalF01_title, .TotalF02_title {
+  font-size: 125%;
+  font-weight: 800;
+  padding: 5px; }
+
+.TotalF01_innertb th, .TotalF01_innertb_a th, .TotalF02_innertb th, .TotalF01_innertb_a_bps th {
+  font-weight: normal;
+  text-align: left; }
+
+.TotalF01_innertb th, .TotalF01_innertb td {
+  padding: 5px 10px 5px 5px; }
+
+.TotalF01_innertb_a th, .TotalF01_innertb_a td {
+  padding: 5px 10px 5px 5px; }
+
+.TotalF02_innertb th, .TotalF02_innertb td {
+  padding: 5px 10px 5px 5px; }
+
+.TotalF01_innertb_a_bps th, .TotalF01_innertb_a_bps td {
+  padding: 5px 10px 5px 5px; }
+
+.TotalF01_innertb .yen, .TotalF01_innertb_a .yen, .TotalF02_innertb .yen, .TotalF01_innertb_a_bps .yen {
+  font-weight: 800;
+  text-align: right;
+  font-size: 115%;
+  white-space: nowrap; }
+
+.TotalF01_innertb {
+  background-color: #e6e6e6;
+  float: left;
+  border: 1px solid black;
+  width: 91%; }
+
+.TotalF01_innertb_a {
+  background-color: #e6e6e6;
+  float: left;
+  border: 1px solid black;
+  width: 91%;
+  height: 56px; }
+
+.TotalF01_innertb_a_bps {
+  background-color: #e6e6e6;
+  float: left;
+  border: 1px solid black;
+  width: 91%;
+  height: 79px; }
+
+.TotalF02_innertb {
+  background-color: #e6e6e6;
+  float: left;
+  border: 1px solid black;
+  width: 91%;
+  height: 75px; }
+
+.TotalF01_mark, .TotalF02_mark {
+  width: 34%;
+  float: left; }
+
+.TotaltableF01_box, .TotaltableF02_box {
+  width: 100%;
+  text-align: center;
+  margin-left: 1.5%; }
+
+.Total_mark1 {
+  margin-top: 9px;
+  padding: 1px; }
+
+.Total_mark1_a {
+  margin-top: 20px;
+  padding: 1px; }
+
+.Total_mark2 {
+  margin-top: 30px;
+  padding: 1px; }
+
+.TotalF01_righttb, .TotalF02_righttb {
+  width: 30%; }
+
+.normally, .special {
+  font-weight: normal; }
+
+/* TotaltableF01TotaltableF02合計テーブルここまで*/
+/* timeF01基準日ここから */
+.timeF01 {
+  font-size: 114.28571%;
+  font-weight: 800;
+  text-align: right;
+  margin-top: 10px; }
+  .timeF01 span {
+    margin-left: 5px; }
+
+/* timeF01基準日ここまで */
+/* informationF01ファンドボタン+文言ここから */
+.infoF01_01 {
+  float: left; }
+  .infoF01_01 p {
+    line-height: 1.4em;
+    display: block; }
+
+.infoF01btn {
+  background: #a9c0df url(../../images/2951/bg_btn_03.png) repeat-x top;
+  border-top: 1px solid #bdd5f4;
+  border-left: 1px solid #bdd5f4;
+  border-right: 1px solid #bdd5f4;
+  border-bottom: 1px solid #75869a;
+  border-radius: 5px;
+  padding: 0;
+  color: #074dac;
+  text-decoration: none;
+  float: right;
+  font-size: 14px;
+  cursor: pointer; }
+
+.infoF01btn_inner {
+  color: #074dac;
+  line-height: 1.4em;
+  background: none;
+  padding: 3px 15px 3px 22px;
+  *padding: 1px 5px 1px 7px;
+  background: transparent url(../../images/2951/icon_arrow_01.png) no-repeat 10px center; }
+
+.infoF01btn:hover {
+  background: #bcd9ff url(../../images/2951/bg_btn_03_o.png) repeat-x top; }
+
+/* informationF01ファンドボタン+文言ここまで */
+/* informationF02PDFブロックここから */
+.informationF02 {
+  border: 2px solid #bdd5f4;
+  padding: 10px;
+  margin-top: 15px; }
+  .informationF02 .pdffile_img {
+    float: left; }
+  .informationF02 .informationF02_inner {
+    float: left;
+    margin-left: 15px;
+    line-height: 1.4;
+    width: 85%; }
+
+/* informationF02PDFブロックここまで */
+/* message_blockF01翌営業日注意ブロックここから */
+.message_blockF01 {
+  font-weight: 800;
+  font-size: 125%; }
+
+/* message_blockF01翌営業日注意ブロックここまで */
+/* attention_listF01リスクエラーブロックここから */
+.attention_listF01 li {
+  font-size: 114.28571%;
+  font-weight: 400;
+  padding: 3px 0; }
+
+/* attention_listF01リスクエラーブロックここまで */
+/* prospectusF01目論見書確認ここから */
+.prospectusF01 {
+  background-color: #ebeff4;
+  border: 2px solid #bdd5f4;
+  border-radius: 8px;
+  padding: 5px; }
+
+.prospectusF01_box1 {
+  width: 100%;
+  height: 55px; }
+
+.prospectusF01_inner_box {
+  padding-left: 25px; }
+
+.inF05_link {
+  background: none;
+  padding: 0 0 0 15px;
+  color: #074dac;
+  text-decoration: underline;
+  *padding: 0; }
+  .inF05_link:hover {
+    text-decoration: none;
+    color: #003173; }
+
+.prospectusF01_box2 {
+  width: 100%;
+  overflow: hidden;
+  border-top: 1px solid #0079bf;
+  height: 55px; }
+
+.prospectusF01_inner_box1 {
+  margin-left: 20px; }
+
+.prospectusF01_read {
+  font-size: 21px;
+  font-weight: 800;
+  text-align: center;
+  color: #F84141;
+  background-color: white;
+  padding: 3px 0;
+  border: 1px solid #666666;
+  width: 69px;
+  margin-top: 10px;
+  line-height: 1.5; }
+
+.F01no_read {
+  color: #F84141; }
+
+.F01_read {
+  color: #666; }
+
+.prospectusF01_list1 {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.prospectusF01_list2 .prospectusF01_list2_item {
+  list-style: none;
+  background: url(../../images/2951/icon_arrow_01.png) no-repeat 0 10px; }
+.prospectusF01_list2 .prospectusF01_list2_item_img {
+  float: left;
+  list-style: none; }
+
+.prospectusF01_list2_item {
+  margin-top: 8px; }
+
+.prospectusF01_list1_item {
+  font-size: 114.28571%;
+  font-weight: 800;
+  margin: 21px 0 0 20px; }
+
+.prospectusF01_list2 {
+  margin: 8px 0;
+  padding: 0 0 0 15px; }
+
+.prospectusF01_list2_item, .prospectusF01_read, .prospectusF01_list1, .prospectusF01_list2 {
+  float: left; }
+
+.prospectusF01_list2_img {
+  margin-left: 10px;
+  *margin: 0; }
+
+.inF05_link2 {
+  background: none;
+  padding: 0;
+  color: #074dac;
+  text-decoration: underline;
+  *padding: 0; }
+  .inF05_link2:hover {
+    text-decoration: none;
+    color: #003173; }
+
+/* prospectusF01目論見書確認ここまで */
+/* prospectusF02目論見書チェックボックスここから */
+.prospectusF02, .prospectusF03 {
+  line-height: 1.4em;
+  margin-top: 15px; }
+
+.prospectusF02_agreement {
+  background: #ebeff4;
+  border: 3px solid #bdd5f4;
+  margin-top: 5px;
+  font-weight: 800;
+  font-size: 114.28571%; }
+
+.prospectusF03_agreement {
+  background: #ebeff4;
+  border: 3px solid #bdd5f4;
+  margin-top: 5px;
+  font-weight: 800;
+  font-size: 114.28571%;
+  padding: 5px 5px 5px 10px; }
+
+.prospectusF02_agreement ul {
+  list-style: none;
+  line-height: 1.5;
+  margin: 10px 15px 10px 10px;
+  padding: 0; }
+
+.prospectusF02_agreement li {
+  text-indent: -1.5em;
+  padding-left: 25px; }
+
+.prospectusF03_agreement ul {
+  list-style: none;
+  line-height: 1.5;
+  margin: 10px 15px 10px 10px;
+  padding: 0; }
+.prospectusF03_agreement li {
+  padding: 8px 5px; }
+
+/* prospectusF02目論見書チェックボックスここまで */
+/* informationF03ファンド情報ここから */
+/* ParaSOL4.0版対応R006_金利優遇サービスにてlisa-primary-listF03追加 */
+.informationF03 .lisa-primary-listF01 dl, mationF04 .lisa-primary-listF01 dl, .informationF03 .lisa-primary-listF03 dl {
+  display: inline; }
+
+/* ParaSOL4.0版対応R006_金利優遇サービスにてlisa-primary-listF03追加 */
+.lisa-primary-listF01, .lisa-secondary-listF01, .lisa-primary-listF02, .lisa-secondary-listF02, .lisa-primary-listF03 {
+  margin: 0;
+  width: 100%;
+  padding-left: 0;
+  list-style: none; }
+
+/* ParaSOL4.0版対応R006_金利優遇サービスにてlisa-primary-listF03追加 */
+.lisa-primary-listF01, .lisa-secondary-listF01, .lisa-secondary-listF02, .lisa-primary-listF03 {
+  float: left; }
+
+.lisa-primary-listF02 li, .lisa-secondary-listF02 li {
+  float: left;
+  clear: none;
+  list-style: none;
+  margin-top: 0;
+  margin-right: 15px;
+  font-weight: 800;
+  display: inline; }
+
+.fixed-item-blockA01 .informationF03 .lisa-primary-listF01 li, .confirm-item-blockA01 .informationF03 .lisa-primary-listF01 li, .fixed-item-blockA01 .informationF03 .lisa-secondary-listF01 li, .confirm-item-blockA01 .informationF03 .lisa-secondary-listF01 li {
+  margin: 0px;
+  float: left;
+  clear: none;
+  list-style: none;
+  font-weight: 800; }
+
+/* ParaSOL4.0版対応R006_金利優遇サービスにてlisa-primary-listF03追加 */
+.selective-listA01 .informationF03 .lisa-primary-listF01 li, .selective-listA01 .informationF03 .lisa-secondary-listF01 li, .selective-listA01 .informationF03 .lisa-primary-listF03 li {
+  margin: 0px;
+  float: left;
+  clear: none;
+  list-style: none;
+  font-weight: 800; }
+
+.fixed-item-blockA01 .informationF04 .lisa-primary-listF01 li, .confirm-item-blockA01 .informationF04 .lisa-primary-listF01 li, .fixed-item-blockA01 .informationF04 .lisa-secondary-listF01 li, .confirm-item-blockA01 .informationF04 .lisa-secondary-listF01 li {
+  margin: 0px;
+  float: left;
+  clear: none;
+  list-style: none;
+  font-weight: 800; }
+
+.selective-listA01 .informationF04 .lisa-primary-listF01 li, .selective-listA01 .informationF04 .lisa-secondary-listF01 li {
+  margin: 0px;
+  float: left;
+  clear: none;
+  list-style: none;
+  font-weight: 800; }
+
+/* ParaSOL4.0版対応R006_金利優遇サービスにてlisa-primary-listF03追加 */
+.lisa-primary-listF01 dl, .lisa-secondary-listF01 dl, .lisa-primary-listF02 dl, .lisa-secondary-listF02 dl, .lisa-primary-listF03 dl {
+  float: left; }
+
+/* ParaSOL4.0版対応R006_金利優遇サービスにてlisa-primary-listF03追加 */
+.lisa-primary-listF01 dd, .lisa-secondary-listF01 dd, .lisa-primary-listF02 dd, .lisa-secondary-listF02 dd, .lisa-primary-listF03 dd {
+  font-size: 114.28571%;
+  line-height: 1.3;
+  font-weight: 800;
+  float: left;
+  margin-left: 5px;
+  margin-right: 25px; }
+
+/* ParaSOL4.0版対応R006_金利優遇サービスにてlisa-primary-listF03追加 */
+.lisa-primary-listF01 dt, .lisa-secondary-listF01 dt, .lisa-primary-listF02 dt, .lisa-secondary-listF02 dt, .lisa-primary-listF03 dt {
+  font-size: 100%;
+  line-height: 1.48571;
+  font-weight: 400;
+  margin: 0 10px 0 0;
+  float: left; }
+
+/* ParaSOL4.0版対応R006_金利優遇サービスにてlisa-primary-listF03追加 */
+.lisa-primary-listF01 .itemF-dd03, .lisa-secondary-listF01 .itemF-dd02, .lisa-primary-listF02 .itemF-dd01, .lisa-primary-listF03 .itemF-dd03 {
+  font-size: 143%; }
+
+.fundinfo_table1, .fundinfo_tableF1 {
+  float: left;
+  line-height: 1;
+  width: 43.5%; }
+
+.fundinfo_table2, .fundinfo_tableF2 {
+  float: left;
+  line-height: 1; }
+
+.fundinfo_table1 th, .fundinfo_tableF1 th {
+  font-size: 100%;
+  font-weight: 400;
+  width: 140px;
+  padding-right: 15px;
+  text-align: right;
+  white-space: nowrap; }
+
+.fundinfo_table2 th, .fundinfo_tableF2 th {
+  font-size: 100%;
+  font-weight: 400;
+  width: 120px;
+  padding-right: 15px;
+  text-align: right;
+  white-space: nowrap; }
+
+.fundinfo_table1 td, .fundinfo_table2 td, .fundinfo_tableF1 td, .fundinfo_tableF2 td {
+  font-weight: 800;
+  font-size: 114.28571%;
+  white-space: nowrap; }
+
+.fundinfo_table1, .fundinfo_tableF1 {
+  margin-left: 15px; }
+
+.informationF03 {
+  width: 83%;
+  float: left;
+  padding: 5px 5px 10px 15px; }
+
+.informationF04 {
+  width: 88%;
+  padding: 5px 15px 10px 15px; }
+
+.Contract_listF01 {
+  border-top: 1px solid #aaaaaa;
+  border-bottom: 1px solid #aaaaaa;
+  background-color: #F2F2F2;
+  font-family: "Meiryo UI", "メイリオ", "Meiryo", "MS UI Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", sans-serif;
+  padding: 10px 20px 10px 15px;
+  margin-top: 10px; }
+
+/* informationF03ファンド一覧ここまで　枠 */
+/* newslinkF01リンクアコーディオンここから */
+.newslinkF01 {
+  border: 1px solid #dddddd;
+  padding: 5px 0 5px 0;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  overflow: hidden;
+  margin-top: 15px; }
+  .newslinkF01 .newslinkF01_list {
+    margin: 0;
+    padding-left: 30px; }
+
+.newslinkF01_text li {
+  border-bottom: 1px dotted #999999;
+  margin-right: 30px;
+  list-style-position: outside;
+  list-style-image: url(../../images/2951/icon_newslink.png); }
+
+.newslinkF01_btn_innner {
+  margin-left: 20px;
+  color: #074dac;
+  text-decoration: underline;
+  background: none;
+  font-size: 100%; }
+  .newslinkF01_btn_innner:hover {
+    text-decoration: none;
+    color: #003173; }
+
+.newslinkF01_btn .iconnews {
+  vertical-align: middle; }
+
+.newslinkF01_btn2 {
+  float: right;
+  margin-right: 30px;
+  background: url(../../images/2951/icon_newslink_02.png) no-repeat 4px 4px; }
+
+.newslinkF01_btn1 {
+  float: right;
+  margin-right: 30px;
+  background: url(../../images/2951/icon_newslink_01.png) no-repeat 4px 4px; }
+
+/* newslinkF01リンクアコーディオンここまで */
+/* attention-blockF01目論見書確認注意ここから */
+.attention-blockF01 {
+  background: url(../../images/2951/bg_alert_01s.png) no-repeat left center #f5edb8;
+  border: 1px solid #d3bb15;
+  padding: 15px 15px 15px 84px;
+  color: #000;
+  margin-top: 15px; }
+  .attention-blockF01 p {
+    font-size: 114.28571%;
+    font-weight: 800;
+    line-height: 1.5; }
+
+/* attention-blockF01目論見書確認注意ここまで */
+/* attention-blockF02翌営業日注意ブロックここから */
+.attention-blockF02 {
+  border: 1px solid #d3bb15;
+  background: url(../../images/2951/bg_alert_01ss.png) no-repeat left center #f5edb8;
+  padding: 10px 0 7px 40px;
+  color: #000;
+  margin: 10px 0 0; }
+  .attention-blockF02 p {
+    font-size: 114.28571%;
+    font-weight: 800; }
+
+/* attention-blockF02翌営業日注意ブロックここまで */
+/* tab_boxF01遷移用タブここから */
+.tab_boxF01 {
+  margin: 8px 0 10px 0;
+  padding: 0; }
+  .tab_boxF01 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: table; }
+  .tab_boxF01 li {
+    border-bottom: 5px solid #0079bf;
+    padding: 0 1px 0 0;
+    display: table-cell;
+    vertical-align: bottom;
+    width: 19.8%;
+    *float: left; }
+  .tab_boxF01 .tab_title_a {
+    background: url(../../images/2951/bg_tab_a.png) repeat-x top;
+    color: #FFF;
+    text-shadow: 1px 1px 1px black;
+    height: 52px;
+    border-radius: 5px 5px 0 0;
+    font-size: 120%;
+    cursor: default;
+    text-align: center;
+    width: 100%;
+    *vertical-align: bottom; }
+  .tab_boxF01 .tab_title {
+    margin: 7px 0 0 0;
+    height: 45px;
+    color: #0079bf;
+    background-color: #fff;
+    border-style: solid;
+    border-color: #d6d6d6;
+    border-width: 1px 1px 0 1px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 115%;
+    font-weight: 600;
+    width: 100%;
+    *vertical-align: bottom; }
+    .tab_boxF01 .tab_title:hover {
+      margin-top: 0px;
+      height: 52px; }
+
+/* tab_boxF01遷移用タブここまで */
+/* tab_boxF02遷移用タブリンクここから */
+.tab_boxF02 {
+  width: 100%; }
+  .tab_boxF02 ul {
+    list-style: none;
+    float: right; }
+  .tab_boxF02 li {
+    float: left;
+    *border-left: 1px solid black; }
+    .tab_boxF02 li:first-child {
+      *border-left: 0px solid black; }
+      .tab_boxF02 li:first-child:before {
+        content: none; }
+    .tab_boxF02 li:before {
+      content: "/"; }
+  .tab_boxF02 .tab_link {
+    color: #074dac;
+    text-decoration: underline;
+    background: none;
+    font-size: 100%; }
+  .tab_boxF02 p {
+    padding: 3px 6px;
+    margin: 0;
+    *line-height: 1.7; }
+  .tab_boxF02 .tab_link_a {
+    text-decoration: none;
+    color: #000;
+    background-color: #eaf3ff;
+    display: inline-block;
+    margin: 2px 7px 0 7px;
+    *display: inline; }
+  .tab_boxF02 .tab_link:hover {
+    text-decoration: none;
+    color: #003173; }
+
+/* searchresultsF01ファンド検索結果ここから */
+.searchresultsF01 {
+  border-left: 3px solid #0079bf; }
+  .searchresultsF01 p {
+    font-weight: 400;
+    margin-left: 8px;
+    margin-top: 10px;
+    display: inline; }
+  .searchresultsF01 .searchresults_red {
+    color: #f00;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: 800; }
+
+.selected-item {
+  background-color: #eaf3ff;
+  min-height: 23px;
+  height: auto !important;
+  height: 23px;
+  border: 1px solid #bdd5f4;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  padding: 5px 5px 0 5px;
+  margin: 5px;
+  font-size: 90%;
+  text-align: left; }
+
+.selected-box {
+  padding: 10px 0 10px 0;
+  border: 1px solid #aeb6be;
+  display: inline-block;
+  margin-top: 10px;
+  width: 100%; }
+  .selected-box .selected-box-ul {
+    list-style-type: none;
+    margin: 0 auto;
+    float: left; }
+    .selected-box .selected-box-ul li {
+      white-space: normal; }
+  .selected-box .selected-box-innner1 {
+    float: left;
+    margin-top: 10px;
+    margin-left: 15px;
+    color: #0079bf; }
+  .selected-box .selected-box-innner2 {
+    float: right;
+    width: 90%; }
+
+/* searchresultsF01ファンド検索結果ここまで */
+/* investment-trust-menuA01業務ボタン群ここから */
+.investment-trust-menuA01 .itma1-menu-area-wrapper01, .investment-trust-menuA01 .itma1-menu-area-wrapper02 {
+  width: 49.5%; }
+.investment-trust-menuA01 .itma1-menu-area-wrapper01 {
+  float: left; }
+.investment-trust-menuA01 .itma1-menu-area-wrapper02 {
+  float: left;
+  margin-left: 9.5px; }
+.investment-trust-menuA01 .itma1-menu-area {
+  border: 2px solid #dddddd;
+  padding: 10px;
+  /* border-radius: 8px;*/
+  margin-bottom: 10px; }
+  .investment-trust-menuA01 .itma1-menu-area.itma1-menu-area-top {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: 0; }
+  .investment-trust-menuA01 .itma1-menu-area.itma1-menu-area-middle {
+    border-top: none;
+    border-radius: 0;
+    margin-bottom: 0; }
+  .investment-trust-menuA01 .itma1-menu-area.itma1-menu-area-bottom {
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
+  .investment-trust-menuA01 .itma1-menu-area.itma1-menu-area-top-right {
+    margin: 0;
+    border-bottom: none; }
+.investment-trust-menuA01 .itma1-menu-area-head01 {
+  border-top: 2px solid #dddddd; }
+.investment-trust-menuA01 .itma1-menu-title {
+  font-size: 143%;
+  font-weight: 800; }
+.investment-trust-menuA01 .itma1-menu-table .item-td01 {
+  width: 130px; }
+.investment-trust-menuA01 .itma1-menu-table .item-td02 {
+  padding-left: 10px; }
+.investment-trust-menuA01 .investment-trust-menu-buttonA01 {
+  text-align: center;
+  background: #093e92 url(../../images/2951/bg_btn_01.png) repeat-x top;
+  border-bottom: 1px solid black;
+  border-top: 1px solid #5595ed;
+  border-left: 1px solid #5595ed;
+  border-right: 1px solid #5595ed;
+  *border: none;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  text-decoration: none;
+  width: 130px;
+  min-height: 37px;
+  border-radius: 5px; }
+  .investment-trust-menuA01 .investment-trust-menu-buttonA01:hover {
+    background: #002156 url(../../images/2951/bg_btn_01_o.png) repeat-x top; }
+  .investment-trust-menuA01 .investment-trust-menu-buttonA01 span {
+    padding: 7px 0;
+    /*ボタン文字サイズ指定*/
+    font-size: 16px;
+    width: 130px;
+    *zoom: 1; }
+.investment-trust-menuA01 .investment-trust-menu-buttonA02 {
+  background: #ebeff4;
+  font-size: 100%;
+  border-radius: 5px;
+  text-decoration: underline;
+  font-weight: 500;
+  color: #074dac;
+  width: 130px;
+  min-height: 37px;
+  padding-bottom: 4px; }
+  .investment-trust-menuA01 .investment-trust-menu-buttonA02:hover {
+    color: #003173;
+    text-decoration: none; }
+  .investment-trust-menuA01 .investment-trust-menu-buttonA02 span {
+    padding: 5px 0 4px;
+    width: 130px;
+    *zoom: 1; }
+.investment-trust-menuA01 .investment-trust-menu-buttonA01 {
+  padding: 7px 0;
+  font-size: 16px;
+  width: 130px; }
+
+/* investment-trust-menuA01非活性ボタン */
+.selectlist-disabled-buttonF03 {
+  border-radius: 4px;
+  color: #666;
+  border: 1px solid #c7c7c7;
+  width: 128px;
+  min-height: 19px;
+  padding: 8px 0;
+  text-align: center;
+  text-decoration: none;
+  background: #F5F5F5;
+  display: block;
+  margin: 0 auto;
+  font-family: "Meiryo UI", "メイリオ", "Meiryo", "MS UI Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", sans-serif;
+  font-size: 16px;
+  font-weight: 400; }
+
+/* investment-trust-menuA01業務ボタン群ここまで */
+/* vertical-layoutF01投信口座種類テーブルここから */
+.vertical-layoutF01 {
+  margin-bottom: 3px; }
+
+.vertical-layoutF02 {
+  margin-bottom: 3px;
+  margin-top: 3px; }
+
+.vertical-layoutF01 p {
+  margin-top: 3px;
+  font-size: 87.5%;
+  padding-left: 6px; }
+
+/* vertical-layoutF01投信口座種類テーブルここまで */
+/* listitem-ISA01listitem-ISA02ISA利用可能額ここから */
+.listitem-ISA01 {
+  width: 100%; }
+
+.confirm-item-blockF01 {
+  border: 2px solid #bdd5f4;
+  background: #f5f9ff;
+  padding: 10px 20px 10px 10px;
+  margin-top: 3px;
+  margin-bottom: 15px; }
+
+.confirm-item-blockF02 {
+  border: 2px solid #bdd5f4;
+  background: #f5f9ff;
+  padding: 10px 20px 10px 10px;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.listitem-ISA01 .lisa-primary-listISA01 li, .listitem-ISA02 .lisa-primary-listISA02 li {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  list-style: none;
+  font-size: 114.28571%;
+  font-weight: 800;
+  white-space: nowrap; }
+
+.lisa-primary-listISA01 {
+  line-height: 2.9;
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 82%; }
+
+.lisa-primary-listISA02 {
+  margin: 0 auto;
+  text-align: center; }
+
+.listitem-ISA01 .lisa-primary-listISA01 .item-li01, .listitem-ISA01 .lisa-primary-listISA01 .item-li03 {
+  margin: 3px 10px 0 30px;
+  font-size: 100%;
+  font-weight: 400;
+  text-align: right;
+  *margin: 3px 15px 0 20px; }
+
+.listitem-ISA02 .lisa-primary-listISA02 .item-li01, .listitem-ISA02 .lisa-primary-listISA02 .item-li03 {
+  margin: 2px 15px 0 25px;
+  font-size: 100%;
+  font-weight: 400; }
+
+.infoF02btn {
+  float: right;
+  width: 18%; }
+
+.infoF02btn_inner {
+  color: #074dac;
+  line-height: 1.4em;
+  background: #a9c0df url(../../images/2951/bg_btn_03.png) repeat-x top;
+  border-top: 1px solid #bdd5f4;
+  border-left: 1px solid #bdd5f4;
+  border-right: 1px solid #bdd5f4;
+  border-bottom: 1px solid #75869a;
+  border-radius: 5px;
+  padding: 0 30px 2px;
+  *padding: 0 15px 2px;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer; }
+
+.infoF02btn_inner:hover {
+  background: #bcd9ff url(../../images/2951/bg_btn_03_o.png) repeat-x top; }
+
+/* listitem-ISA01listitem-ISA02ISA利用可能額ここまで */
+/* sortlinkF01ソート機能件数付きここから */
+.sortlinkF01 dt {
+  font-weight: 800;
+  display: inline; }
+.sortlinkF01 dd {
+  display: inline;
+  border-left: 1px solid black;
+  padding: 0 7px;
+  margin: 0; }
+  .sortlinkF01 dd.pseude-first-child {
+    border-left: none; }
+  .sortlinkF01 dd a {
+    text-decoration: underline; }
+  .sortlinkF01 dd.active a {
+    background: #eaf3ff url(../../images/2951/bg_arrow_04_o.png) no-repeat right center;
+    padding: 0 15px 0 5px;
+    text-decoration: none;
+    color: black; }
+  .sortlinkF01 dd.active02 a {
+    background: #eaf3ff url(../../images/2951/bg_arrow_07_o.png) no-repeat right center;
+    padding: 0 15px 0 5px;
+    text-decoration: none;
+    color: black; }
+
+.function-blockF01 .result-statsF01 {
+  float: left;
+  padding: 0 10px 0 0; }
+.function-blockF01 .function-areaF01 {
+  float: left; }
+
+.result-statsF01 {
+  font-weight: 800; }
+
+/* sortlinkF01ソート機能件数付きここまで */
+/* message-main-buttonF01ここから */
+.message-main-buttonF01 {
+  text-align: center;
+  margin: 20px 0 0; }
+  .message-main-buttonF01 button {
+    font-size: 20px;
+    font-weight: 400;
+    background: white url(../../images/2951/bg_btn_02left.png) no-repeat top;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 11px 13px;
+    color: #FFF;
+    text-shadow: 1px 1px 1px black;
+    width: 286px;
+    text-decoration: none; }
+    .message-main-buttonF01 button:hover {
+      background: white url(../../images/2951/bg_btn_02left_o.png) no-repeat top; }
+
+/*	message-main-buttonF01ここまで */
+/* ISA対応にて既存コンポーネントが崩れたため暫定対処ここから */
+/* _style.scssへ移動しました */
+/* ISA対応にて既存コンポーネントが崩れたため暫定対処ここまで */
+/*選択されたラジオボタン・チェックボックス用のcss(チェックボックス・ラジオボタンがcheckedのときに効かせるのが理想だが、
+labelも含めてスタイルをあてるため上記のスクリプトでclassをあてるようにしている)*/
+.c_on {
+  background-color: white;
+  border: 2px solid #1c5cb4 !important;
+  padding: 4px 10px 4px 5px !important;
+  font-weight: bold; }
+
+/* IE6ボタンタグ対応*/
+.infoF01btn_inner, .infoF02btn_inner, .tab_boxF02 .tab_link, .tab_boxF01 .tab_title_a, .inquiryF03btn_inner1, .inquiryF03btn_inner2, .newslinkF01_btn_innner, .buttonF01_left {
+  _border: none;
+  _cursor: pointer; }
+
+.newslinkF01_btn_innner {
+  _margin: 0;
+  _background: none; }
+
+.infoF02btn {
+  _padding: 0 10px;
+  _margin: 10px 0; }
+
+.lisa-primary-listISA01 {
+  _margin: 0 20px 0 0; }
+
+.investment-trust-menuA01 .investment-trust-menu-buttonA01 {
+  _width: 145px !important; }
+
+/* 過去の運用損益を照会するボタンここから */
+.message-main-fund-buttonA01 {
+  text-align: center;
+  margin: 20px 0 0; }
+
+.message-main-fund-buttonA01 button, .message-main-fund-buttonA01 input {
+  border: none;
+  font-size: 142.85714%;
+  font-weight: 400;
+  font-size: 20px;
+  background: white url(../../images/2951/bg_btn_02.png) no-repeat top;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 11px 13px;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  width: 286px;
+  text-decoration: none; }
+
+.message-main-fund-buttonA01 button:hover, .message-main-fund-buttonA01 input:hover {
+  background: white url(../../images/2951/bg_btn_02_o.png) no-repeat top; }
+
+/* 過去の運用損益を照会するボタンここまで */
+/* パフォーマンス画面のパフォーマンスレビュータブがIE7以下で崩れてしまう事象解消ここから */
+.tab_boxF01.tab_04 li {
+  width: 24.9%; }
+
+.tab_boxF01.tab_03 li {
+  width: 33.2%; }
+
+.tab_boxF01.tab_02 li {
+  width: 49.8%; }
+
+.tab_boxF01.tab_01 li {
+  width: 99.6%; }
+
+/* パフォーマンス画面のパフォーマンスレビュータブがIE7以下で崩れてしまう事象解消ここまで */
+/*JavaScriptここから*/
+.fundjs1 {
+  display: none; }
+
+/* 3版追加 */
+.clear {
+  clear: both; }
+
+.prospectusF01_inner_box2 {
+  margin-left: 116px; }
+
+.prospectusF01_inner_box2_guidance {
+  display: inline; }
+
+.prospectusF01_inner_box2_link {
+  display: inline;
+  margin-left: 45px; }
+
+.prospectusF01_inner_box2 .form-tableF01 th {
+  width: 255px;
+  vertical-align: middle; }
+
+.prospectusF01_inner_box2 .form-tableF01 tr:last-child th {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px; }
+
+.prospectusF01_inner_box2 .form-tableF01 td {
+  width: 425px; }
+
+.prospectusF01_inner_box2 .form-tableF01 tr:last-child td {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px; }
+
+.prospectusF01_inner_box2 .form-tableF01 {
+  margin-bottom: 10px;
+  margin-top: 5px;
+  border-radius: 0px; }
+
+.lisa-primary-listF01 .itemF-dd03-arrow {
+  font-size: 143%;
+  margin-left: 45px; }
+
+.Fundtable01 .switching-buttonF01, .Fundtable09 .switching-buttonF09 {
+  font-size: 9px; }
+
+.infoF01btn_disabled {
+  background: #F5F5F5;
+  display: block;
+  border-top: 1px solid #c7c7c7;
+  border-left: 1px solid #c7c7c7;
+  border-right: 1px solid #c7c7c7;
+  border-bottom: 1px solid #c7c7c7;
+  border-radius: 5px;
+  padding: 0;
+  color: #666;
+  text-decoration: none;
+  float: right;
+  font-size: 14px;
+  cursor: auto; }
+
+.infoF01btn_inner_disabled {
+  color: #666;
+  line-height: 1.4em;
+  background: #F5F5F5;
+  display: block;
+  padding: 3px 15px 3px 22px;
+  *padding: 1px 5px 1px 7px;
+  background: transparent;
+  cursor: auto; }
+
+/* 次世代-Ph3-業務追加開発-0014対応 */
+.Fundtable09 .header_cellF09_02 {
+  width: 215px; }
+
+.Fundtable09 .header_cellF09_03 {
+  width: 143px; }
+
+.Fundtable09 .header_cellF09_05 {
+  width: 169px; }
+
+.Fundtable09 .header_cellF09_06 {
+  width: 255px; }
+
+/*
+#投信G style.cssここまで
+*/
+/* 金利優遇サービス開始 */
+.Fundtable09 .bold {
+  font-weight: 800; }
+
+/* 実装は lisa-primary-listF01を定義している辺りにもF03を追加しているので注意！ */
+.lisa-primary-listF03 li {
+  display: inline-block;
+  vertical-align: bottom; }
+
+/* 金利優遇サービス終了 */
+/* 2014/12/22 H28年の税制対応 特定口座区分追加 start */
+/* 2015/07/17 PSL4_IT2_00005にて修正 */
+.accountB01 .private-column-title .item-listN01 .item-li06 {
+  font-size: 114.28571%;
+  line-height: 1.3;
+  font-weight: 800;
+  width: 60px;
+  margin-right: 10px; }
+
+.accountB01 .private-column-title .item-listN01 .item-li07 {
+  font-size: 114.28571%;
+  line-height: 1.3;
+  font-weight: 800; }
+
+/* 2014/12/22 H28年の税制対応 特定口座区分追加 end */
+/* PSL4_IT2_00007 start */
+.Fundtable13 .header_cellF13_01, .Fundtable13 .header_cellF13_02, .Fundtable13 .header_cellF13_04, .Fundtable13 .header_cellF13_07, .Fundtable13 .header_cellF13_03, .Fundtable13 .header_cellF13_05, .Fundtable13 .header_cellF13_06 {
+  text-align: center; }
+
+.Fundtable13 .F13_date {
+  font-size: 85%;
+  white-space: nowrap; }
+
+.Fundtable13 .F13_branch {
+  font-size: 85%; }
+
+.Fundtable13 .header_cellF13_01 {
+  width: 95px; }
+
+.Fundtable13 .header_cellF13_06 {
+  width: 166px; }
+
+.Fundtable13 .header_cellF13_07 {
+  width: 62px; }
+
+.Fundtable13 .bold {
+  font-weight: 800; }
+
+/* PSL4_IT2_00007 end */
+/* Bestway10.1対応 start */
+.isa_type {
+  text-align: center;
+  font-size: 115%;
+  font-weight: 800; }
+
+/* Bestway10.1対応 end */
+/* PDF出力リンク、PDF出力アイコン設定変更 start*/
+.prospectusF01_box2 {
+  height: auto; }
+
+/* PDF出力リンク、PDF出力アイコン設定変更 end*/
+/* 9版検討追記（投信） 開始 */
+.Fundtable01 .selectlist-disabled-buttonF01_02 {
+  background: #F5F5F5;
+  border: 1px solid #bdd5f4;
+  text-shadow: none;
+  color: #666; }
+
+/* 9版検討追記（投信） 終了 */
+/* 投資信託制度対応（Bestway11.0） start */
+/* ロールオーバー指示状況 */
+.Fundtable10 .isa_roll_over_kbn {
+  text-align: center;
+  font-size: 115%;
+  font-weight: 800; }
+
+/* NISA非課税枠利用状況のファンド名のヘッダ */
+.Fundtable10 .fundname_th_isa {
+  width: 70%; }
+
+/* NISA非課税枠利用状況のファンド名 */
+.Fundtable10 .fundname_td_isa {
+  white-space: normal; }
+
+/* 投資信託制度対応（Bestway11.0） end */
+/* 岩手銀行「不成立」本格対応 start */
+/* ガイダンス */
+.form-guidance-blockA01 {
+  color: #cc0000;
+  margin: 20px 0;
+  font-size: 114.28571%;
+  font-weight: 800; }
+
+/* 岩手銀行「不成立」本格対応 end */
+/* 紀陽銀行導入対応 start */
+.icon-tsumitate-nisa {
+  text-align: center;
+  padding: 2px;
+  background: #D1FCC2;
+  margin: 2px;
+  border-radius: 3px;
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  border-color: #4F9F33;
+  max-height: 25px;
+  max-width: 140px;
+  font-size: 85%;
+  display: inline-block; }
+
+/* 紀陽銀行導入対応 end */
+/* 投資信託制度対応（2019） start */
+.selectlist-disabled-buttonF09 {
+  border-radius: 4px;
+  color: #666;
+  border: 1px solid #c7c7c7;
+  width: 60px;
+  padding: 5px 0;
+  text-align: center;
+  text-decoration: none;
+  background: #F5F5F5;
+  display: block;
+  margin: 5px auto;
+  font-size: 14px; }
+
+/* 投資信託制度対応（2019） end */
+/* 投信制度対応（2023年度）_BPS start */
+.table-layoutA01 {
+  display: inline-block;
+  width: 100%; }
+
+.table-pr-layoutA01 {
+  display: inline-block;
+  width: 100%; }
+
+.table-pr-layoutA01 .infoF02btn {
+  width: 15%; }
+
+.table-pr-layoutB01 {
+  display: inline-block;
+  width: 100%; }
+
+.table-pr-layoutB01 .infoF02btn {
+  width: 30%; }
+
+/* table-blockA用 ここから */
+.table-blockA01 {
+  float: left;
+  margin-left: 55px;
+  width: 380px; }
+
+.table-blockA01 table {
+  width: 100%; }
+
+.table-itemA01 th {
+  font-weight: unset;
+  text-align: left; }
+
+.table-itemA01 td {
+  font-weight: bold;
+  text-align: right; }
+
+.table-blockA02 {
+  float: left;
+  margin-left: 25px;
+  width: 380px; }
+
+.table-blockA02 table {
+  width: 100%; }
+
+.table-itemA02 th {
+  font-weight: unset;
+  text-align: left; }
+
+.table-itemA02 td {
+  font-weight: bold;
+  text-align: right; }
+
+/* table-blockA用 ここまで */
+/* table-blockB用 ここから */
+.table-blockB01 {
+  float: left;
+  width: 100%; }
+
+.table-blockB01 table {
+  width: 100%; }
+
+.table-itemB01 th {
+  font-weight: unset;
+  text-align: left; }
+
+.table-itemB01 td {
+  font-weight: bold;
+  text-align: right; }
+
+.table-blockB02 {
+  float: left;
+  width: 100%; }
+
+.table-blockB02 table {
+  width: 100%; }
+
+.table-itemB02 th {
+  font-weight: unset;
+  text-align: left; }
+
+.table-itemB02 td {
+  font-weight: bold;
+  text-align: right; }
+
+/* table-blockB用 ここまで */
+/* table-pr-blockA用 ここから */
+.table-pr-blockA01 {
+  float: left;
+  width: 380px; }
+
+.table-pr-blockA01 table {
+  width: 100%; }
+
+.table-pr-itemA01 th {
+  font-weight: unset;
+  text-align: left; }
+
+.table-pr-itemA01 td {
+  font-weight: bold;
+  text-align: right; }
+
+.table-pr-blockA02 {
+  float: left;
+  width: 380px;
+  margin-left: 10px; }
+
+.table-pr-blockA02 table {
+  width: 100%; }
+
+.table-pr-itemA02 th {
+  font-weight: unset;
+  text-align: left; }
+
+.table-pr-itemA02 td {
+  font-weight: bold;
+  text-align: right; }
+
+/* table-pr-blockA用 ここまで */
+/* table-pr-blockB用 ここから */
+.table-pr-blockB01 {
+  float: left;
+  width: 70%; }
+
+.table-pr-blockB01 table {
+  width: 100%; }
+
+.table-pr-itemB01 th {
+  font-weight: unset;
+  text-align: left; }
+
+.table-pr-itemB01 td {
+  font-weight: bold;
+  text-align: right; }
+
+.table-pr-blockB02 {
+  float: left;
+  width: 70%; }
+
+.table-pr-blockB02 table {
+  width: 100%; }
+
+.table-pr-itemB02 th {
+  font-weight: unset;
+  text-align: left; }
+
+.table-pr-itemB02 td {
+  font-weight: bold;
+  text-align: right; }
+
+/* table-pr-blockB用 ここまで */
+/* 投信制度対応（2023年度）_BPS end */

@@ -1,0 +1,381 @@
+/**
+ * Version 1.0.0
+ */
+if (typeof(teralib) === "undefined") {
+	teralib = {};
+}
+
+/**
+ * TERASOLUNAライブラリ（画面部品）が使用するクラス、関数、オブジェクトを
+ * 格納する名前空間です。
+ * 
+ * @namespace
+ * 
+ * <p>
+ * TERASOLUNAライブラリ（画面部品）が使用するクラス、関数、オブジェクトを
+ * 格納する名前空間です。
+ * </p>
+ * 
+ * <p>
+ * TERASOLUAライブラリ（画面部品）は複数の JavaScript ライブラリと
+ * 共存することを念頭に設計されているため、コアモジュールはグローバル名前空間
+ * や組み込みオブジェクトの prototype プロパティを汚染しません。
+ * </p>
+ */
+teralib = {
+		 
+	/**
+	 * TERASOLUNAライブラリ（画面部品）のコア機能を格納する名前空間です。
+	 * 
+	 * @namespace
+	 * 
+	 * <p>
+	 * TERASOLUNAライブラリ（画面部品）のコア機能を格納する名前空間です。
+	 * </p>
+	 * 
+	 * <p>
+	 * プロパティ情報の設定などのマージや、対象要素への機能の追加処理など、
+	 * TERASOLUNAライブラリの利用に必要なAPIを提供します。
+	 * </p>
+	 *
+	 * @name teralib.core
+	 */
+	core : {
+	 
+	 	/** @scope teralib.core */
+
+		/**
+		 * クラス階層をオブジェクトの階層構造を用いて定義します。
+		 * 
+		 * @param {String} name クラス階層を定義する文字列 (各クラス階層名を "." で区切った文字列)
+		 * @throws {error} name に想定外の値が設定された場合に throw するエラー
+		 */
+	 	createObject : function(name) {
+			var names = name.split(".");
+			var length = names.length;
+			if (names[0] !== "teralib" || length < 2){
+				throw Error("サポート対象外のオブジェクト構成です。 : " + name);
+			}
+			var obj = teralib;
+			for (var i=1; i<length; i++) {
+				if (typeof(obj[names[i]]) === "undefined") {
+					obj[names[i]] = {};
+				}
+				obj = obj[names[i]];
+			}
+		},
+		
+		/**
+		 * TERASOLUNAライブラリ内部でのみ利用されることを想定している private 関数です。
+		 * デフォルトの設定内容に対し、対象要素単位のカスタム設定を上書きします。
+		 * 
+		 * <p>
+		 * defualts には、各プロパティ情報を有するオブジェクトを設定します。
+		 * </p>
+		 *
+		 * <pre>
+		 * defaults = {
+		 *   "prop1" : "value1",
+		 *   ・・・ プロパティ設定 ・・・	
+		 * };
+		 * </pre>
+		 *
+		 * <p>
+		 * customs は複数の設定情報の配列からなります。
+		 * 各設定情報は、設定を行う各プロパティ情報を有するオブジェクトと、機能の
+		 * 設定対象となる要素の name 属性の配列で構成されます。
+		 * </p>
+		 * 
+		 * <pre>
+		 * customs = [
+		 *   {
+		 *     "names" : ["target1"],
+		 *     "properties" : {
+		 *     	 "prop1" : "value2",
+		 *     	 ・・・ プロパティ設定 ・・・	
+		 *     }
+		 *   },
+		 *     "names" : ["target3", "target4"],
+		 *     "properties" : {
+		 *     	 "prop1" : "value3",
+		 *     	 ・・・ プロパティ設定 ・・・	
+		 *     }
+		 *   }
+		 * ];
+		 * </pre>
+		 * 
+		 * <p>
+		 * マージされた設定情報は、カスタム設定が行われている要素ごとにまとめられて返却されます。
+		 * </p>
+		 * 
+		 * <pre>
+		 * {
+		 *   "target1" : {
+		 *     "prop1" : "value2",
+		 *     ・・・ プロパティ設定 ・・・	
+		 *   },
+		 *   "target2" : {
+		 *     "prop1" : "value1",
+		 *     ・・・ プロパティ設定 ・・・	
+		 *   },
+		 *   ・・・ 要素ごとの設定 ・・・
+		 * }
+		 * </pre>
+		 * 
+		 * @param {object[]} customs 複数のカスタム設定情報のオブジェクトからなる配列
+		 * @param {object} defaults デフォルト設定情報のオブジェクト
+		 * 
+		 * @returns {object} 各要素ごとにマージされた設定オブジェクト
+		 */
+		mergeCustoms : function(customs, defaults) {
+			var m_customs = {};
+			
+			for (var i=0, c_len=customs.length; i<c_len; i++) {
+				var custom = customs[i];
+				if (custom.names && custom.properties) {
+					var c_properties = custom.properties;
+					var c_names = custom.names;
+					for (var j=0, n_len=c_names.length; j<n_len; j++) {				
+						if (!m_customs[c_names[j]]) {
+							m_customs[c_names[j]] = defaults;
+						}
+						m_customs[c_names[j]] = teralib.common.mergeProperties(
+								m_customs[c_names[j]], c_properties);
+					}
+				}
+			}
+			
+			return m_customs;
+		},
+		
+		/**
+		 * TERASOLUNAライブラリ内部でのみ利用されることを想定している private 関数です。
+		 * 
+		 * TERASOLUNAライブラリ（画面部品）では、一つのクラスの中に複数の機能が存在しています。
+		 * これら複数の機能ごとに存在する個別の設定情報を、共通的な設定情報にマージします。
+		 *
+		 * <p>
+		 * settings には、各機能ごとの設定情報をオブジェクト形式で設定します。
+		 * </p>
+		 *
+		 * <pre>
+		 * settings = {
+		 *   "<機能名>" {
+		 *     ・・・ 設定情報 ・・・	
+		 *   },
+		 *   "<機能名>" {
+		 *     ・・・ 設定情報 ・・・	
+		 *   }
+		 * };
+		 * </pre>
+		 * 
+		 * <p>
+		 * defaultSetting には、クラス単位で定義されているデフォルトの設定情報を設定します。
+		 * </p>
+		 *
+		 * <pre>
+		 * defaultSetting = {
+		 *   ・・・ 設定情報 ・・・	
+		 * }
+		 * </pre>
+		 *
+		 * <p>
+		 * マージされた設定情報は、機能ごとにまとめられて返却されます。
+		 * </p>
+		 * 
+		 * <pre>
+		 * {
+		 *   "<機能名>" {
+		 *     ・・・ 設定情報 ・・・	
+		 *   },
+		 *   "<機能名>" {
+		 *     ・・・ 設定情報 ・・・	
+		 *   }
+		 * };
+		 * </pre>
+		 * 
+		 * <p>
+		 * また、これらの設定情報を変更するための拡張ポイントを利用している場合は、
+		 * 変更内容を設定にマージ（上書き）します。
+		 * </p>
+		 *
+		 * <pre>
+		 * tearlib<クラス名>.settings.<機能名>.<設定情報プロパティ名> = <変更内容>
+		 * </pre>
+		 *
+		 * @param {object} instance クラスのオブジェクト
+		 * @param {object} settings 各機能ごとの設定情報オブジェクト
+		 * @param {object} defaultsSetting クラス単位で定義されているデフォルトの設定情報オブジェクト
+		 * 
+		 * @returns {object} 各要素ごとにマージされた設定オブジェクト
+		 */
+		mergeSettings : function(instance, settings, defaultSetting) {
+			/* 設定情報へのデフォルト設定反映 */
+			for (var i in settings){
+				settings[i] = teralib.common.mergeProperties(defaultSetting, settings[i]);
+			}
+			
+			/* 拡張ポイント : 設定ファイルにて settings を定義していた場合の対応 */
+			if (instance.settings) {
+				var c_settings = instance.settings; 
+				for (var i in c_settings) {
+					settings[i] = settings[i] || {};
+					var c_setting = c_settings[i];
+					for (var j in c_setting) {
+						settings[i][j] = c_setting[j];
+					}
+				}
+			}
+			return settings;
+		},
+		
+		/**
+		 * TERASOLUNAライブラリ内部でのみ利用されることを想定している private 関数です。
+		 * 
+		 * TERASOLUNAライブラリ（画面部品）が提供する各機能を対象要素に設定します。
+		 * 
+		 * <p>
+		 * settings には、各機能ごとの設定情報をオブジェクト形式で設定します。
+		 * </p>
+		 *
+		 * <pre>
+		 * settings = {
+		 *   "<機能名>" {
+		 *     ・・・ 設定情報 ・・・	
+		 *   },
+		 *   "<機能名>" {
+		 *     ・・・ 設定情報 ・・・	
+		 *   }
+		 * };
+		 * </pre>
+		 *  
+		 * @param {object} instance クラスのオブジェクト
+		 * @param {object} settings 各機能ごとの設定情報オブジェクト
+		 */
+		addTeralibFunction : function(instance, settings) {
+			/* 各機能の設定 */
+			for (var i in settings) {
+				var defaults = instance.defaults ? instance.defaults[i] || {} : {};
+				var properties = defaults.properties || {};
+				var customs = instance.customs ? instance.customs[i] || [] : [];
+				var m_customs = {};
+				if (customs.length > 0) {
+					m_customs = teralib.core.mergeCustoms(customs, properties);
+				}
+				
+				var jq_element = $(settings[i].targets.join(", "));
+		
+				/* 各機能の初期化 */
+				if (settings[i].initialize) {
+					jq_element.each(settings[i].initialize);
+				}
+				
+				/* 全ての対象要素に機能を追加（個別設定で上書き） */
+				if (defaults.setAllTargets) {
+					defaults.setBaseTarget = true;
+				/* className による個別設定要素にのみ機能を追加 */
+				} else {
+					jq_element = jq_element.filter("." + settings[i].className);
+				}
+				
+				/* 各機能のベース要素に機能を追加 */
+				if (defaults.setBaseTarget && settings[i].baseTarget) {
+					var baseTarget = settings[i].baseTarget;
+					if (baseTarget instanceof Array) {
+						for (var j=0, b_len=baseTarget.length; j<b_len; j++) {
+							settings[i]._function($(baseTarget[j]), properties);
+						}
+					} else {
+						settings[i]._function($(baseTarget), properties);
+					}
+				}				
+				var excludes = defaults.excludes || [];
+				jq_element.each(function(defaults, customs, setting, excludes) {
+					var _function = setting._function || function(){/* NOP */};
+					var name = $(this).attr("name");
+					var properties = defaults.properties || {}
+					/**
+					 * name 属性が未定義（カスタム設定、および、excludes 指定が不可）の場合、
+					 * デフォルト設定を適用。
+					 */
+					if (!name) {
+						_function($(this), properties, setting);
+					} else {
+						/* カスタム設定がされている場合、カスタム設定を適用 */
+						if (customs[name]) {
+							_function($(this), customs[name], setting);
+						/**
+						 * class 設定がされている場合、デフォルト設定を適用
+						 */
+						} else if (this.className === setting.className) {
+							_function($(this), properties, setting);
+						/**
+						 * class 設定がされていないが exclude による除外設定もされていない場合、
+						 * デフォルト設定を適用
+						 */
+						} else if ($.inArray(name, excludes) === -1) {
+							_function($(this), properties, setting);
+						/**
+						 * exclude による除外設定がされている場合、機能は設定行せず、
+						 * 除外処理があれば実行
+						 */
+						} else if (setting._exclude) {
+							setting._exclude($(this), properties, setting);
+						}
+					}
+				}, [defaults, m_customs, settings[i], excludes]);
+			}
+		}
+	},
+		
+	/**
+	 * TERASOLUNAライブラリ（画面部品）の共通機能を格納する名前空間です。
+	 *
+	 * @namespace
+	 *
+	 * <p>
+	 * TERASOLUNAライブラリ（画面部品）の共通機能を格納する名前空間です。
+	 * </p>
+	 *
+	 * <p>
+	 * オブジェクトのマージや、HTMLのエスケープ処理など、外部からも
+	 * 共通的に利用することが可能なAPIを提供します。
+	 * </p>
+	 * 
+	 * @name teralib.common
+	 */
+	common : {
+
+	 	/** @scope teralib.common */
+		
+		/**
+		 * オブジェクトの各プロパティをマージします。
+		 * 
+		 * <p>
+		 * 各引数の値は変更されず、マージされた結果が戻り値として返却されます。
+		 * target と source に同じ名前のプロパティが設定されていた場合、
+		 * target のプロパティが source の値で上書きされます。
+		 * </p>
+		 * 
+		 * @param {object} target マージ先のオブジェクト（source と同じ名前のプロパティが存在した場合は上書きされる）
+		 * @param {object} source マージ元のオブジェクト
+		 * 
+		 * @returns {object} マージされたオブジェクト
+		 */
+		mergeProperties : function(target, source) {
+			var merge = $.extend({}, target);
+			return $.extend(merge, source);
+		},		
+		
+		/**
+		 * 文字列のエスケープ処理を行います。
+		 * 
+		 * @param {string} value エスケープ対象の文字列
+		 * 
+		 * @returns {string} エスケープされた文字列
+		 */
+		escapeHtml : function(value) {
+			return $("<div/>").text(value).html();
+		}
+	}
+};

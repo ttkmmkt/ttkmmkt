@@ -1,0 +1,61 @@
+/* 日曜日のスタイル */
+.ui-datepicker-sunday .ui-state-default {
+  background: #ffb8c2;
+}
+
+/* 土曜日のスタイル */
+.ui-datepicker-saturday .ui-state-default {
+  background: #99c9ff;
+}
+
+/* 祝日のスタイル */
+.ui-datepicker-holiday .ui-state-default {
+  background: #ffb8c2;
+}
+
+/* カレンダーのサイズを指定（フォントサイズに依存） */
+#ui-datepicker-div {
+  font-size: 12px;
+}
+
+/* 日付をセンタリング */
+.ui-datepicker td span, .ui-datepicker td a {
+  text-align: center;
+}
+
+/* 年、月のセレクタを同時に利用した際の表示不具合対応 */
+.ui-datepicker select.ui-datepicker-year, .ui-datepicker select.ui-datepicker-month {
+  width: auto;
+}
+
+/* 現在日付のスタイル */
+.ui-datepicker-today .ui-state-default {
+  border: solid red 2px;
+}
+
+/* 選択日付のスタイル */
+.ui-datepicker-current-day .ui-state-default {
+  background: blue;
+  color: white;
+}
+
+/* 閉じるボタンを非表示にする */
+.ui-datepicker-close {
+  display: none;
+}
+
+/* 選択可能な日付のスタイル */
+.ui-datepicker-selectable .ui-state-default {
+  text-decoration: underline;
+}
+
+/* ボタンパネルのスタイル */
+.ui-datepicker .ui-datepicker-buttonpane {
+  background-image: none;
+  margin: 0 0 0 0;
+  padding: 0 .2em;
+  borde: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-top: 0;
+}

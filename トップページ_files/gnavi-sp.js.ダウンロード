@@ -1,0 +1,476 @@
+// グロナビの設定
+var settings = {
+	// ヘッダ・グロナビ以外のコンテンツ
+	main_contents: "#frame-body,#contentsfooter_sp,#commonfooter_sp,#gnav-overlay-sp",
+	// ヘッダ
+	header: "#frame-header",
+	// グロナビ
+	menu: "#frame-gnav",
+	// グロナビのコンテンツエリア
+	menu_contents: "#frame-gnav .frame-content",
+	menu_list: "#contents-gnav-area ul",
+	// グロナビを開くボタン
+	menu_button: "#cs_globalImage003_sp",
+	// グローバルナビゲーション欄外
+	main_header_contents: "#frame-body,#contentsfooter_sp,#commonfooter_sp,#gnav-overlay-sp,#frame-header",
+};
+// メニュー開閉タブのフラグ
+var tabflag = false;
+// 最後のメニュータブが一番下にあるかどうか
+var bottomflag = false;
+
+// グロナビのコンテンツエリアの高さ
+var menu_list_height;
+
+// グロナビ開閉の状態
+var Status = {
+	CLOSE: 0,
+	OPEN: 1,
+};
+var status = Status.CLOSE;
+
+//下位メニューがすべて閉じているかどうか
+//0:閉じている 1:開いている 
+
+var menucloseflg = 0;
+
+//前回開いた下位メニューの値を保持する
+
+var openedmenu = null;
+
+//開いた下位メニューについてすぐにクリックできないようにする
+
+var openmenutemp = null;
+
+//開いているメニュの高さを保持する
+var openedMenuheight = null;
+
+// スクロールするための数値
+var smY, sfY, mfY, moveY, startY, draggedY, startTime, diffTime;
+
+smY = 0;
+
+// 各メニューの高さの配列
+var menuHeightArray = [];
+
+// 各メニューのhtmlの配列
+var menuHtmlArray = [];
+
+// 各メニューのhtmlの配列
+var bsMenuHeightArray = [];
+
+/**
+ * グロナビオープン機能
+ * @param なし
+ * @return なし
+ * 
+ */
+function _open() {
+	// 状態を「開」にする
+	status = Status.OPEN;
+	// 開状態のクラスを付与
+	$(settings.menu + ", " + settings.main_contents).addClass('show');
+	$(settings.header).addClass('show');
+	$("html, body").css("overflow-x", "hidden");
+	
+	// グロナビを表示
+	$(settings.menu_contents).show();
+	// スクロールを禁止する
+	$("html").on("touchmove.scrollContents", function(e) {
+		e.preventDefault();
+	});
+};
+
+/**
+ * グロナビクローズ機能
+ * @param なし
+ * @return なし
+ * 
+ */
+ 
+function _close() {
+	// 状態を「閉」にする
+	status = Status.CLOSE;
+	// 開状態のクラスを削除
+	$(settings.menu + ", " + settings.main_contents).removeClass('show');
+	$(settings.header).removeClass('show');
+	// スクロールを禁止を解除する
+	$("html").off(".scrollContents");
+};
+
+/**
+ * ヘッダ・グロナビ以外のコンテンツが押された際の処理
+ * @param e イベント情報
+ * @return なし
+ * 
+ */
+function _buttonclick(e) {
+	if(status == Status.CLOSE){
+		_open();
+	} else if (status == Status.OPEN){
+		_close();
+	}
+};
+
+/**
+ * グロナビを開くボタンが押された際の処理
+ * @param e イベント情報
+ * @return なし
+ * 
+ */
+function _bodyclick(e) {
+	if(status == Status.OPEN){
+		_close();
+	}
+}
+
+// ロード時の呼び出し
+$(document).ready(function() {
+	/* グロナビのボタンに特定のクラスがあった場合、親要素にスタイルを付与 */
+	// no-float-btn: ボタンをfloatさせない（左にボタン表示）
+	$('.no-float-btn').each( function(){
+         $(this).parents('.button_outer').css("clear","both");
+	});
+	// right-float-btn: 右にボタン表示
+	$('.right-float-btn').each( function(){
+         $(this).parents('.button_outer').css({"float":"right","clear":"right"});
+	});
+	// button_gray_disabled: 非活性処理
+	$('.button_gray_disabled').each( function(){
+		 $(this).attr('disabled','disabled');
+         $(this).parents('.button_outer').addClass('button_disabled_outer');
+	});
+	/* 初期処理  */
+	$('.menu-list dl dd').each( function(){
+		// 親要素のIDを取得
+		var menuListId1 = $(this).closest('li').attr('id');
+		// 各メニューの高さを取得
+		var height1 = $(this).height();
+		// ID、各メニューの高さの順で配列に格納
+		menuHeightArray.push(menuListId1);
+		menuHeightArray.push(height1);
+		//メニューに高さを付与する
+		$(this).css("height",height1+"px");
+	});
+	
+	// メニュータブを閉じる
+	$('.menu-list dl dt').each( function(){
+		$(this).parent("dl").toggleClass('close');
+	});
+	
+	// レイヤーを作成
+	$('#frame-body').before('<div id=\'gnav-overlay-sp\' style=\'height:'+window.innerHeight*2+'px; width:'+window.innerWidth*2+'px \'>\
+	</div>');
+
+
+	/* イベントバインド処理  */
+	// グロナビを開くボタンにクリックイベントをバインド
+	$(settings.menu_button).on("click", function(e) {
+		_buttonclick(e);
+	});
+
+	// ヘッダ・グロナビ以外のコンテンツにクリックイベントををバインド
+	$(settings.main_header_contents).on("click", function(e) {
+		if( settings.menu_button == ("#" + $(e.target).attr("id"))){
+		} else {
+			_bodyclick(e);
+		}
+	});
+	
+	/* touchstart処理  */
+	$(settings.menu_contents).on("touchstart", function(e) {
+		menu_list_height = $(settings.menu_list).height();
+		sfY = e.originalEvent.touches[0].screenY;
+		startTime = (new Date()).getTime();
+		startY = e.originalEvent.changedTouches[0].clientY;
+		tabflag = false;
+	});
+
+	/* touchmove処理  */
+	$(settings.menu_contents).on("touchmove", function(e) {
+		mfY = e.originalEvent.changedTouches[0].screenY;
+		moveY = smY + mfY - sfY;
+		draggedY = e.originalEvent.changedTouches[0].clientY - startY;
+		
+		// メニューを動かした際はメニュータブが開閉しないようにする
+		tabflag =true;
+		
+		$(this).css({
+			'-webkit-transition': 'none',
+			'-webkit-transform': 'translate3d(0px,'+ moveY +'px,0px)',
+			'-moz-transition': 'none',
+			'-moz-transform': 'translate3d(0px,'+ moveY +'px,0px)',
+			'-o-transition': 'none',
+			'-o-transform': 'translate3d(0px,'+ moveY +'px,0px)'
+		});
+	});
+	
+	/* touchend処理  */
+	// メニュータブの開閉
+	$('.menu-list dl dt').each( function(){
+		$(this).on("touchend", function(e){
+			if(!tabflag){
+				var menuListId = $(this).closest('li').attr('id');
+				var index = menuHeightArray.indexOf(menuListId) + 1;
+				var str = $('#' + menuListId + ' dl').attr('class');
+				var height2 = menuHeightArray[index];
+				var index2 = menuHtmlArray.indexOf(menuListId) + 1;
+				var menuHtml = menuHtmlArray[index2];
+				//上位メニューの場所を取得
+				var menuPosition = $('#'+menuListId).position();
+				
+				// 開閉した際のナビメニューの高さを計算
+				if(str != null && str.match('close')){
+					menu_list_height = menu_list_height + height2;
+				} else {
+					menu_list_height = menu_list_height - height2;
+				}
+				
+				
+				//開いている下位メニュを閉じてタップされた下位メニューを開く
+				if(menucloseflg == 1 && str != null && str.match('close')){
+					menucloseflg = 0
+					var openedmenutest = openedmenu
+					//現在開いているメニュの高さを取得
+					$('#'+openedmenu+' dl dt').trigger('touchend');
+					openedMenuheight = menuHeightArray[menuHeightArray.indexOf(openedmenutest) + 1];
+					menuHtml.insertAfter($(this));
+					menuPosition = bsMenuHeightArray[menuHtmlArray.indexOf(menuListId) + 1]
+					//ボタンの初期化(投信用)
+					initPCIconButton(menuListId);
+					//挿入されたHTMLのボタンで元々活性のボタンはアニメーション中は非活性とする
+					$('#' + menuListId + ' button.button_gray').attr('disabled', 'disabled');
+					openmenutemp = menuListId;
+					setTimeout(function(){
+					 $('#' + openmenutemp + ' button.button_gray').removeAttr('disabled');
+					 },700)
+					 //アニメーションのため下位メニューの表示処理
+					$(settings.menu).show();
+					menucloseflg = 1
+				//すべての下位メニューが閉じている場合タップされた下位メニューを開く
+				}else if(menucloseflg == 0 && str != null && str.match('close')){
+					openedMenuheight = 0;
+					menuHtml.insertAfter($(this));
+					//ボタンの初期化(投信用)
+					initPCIconButton(menuListId);
+					//挿入されたHTMLのボタンで元々活性のボタンはアニメーション中は非活性とする
+					$('#' + menuListId + ' button.button_gray').attr('disabled','disabled');
+					openmenutemp = menuListId;
+					setTimeout(function(){
+					 $('#' + openmenutemp + ' button.button_gray').removeAttr('disabled');
+					 },700)
+					$(settings.menu).show();
+					menucloseflg = 1
+				} else {
+					openedMenuheight = 0;
+				//グロナビが閉じるアニメーションのため
+					//閉じるメニューのボタンを非活性とする
+					$('#' + menuListId + ' button.button_gray').attr('disabled','disabled');
+					menucloseflg = 0
+					var setTmp = $(($(this).next()));
+					setTimeout(function(){
+					 setTmp.remove();
+					 menuPosition = $('#'+menuListId).position();
+					 },500)
+				}
+				
+				
+				if((window.innerHeight - menu_list_height) > 0){
+				// グロナビのコンテンツエリアが画面高さよりも小さい場合
+					$(settings.menu_contents).css({
+						'-webkit-transition': '-webkit-transform .5s ease-out',
+						'-webkit-transform': 'translate3d(0px,'+ 0 +'px,0px)',
+						'-moz-transition': '-moz-transform .5s ease-out',
+						'-moz-transform': 'translate3d(0px,'+ 0 +'px,0px)',
+						'-o-transition': '-o-transform .5s ease-out',
+						'-o-transform': 'translate3d(0px,'+ 0 +'px,0px)'
+					});
+					smY = 0;
+
+					// 不要なクラスの削除
+					$(this).parent("dl").removeClass('menuShow');
+					// タブの開閉クラスを付与する。
+					$(this).parent("dl").toggleClass('close');
+
+					bottomflag = false;
+					
+				} else {
+					if((window.innerHeight - menu_list_height > smY)){
+					// グロナビのコンテンツエリアの下部に隙間ができる場合
+						$(settings.menu_contents).css({
+							'-webkit-transition': '-webkit-transform .5s ease-out',
+							'-webkit-transform': 'translate3d(0px,'+ (window.innerHeight - menu_list_height) +'px,0px)',
+							'-o-transition': '-o-transform .5s ease-out',
+							'-o-transform': 'translate3d(0px,'+ (window.innerHeight - menu_list_height) +'px,0px)',
+							'-moz-transition': '-moz-transform .5s ease-out',
+							'-moz-transform': 'translate3d(0px,'+ (window.innerHeight - menu_list_height) +'px,0px)'
+						});
+						smY = window.innerHeight - menu_list_height;
+						// 不要なクラスの削除
+						$(this).parent("dl").removeClass('menuShow');
+						// タブの開閉クラスを付与する。
+						$(this).parent("dl").toggleClass('close');
+						
+						bottomflag = true;
+						
+					}else if(((menuPosition.top) + $('#'+menuListId).height()+height2  >= $(window).height() ) && str.match('close')){
+						//スクロール処理
+						//下位メニューの大きさが画面以上かどうか
+						if(( $('#'+menuListId).height()+height2  >= $(window).height() )){
+							$(settings.menu_contents).css({
+								'-webkit-transition': '-webkit-transform .5s ease-out',
+								'-webkit-transform': 'translate3d(0px,'+ (0-menuPosition.top) +'px,0px)',
+								'-moz-transition': '-moz-transform .5s ease-out',
+								'-moz-transform': 'translate3d(0px,'+ (0-menuPosition.top) +'px,0px)',
+								'-o-transition': '-o-transform .5s ease-out',
+								'-o-transform': 'translate3d(0px,'+ (0-menuPosition.top) +'px,0px)'
+							});
+							smY = 0-menuPosition.top;
+						} else {
+						//下位メニューが画面から見切れる場合スクロールをする。
+							$(settings.menu_contents).css({
+								'-webkit-transition': '-webkit-transform .5s ease-out',
+								'-webkit-transform': 'translate3d(0px,'+ ($(window).height()-((menuPosition.top) + $('#'+menuListId).height()+height2)) +'px,0px)',
+								'-moz-transition': '-moz-transform .5s ease-out',
+								'-moz-transform': 'translate3d(0px,'+ ($(window).height()-((menuPosition.top) + $('#'+menuListId).height()+height2)) +'px,0px)',
+								'-o-transition': '-o-transform .5s ease-out',
+								'-o-transform': 'translate3d(0px,'+ ($(window).height()-((menuPosition.top) + $('#'+menuListId).height()+height2)) +'px,0px)'
+							});
+						smY = $(window).height()-((menuPosition.top) + $('#'+menuListId).height()+height2);
+						}
+						// タブの中身をスムーズに開閉させないようにする
+						$(this).parent("dl").addClass('menuShow');
+						// タブの開閉クラスを付与する。
+						$(this).parent("dl").toggleClass('close');
+					
+					bottomflag = true;
+					//上位メニューの位置が画面の上に見切れている場合
+					} else if( Math.abs(smY) >= menuPosition.top){
+						$(settings.menu_contents).css({
+							'-webkit-transition': '-webkit-transform .5s ease-out',
+							'-webkit-transform': 'translate3d(0px,'+ (-menuPosition.top) +'px,0px)',
+							'-moz-transition': '-moz-transform .5s ease-out',
+							'-moz-transform': 'translate3d(0px,'+ (-menuPosition.top) +'px,0px)',
+							'-o-transition': '-o-transform .5s ease-out',
+							'-o-transform': 'translate3d(0px,'+ (-menuPosition.top) +'px,0px)'
+					});
+						smY = (-menuPosition.top);
+						// 不要なクラスの削除
+						$(this).parent("dl").removeClass('menuShow');
+						// タブの開閉クラスを付与する。
+						$(this).parent("dl").toggleClass('close');
+					} else {
+						// 不要なクラスの削除
+						$(this).parent("dl").removeClass('menuShow');
+						// タブの開閉クラスを付与する。
+						$(this).parent("dl").toggleClass('close');
+
+					}
+				}
+			openedmenu = menuListId;
+			}
+		});
+	});
+	
+	// 特殊なスクロールの処理
+	$(settings.menu_contents).on("touchend", function(e) {
+		if(tabflag){
+			// グロナビのコンテンツエリアが画面高さよりも小さい場合
+			if((window.innerHeight - menu_list_height)>0){
+				$(settings.menu_contents).css({
+					'-webkit-transition': '-webkit-transform .5s ease-out',
+					'-webkit-transform': 'translate3d(0px,'+ 0 +'px,0px)',
+					'-moz-transition': '-moz-transform .5s ease-out',
+					'-moz-transform': 'translate3d(0px,'+ 0 +'px,0px)',
+					'-o-transition': '-o-transform .5s ease-out',
+					'-o-transform': 'translate3d(0px,'+ 0 +'px,0px)'
+				});
+				smY = 0;
+				bottomflag = false;
+			} else {
+				// 慣性スクロールの実現
+				diffTime = (new Date()).getTime() - startTime;
+				// 上部の初期値を変化させる
+				smY = smY + (mfY - sfY);
+				if (diffTime < 200 && draggedY > 0) { // scroll up
+					moveY += Math.abs((draggedY / diffTime) * 500);
+					$(settings.menu_contents).css({
+						'-webkit-transition': '-webkit-transform .7s ease-out',
+						'-webkit-transform': 'translate3d(0px,'+ moveY +'px,0px)',
+						'-moz-transition': '-moz-transform .7s ease-out',
+						'-moz-transform': 'translate3d(0px,'+ moveY +'px,0px)',
+						'-o-transition': '-o-transform .7s ease-out',
+						'-o-transform': 'translate3d(0px,'+ moveY +'px,0px)'
+					});
+					smY = moveY;
+				} else if (diffTime < 200 && draggedY < 0) { // scroll down
+					moveY -= Math.abs((draggedY / diffTime) * 500);
+					$(settings.menu_contents).css({
+						'-webkit-transition': '-webkit-transform .7s ease-out',
+						'-webkit-transform': 'translate3d(0px,'+ moveY +'px,0px)',
+						'-o-transition': '-o-transform .7s ease-out',
+						'-o-transform': 'translate3d(0px,'+ moveY +'px,0px)',
+						'-moz-transition': '-moz-transform .7s ease-out',
+						'-moz-transform': 'translate3d(0px,'+ moveY +'px,0px)'
+					});
+					smY = moveY;
+				}
+				
+				// グロナビのコンテンツエリアの上部に隙間ができる場合
+				if (moveY > 0) {
+					$(settings.menu_contents).css({
+						'-webkit-transition': '-webkit-transform .5s ease-out',
+						'-webkit-transform': 'translate3d(0px,'+ 0 +'px,0px)',
+						'-moz-transition': '-moz-transform .5s ease-out',
+						'-moz-transform': 'translate3d(0px,'+ 0 +'px,0px)',
+						'-o-transition': '-o-transform .5s ease-out',
+						'-o-transform': 'translate3d(0px,'+ 0 +'px,0px)'
+					});
+					smY = 0;
+					bottomflag = false;
+				} else if (window.innerHeight - menu_list_height > moveY) {
+					// グロナビのコンテンツエリアの下部に隙間ができる場合
+					$(settings.menu_contents).css({
+						'-webkit-transition': '-webkit-transform .5s ease-out',
+						'-webkit-transform': 'translate3d(0px,'+ (window.innerHeight - menu_list_height) +'px,0px)',
+						'-o-transition': '-o-transform .5s ease-out',
+						'-o-transform': 'translate3d(0px,'+ (window.innerHeight - menu_list_height) +'px,0px)',
+						'-moz-transition': '-moz-transform .5s ease-out',
+						'-moz-transform': 'translate3d(0px,'+ (window.innerHeight - menu_list_height) +'px,0px)'
+					});
+					smY = window.innerHeight - menu_list_height;
+					bottomflag = true;
+				}
+			}
+		}
+		tabflag = false;
+	});
+});
+
+//windowサイズが変更された際に、レイヤーの大きさを変更
+$(function(){
+	$(window).on("resize load",function(){
+		$('#gnav-overlay-sp').removeAttr('style');
+		$('#gnav-overlay-sp').attr('style', 'height:'+window.innerHeight*2+'px; width:'+window.innerWidth*2+'px');
+	});
+});
+
+jQuery.event.add(window, "load", function() {
+	/* 初期処理  */
+	$('.menu-list dl dd').each( function(){
+		// 親要素のIDを取得
+		var menuListId1 = $(this).closest('li').attr('id');
+		//各グロナビ下位メニュのhtmlを格納 thisのアウター要素を取得
+		var menuhtml1 = $(this);
+		//各グロナビ下位メニュのhtml配列に格納
+		menuHtmlArray.push(menuListId1);
+		menuHtmlArray.push(menuhtml1);
+		//各グロナビ下位メニュのhtmlを削除
+		$(this).remove();
+		// 各上位メニューの初期の高さを取得
+		var height3 = $('#'+menuListId1).position();
+		// ID、各メニューの高さの順で配列に格納
+		bsMenuHeightArray.push(menuListId1);
+		bsMenuHeightArray.push(height3);
+	});
+});

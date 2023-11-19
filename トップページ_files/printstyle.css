@@ -1,0 +1,30 @@
+@media print {
+  .noprint {
+    display:none !important;
+    visibility: hidden !important;
+  }
+  body{
+    zoom:1;
+  }
+  html>/**/body{
+    zoom /*\**/:0.66\9;
+  }
+  body:not(:target){
+    zoom:1\0;
+  }
+  html>/**/body .stepindicatorA01 li:after{
+    display /*\**/: none\9;
+  }
+  body:not(:target) .stepindicatorA01 li:after{
+    display: block !important;
+  }
+  html>/**/body .stepindicatorA01 li{
+    border-left /*\**/: 1px solid #666666\9;
+  }
+  body:not(:target) .stepindicatorA01 li{
+    border-left: 0px solid #666666\0;
+  }
+  body:not(:target) .stepindicatorA01 .step1{
+    border-left: 1px solid #666666\0;
+  }
+}

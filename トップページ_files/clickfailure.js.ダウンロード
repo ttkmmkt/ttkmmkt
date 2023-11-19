@@ -1,0 +1,18 @@
+/***************************************************************************************************
+ * JavaScript制御（「次へ」ボタン押下時画面遷移制御）
+ * 
+ * 作 成 日：2007/08/14
+ ***************************************************************************************************/
+  var printclicked;
+  function HtmlInit(){
+    printclicked=false;
+  }
+  function OnPrintClicked(){
+    printclicked=true;
+  }
+  function IsPrintClicked(){
+    if(printclicked==false){
+      return false;
+    }
+    return true;
+  }

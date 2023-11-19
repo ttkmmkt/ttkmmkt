@@ -1,0 +1,23 @@
+@charset "shift-jis";
+
+.LV_validation_message{
+    font-weight:bold;
+    margin:0 0 0 5px;
+}
+
+.LV_valid {
+    color:#00cc66;
+}
+	
+.LV_invalid {
+    color:#ff6666;
+}
+
+.LV_invalid_field, 
+input.LV_invalid_field:hover, 
+input.LV_invalid_field:active,
+textarea.LV_invalid_field:hover, 
+textarea.LV_invalid_field:active {
+	/*background-color:#ffddff;*/
+    border: 1px solid #ff3333 !important;
+}

@@ -1,0 +1,2180 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)https://www.parasol.anser.ne.jp/ib/BLI023Dispatch?ServerID=RSRA0306&B=2951&PT=BS -->
+<html lang="ja" class=" qnfqenkdlm idc0_349"><head><meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="cache-control" content="no-store">
+<meta http-equiv="expires" content="0">
+<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0,maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="email=no">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<title>トップページ</title>
+
+
+<link rel="styleSheet" href="./トップページ_files/jquery-ui.theme.css" type="text/css">
+<link rel="styleSheet" href="./トップページ_files/jquery-ui.css" type="text/css">
+<link rel="styleSheet" href="./トップページ_files/jquery-ui.structure.css" type="text/css">
+<link rel="styleSheet" href="./トップページ_files/jquery.qtip.min.css" type="text/css">
+<link rel="styleSheet" href="./トップページ_files/jquery.autocomplete.css" type="text/css"><link rel="styleSheet" href="./トップページ_files/jquery.ui.autocompleteEx.css" type="text/css"><link rel="styleSheet" href="./トップページ_files/jquery-ui.custom.css" type="text/css"><link rel="styleSheet" href="./トップページ_files/aaui001.css" type="text/css"><link rel="styleSheet" href="./トップページ_files/livevalidation_style.css" type="text/css"><link rel="styleSheet" href="./トップページ_files/style_sp.css" type="text/css"><link rel="styleSheet" href="./トップページ_files/page_sp.css" type="text/css"><link rel="styleSheet" href="./トップページ_files/aaui015.css" type="text/css"><link rel="styleSheet" href="./トップページ_files/frame_topmenu_sp.css" type="text/css"><link rel="styleSheet" href="./トップページ_files/commonstyle_sp.css" type="text/css"><link rel="styleSheet" href="./トップページ_files/nav_sp.css" type="text/css"><link rel="styleSheet" href="./トップページ_files/printstyle.css" type="text/css"><link rel="styleSheet" href="./トップページ_files/sp.css" type="text/css">
+<script language="JavaScript"></script>
+
+
+<script type="text/javascript" src="./トップページ_files/jquery.js.ダウンロード"></script>
+<script type="text/javascript" src="./トップページ_files/jquery-ui.js.ダウンロード"></script>
+<script type="text/javascript" src="./トップページ_files/jquery.ui.datepicker-ja.js.ダウンロード"></script>
+<script type="text/javascript" src="./トップページ_files/jquery.qtip.js.ダウンロード"></script>
+<script type="text/javascript" src="./トップページ_files/jquery.tablesorter.js.ダウンロード"></script>
+<script type="text/javascript" src="./トップページ_files/jquery.bgiframe.min.js.ダウンロード"></script>
+<script type="text/javascript" src="./トップページ_files/livevalidation_standaloneEx_sp.js.ダウンロード"></script>
+<script type="text/javascript" src="./トップページ_files/clickfailure.js.ダウンロード"></script>
+<script type="text/javascript" src="./トップページ_files/aaui_sp.js.ダウンロード" charset="shift_jis"></script>
+<script type="text/javascript" src="./トップページ_files/TeraLibCore.js.ダウンロード"></script>
+<script type="text/javascript" src="./トップページ_files/Calender.js.ダウンロード"></script>
+<script type="text/javascript" src="./トップページ_files/Calender_Holidays.js.ダウンロード"></script>
+<script type="text/javascript" src="./トップページ_files/prefs.js.ダウンロード"></script>
+<script type="text/javascript">
+	aaui001_CALENDAR_DEFALTS.numberOfMonths = 1;
+	aaui001_CALENDAR_DEFALTS.nextText = '次の月＞＞';
+	aaui001_CALENDAR_DEFALTS.prevText = '＜＜前の月';
+	aaui001_CALENDAR_DEFALTS.buttonText = 'カレンダー';
+	aaui001_CALENDAR_DEFALTS.currentText = '今日：' + $.datepicker.formatDate('yy/mm/dd', new Date());
+	aaui001_CALENDAR_DEFALTS.dayNamesMin = ['日','月','火','水','木','金','土'];
+	aaui001_CALENDAR_DEFALTS.yearSuffix = '年';
+	aaui001_CALENDAR_DEFALTS.monthNames = ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'];
+
+	aaui003_dialogTitle = '処理中';
+	aaui003_dialogMsg = '<br />ただ今処理中です。しばらくお待ちください。';
+	aaui003_dialogDispFlg = false;
+
+	aaui004_dialogTitle = '確認';
+	aaui004_dialogMsg = 'ページを移動すると入力中のデータは破棄されます。<br />移動する場合は「OK」を押してください。<br />「キャンセル」を押すと、移動を行わず元の画面に戻ります。';
+	aaui004_dialogOkBtnMsg = 'OK';
+	aaui004_dialogCancelBtnMsg = 'キャンセル';
+	aaui004_dialogTitleIborder = '確認';
+	aaui004_dialogMsgIborder = 'インターネットバンキングのお申込手続きについては、ログアウトが必要となります。よろしいですか？';
+	aaui004_dialogOkBtnMsgIborder = 'はい';
+	aaui004_dialogCancelBtnMsgIborder = 'いいえ';
+
+	aaui005_dialogTitle = '確認';
+	aaui005_dialogMsg = '処理を中止します。<br />中止してよろしければ「OK」を押してください。<br />「キャンセル」を押すと中止せず、元の画面に戻ります。';
+	aaui005_dialogOkBtnMsg = 'OK';
+	aaui005_dialogCancelBtnMsg = 'キャンセル';
+
+	aaui014_pageLinksPreBtnMsg = '前ページ';
+	aaui014_pageLinksNextBtnMsg = '次ページ';
+	aaui014_pageLinksNoPageNumPreBtnMsg = '前の{0}件';
+	aaui014_pageLinksNoPageNumNextBtnMsg = '次の{0}件';
+
+	aaui019_dialogTitle = '延長失敗';
+	aaui019_dialogMsg = 'ご利用時間の延長処理に失敗しました。<br />すでにログアウトされている可能性があります。';
+	aaui019_dialogOkBtnMsg = 'OK';	
+
+	aaui020_dialogNoticeTitle = 'お取引継続確認';
+	aaui020_dialogNoticeMsg = '一定時間お客様からの操作が行われませんでした。<br />引き続きご利用いただく場合は「OK」ボタンを押してください。<br /><br />自動的に切断するまでの時間　：<span id = "countdown">60</span>秒';
+	aaui020_dialogNoticeOkBtnMsg = 'OK';
+	aaui020_dialogTimeoutTitle = '切断通知';
+	aaui020_dialogTimeoutMsg = '一定時間お客様からの操作が行われなかったため、<br />自動的に切断させていただきました。<br />ご利用ありがとうございました。';
+	aaui020_dialogTimeoutOkBtnMsg = 'OK';
+
+	aaui023_ERR_MSG_PRESENCE = '必ず入力してください。';
+	aaui023_ERR_MSG_HANKAKU_NUM = '半角数字で入力してください。';
+	aaui023_ERR_MSG_HANKAKU_EISU_LARGE = '半角英数大文字で入力してください。';
+	aaui023_ERR_MSG_HANKAKU_EISU = '半角英数字で入力してください。';
+	aaui023_ERR_MSG_HANKAKU_EISU_SIGN = '半角英数字で入力してください。';
+	aaui023_ERR_MSG_HANKAKU_KANA_SIGN_LARGE = '半角カナ英数大文字で入力してください。';
+	aaui023_ERR_MSG_HANKAKU_KANA_SIGN = '半角カナ英数字で入力してください。';
+	aaui023_ERR_MSG_HANKAKU_KANA_LARGE = '半角カナ英数大文字で入力してください。';
+	aaui023_ERR_MSG_HANKAKU_KANA = '半角カナ英数字で入力してください。';
+	aaui023_ERR_MSG_HANKAKU = '半角文字で入力してください。';
+	aaui023_ERR_MSG_ZENKAKU_KANA = '全角カナで入力してください。';
+	aaui023_ERR_MSG_ZENKAKU_KANA_SP = '全角カナで入力してください。';
+	aaui023_ERR_MSG_ZENKAKU_TERE = '全角文字で入力してください。';
+	aaui023_ERR_MSG_ZENKAKU_FDS = '全角文字で入力してください。';
+	aaui023_ERR_MSG_ZENKAKU = '全角文字で入力してください。';
+	aaui023_ERR_MSG_EMAIL = '有効なメールアドレスではありません。';
+	aaui023_ERR_MSG_REGEXP = '使用できない文字が含まれています。';
+	aaui023_ERR_MSG_IS = '{0}桁で入力してください。';
+	aaui023_ERR_MSG_MIN_LENGTH = '{0}桁以上で入力してください。';
+	aaui023_ERR_MSG_MAX_LENGTH = '{0}桁以下で入力してください。';
+	aaui023_ERR_MSG_RANGE_LENGTH = '{0}から{1}桁で入力してください。';
+	aaui023_ERR_MSG_MIN_VAL = '{0}以上の値を入力してください。';
+	aaui023_ERR_MSG_MAX_VAL = '{0}以下の値を入力してください。';
+	aaui023_ERR_MSG_RANGE_VAL = '{0}以上{1}以下の値を入力してください。';
+	aaui023_ERR_MSG_RADIO = '選択してください。';
+	aaui023_ERR_MSG_CHECK_BOX = '{0}つ以上選択してください。';
+	aaui023_ERR_MSG_PULL_DOWN = '選択してください。';
+	aaui023_ERR_MSG_HEAD_ZERO = '先頭の0は除いて入力して下さい。';
+	
+	aaui026_dialogTitle = '確認';
+	aaui026_dialogOkBtnMsg = 'OK';
+	aaui026_dialogMsg = 'お使いのブラウザはバージョンが古く、<br />推奨するご利用環境ではありません。<br />お取引画面が正しく表示されない場合がありますので、<br />推奨環境のご確認、バージョンアップを行っていただいた上で<br />ご利用いただきますようお願いいたします。';
+
+	aaui027_useFlg = true;
+	
+	aaui028_passwordDialogTitle = 'パスワード登録の確認';
+	aaui028_passwordDialogMsg = 'パスワードを設定いたします。<br>お取引に必要なパスワードですので、お忘れにならないようにご注意ください。<br>OKボタンを押下すると、設定されたパスワードで登録します。';
+	aaui028_passwordDialogOkBtnMsg = 'OK';
+	aaui028_passwordDialogCancelBtnMsg = 'キャンセル';
+	aaui028_passwordUseFlg = false;
+	
+	aaui029_enterKeyDeterUseFlg = true;
+	
+	
+	aaui040.DEFAULT_ERROR_MESSAGE_EMPTY = '必ず入力してください。';
+	aaui040.DEFAULT_ERROR_MESSAGE_INVALID = '日付を正しく入力してください。';
+	aaui040.DEFAULT_ERROR_MESSAGE_INVALID_YM = '年月を正しく入力してください。';
+	
+	aaui041.DEFAULT_ERROR_MESSAGE = '期間を正しく入力してください。';
+	aaui041.DEFAULT_START_EMPTY_ERROR_MESSAGE = '開始日を必ず入力してください。';
+	aaui041.DEFAULT_START_ERROR_MESSAGE = '開始日を正しく入力してください。';
+	aaui041.DEFAULT_END_EMPTY_ERROR_MESSAGE = '終了日を必ず入力してください。';
+	aaui041.DEFAULT_END_ERROR_MESSAGE = '終了日を正しく入力してください。';
+
+	aaui045_dialogTitle = '確認';
+	aaui045_dialogMsg = 'お客様の入力したメールアドレスはセキュリティ上推奨しません。<br />その他のメールアドレスに変更する場合は「キャンセル」ボタンを押下して下さい。';
+	aaui045_dialogOkBtnMsg = 'OK';
+	aaui045_dialogCancelBtnMsg = 'キャンセル';
+	aaui045_domain = '';
+	aaui045_checkMailAddr1 = 'false';
+	aaui045_checkMailAddr2 = 'false';
+	aaui045_checkMailAddr3 = 'false';
+	aaui045_checkMailAddr4 = 'false';
+	aaui045_isCkClsBlackList = true;
+	aaui045_isDispOkBtn = true;
+
+
+	showErrorDialogTitle = 'エラー';
+	showErrorDialogOkBtnMsg = 'OK';
+
+	showMailDialogTitle = '確認';
+	showMailDialogOkBtnMsg = 'OK';
+
+	showErrorLivevalidationDialogTitle = 'エラー';
+	showErrorLivevalidationDialogOkBtnMsg = 'OK';
+
+	pcConfirmDialogTitle = '確認';
+	pcConfirmDialogMsg = 'PCサイトへ移動します。';
+	pcConfirmDialogOkBtnMsg = 'OK';
+	pcConfirmDialogCancelBtnMsg = 'キャンセル';
+
+	logoutConfirmDialogTitle = '確認';
+	logoutConfirmDialogMsg = 'ログアウトします。';
+	logoutConfirmDialogOkBtnMsg = 'OK';
+	logoutConfirmDialogCancelBtnMsg = 'キャンセル';
+
+	pcConfirmDialogUseFlg = 'true';
+
+	aaui046_dialogTitle = '金利優遇サービス対象商品確認';
+	aaui046_dialogMsg = 'お客様が選択していただいた商品は金利優遇サービス対象外です。<br>よろしいでしょうか。';
+	aaui046_dialogOkBtnMsg = 'OK';
+	aaui046_dialogCancelBtnMsg = 'キャンセル';
+	aaui046_dialogCloseBtnMsg = '閉じる';
+	aaui046_dialogDspFlg = true;
+
+	aaui047_sendSwTokenTranAuthPopupTitle = '取引認証通知';
+	aaui047_sendSwTokenTranAuthPopupMsg = 'トークンアプリに取引認証通知を送信しました。トークンアプリにて振込通知内容をご確認の上、手続きを進めて下さい。';
+	aaui047_sendSwTokenTranAuthPopupOkBtnMsg = 'OK';
+	aaui047_sendSwTokenTranAuthPopupUseFlag = true;
+	aaui047_sendSwTokenTranInfPopupTitle = '取引内容送信';
+	aaui047_sendSwTokenTranInfPopupMsg = 'トークンアプリに取引内容を送信しました。トークンアプリにて取引内容をご確認の上、手続きを進めて下さい。';
+
+	aaui048_dialogTitle = 'トークンアプリ確認';
+	aaui048_dialogMsg = 'トークンアプリ上の取引確認開始タブを押すと「取引確認機能が有効になりました。」と表示されます。表示を確認できた方は「OK」を押して下さい。<br />トークンアプリの設定方法について再度確認される方は「キャンセル」を押して下さい。';
+	aaui048_dialogOkBtnMsg = 'OK';
+	aaui048_dialogCancelBtnMsg = 'キャンセル';
+	aaui048_dialogDspFlg = true;
+	aaui048_dialogAppTitle = 'トークンアプリ確認';
+	aaui048_dialogAppMsg = 'トークンアプリ上の取引確認開始タブを押すと「取引確認機能が有効になりました。」と表示されます。表示を確認できた方は「OK」を押して下さい。<br />トークンアプリの設定方法について再度確認される方は「キャンセル」を押して下さい。';
+
+	aaui049_dialogOkBtnMsg = 'OK';
+	aaui049_dialogCancelBtnMsg = 'キャンセル';
+	aaui049_dialogTitle_checkError_fileSize = '確認';
+	aaui049_dialogMsg_checkError_fileSize = 'ファイルサイズが規定範囲内ではありません。<BR>ご確認のうえ、再度アップロードをお願い致します。';
+	aaui049_dialogTitle_checkError_extension = '確認';
+	aaui049_dialogMsg_checkError_extension = 'アップロード可能な拡張子ではありません。<BR>再度確認のうえ、アップロードをお願い致します。';
+	aaui049_dialogTitle_checkError_fileCount = '確認';
+	aaui049_dialogMsg_checkError_fileCount = 'アップロード最大件数超過（5ファイルまで）のためアップロードできません。';
+	aaui049_dialogTitle_checkWarn_fileName = '確認';
+	aaui049_dialogMsg_checkWarn_fileName = '文字数上限を超えているため、一部切り取って受付ました。';
+	aaui049_dialogTitle_uploadConfirm = 'アップロード実行確認';
+	aaui049_dialogMsg_uploadConfirm = 'ファイルアップロードを実行しますか？<BR>よろしければ「OK」を押して下さい。';
+	aaui049_dialogTitle_uploadSuccess = 'アップロード正常終了';
+	aaui049_dialogMsg_uploadSuccess = 'ファイルアップロード処理が正常終了しました。';
+	aaui049_dialogTitle_uploadError = 'アップロード異常終了';
+	aaui049_dialogMsg_uploadError = 'ファイルアップロード処理が異常終了しました。';
+	aaui049_dialogTitle_deleteConfirm = 'ファイル削除実行確認';
+	aaui049_dialogMsg_deleteConfirm = 'ファイルを削除してもよろしいですか？<BR>よろしければ「OK」を押して下さい。';
+	aaui049_dialogTitle_deleteSuccess = 'ファイル削除正常終了';
+	aaui049_dialogMsg_deleteSuccess = 'ファイル削除処理が正常終了しました。';
+	aaui049_dialogTitle_deleteError = 'ファイル削除異常終了';
+	aaui049_dialogMsg_deleteError = 'ファイル削除処理が異常終了しました。';
+	aaui049_dialogTitle_fileOperationUpload = 'ファイルアップロード中';
+	aaui049_dialogMsg_fileOperationUpload = 'ただ今ファイルアップロード中です。<BR>しばらくお待ち下さい。';
+	aaui049_dialogTitle_fileOperationDelete = 'ファイル削除中';
+	aaui049_dialogMsg_fileOperationDelete = 'ただ今ファイル削除中です。<BR>しばらくお待ち下さい。';
+	aaui049_deleteBtnMsg = '削除';
+
+	aaui050_mailDeliveryConfirmPopupTitle = '確認';
+	aaui050_mailDeliveryConfirmPopupMsg = 'お客様のメールアドレスに《案内メール》を送信しました。案内メールには本画面で入力する「認証番号」が記載されています。';
+	aaui050_mailDeliveryConfirmPopupOkBtnMsg = 'OK';
+	aaui050_mailDeliveryConfirmPopupUseFlg = true;
+
+	aaui051_dialogTitle = '確認';
+	aaui051_dialogMsg_51 = 'Webお知らせサービスの利用を開始します。「OK」ボタンを押してください。';
+	aaui051_dialogMsg_52 = 'Webお知らせサービスの利用を開始します。「OK」ボタンを押してください。';
+	aaui051_dialogMsg_53 = 'Webお知らせサービスの利用を開始します。「OK」ボタンを押してください。';
+	aaui051_dialogMsg_54 = 'Webお知らせサービスの利用を開始します。「OK」ボタンを押してください。';
+	aaui051_dialogMsg_55 = 'Webお知らせサービスの利用を開始します。「OK」ボタンを押してください。';
+	aaui051_dialogMsg_56 = 'Webお知らせサービスの利用を開始します。「OK」ボタンを押してください。';
+	aaui051_dialogMsg_57 = 'Webお知らせサービスの利用を開始します。「OK」ボタンを押してください。';
+	aaui051_dialogMsg_58 = 'Webお知らせサービスの利用を開始します。「OK」ボタンを押してください。';
+	aaui051_dialogMsg_59 = 'Webお知らせサービスの利用を開始します。「OK」ボタンを押してください。';
+	aaui051_dialogMsg_60 = 'Webお知らせサービスの利用を開始します。「OK」ボタンを押してください。';
+	aaui051_dialogOkBtnMsg = 'OK';
+	aaui051_dialogCancelBtnMsg = 'キャンセル';
+	aaui051_dialogDspFlg = true;
+
+	aaui054_mailDeliveryConfirmPopupForEkycTitle = '確認';
+	aaui054_mailDeliveryConfirmPopupForEkycMsg = 'お客様のメールアドレスに《案内メール》を送信しました。案内メールには本画面で入力する「認証番号」が記載されています。';
+	aaui054_mailDeliveryConfirmPopupForEkycOkBtnMsg = 'OK';
+	aaui054_mailDeliveryConfirmPopupForEkycUseFlg = true;
+
+</script>
+<script type="text/javascript">
+$(
+	initTimeoutNotice(
+		300,
+		60,
+		true,
+		"/ib",
+		"S",
+		"EB6A9FC5E2A828FBB3EB8AE72BCD88F7338818ADD53F8C74FA73",
+		"ServerID",
+		"RSRA0306"
+	) 
+);
+</script>
+<script type="text/javascript">
+$(
+    HtmlInit()
+);
+</script>
+
+
+
+
+
+
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="frame-base noprint" id="frame-header">
+<div class="frame-content">
+<header>
+    <div class="header-left">
+		
+        <div id="glonavBtn-area">
+            <img id="cs_globalImage003_sp" src="./トップページ_files/sm_glonav.png" alt="お取引メニュー" style="width:60px; height:50px; ">
+        <!-- /glonavBtn-area --></div>
+			
+        
+        <div id="logoImg-area">
+	    <!-- 金融機関ロゴエリア -->
+	        <img id="cs_globalImage002_sp" src="./トップページ_files/header_l.png" alt="" style="width:150px; height:50px; ">
+	    <!-- /logoImg-area --></div>
+	    	    
+	<!-- /header-left --></div>
+	<div class="header-center">
+	    
+	<!-- /header-center --></div>
+	<div class="header-right">
+		<div id="header-func">
+		<!-- ログアウトボタン -->
+		
+		    
+			<form method="post" action="https://www.parasol.anser.ne.jp/ib/BGLOBALNAVIDSP?ServerID=RSRA0306&amp;B=2951&amp;PT=BS"><div id="backward_compatible_filler"></div>
+				<input type="hidden" name="S" value="EB6A9FC5E2A828FBB3EB8AE72BCD88F7338818ADD53F8C74FA73">
+				<input type="hidden" name="BHD0000" value="BCM000">
+				<input type="hidden" name="BHD0001" value="2">
+				<input id="cs_globalButton_logout_sp" name="forward_BSM0001" type="submit" onclick="return dispTokenAppConfirmPopup(this) &amp;&amp; check(this,&#39;logout&#39;);" value="ログアウト">
+			</form>
+				
+		
+		<!-- /header-func --></div>
+	<!-- /header-right --></div>
+</header>
+<!-- /frame-content --></div>
+
+
+<div id="header-servicename" class="header-servicename noprint"><!-- /header-servicename --></div>
+
+<!-- /frame-header --></div>
+
+
+
+
+
+
+    <script type="text/javascript">
+    <!--
+        $(function() {
+            confirmPopup.init();
+        });
+    -->
+    </script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+var confirmMessage = {
+stop : "中止します。",
+logout : "ログアウトします。",
+topc : "PCサイトへ移動します。",
+iborder : "インターネットバンキングのお申込手続きについては、ログアウトが必要となります。よろしいですか？"
+};
+//-->
+</script>
+<div id="confirmPopup" class="popup" style="display:none;">
+    <div id="pupdiv001" class="wrap ">
+    <div id="confirmPopupBody" class="body ">
+</div>
+        <div id="pupdiv002" class="footer ">
+        <table id="puptbl001" class="screenname-table">
+            <tbody>
+		<tr>
+				<td style="width: 50%;" align="left">
+                    <button id="pupbtn001" name="" type="button" onclick="confirmPopup.hide()" value="">キャンセル</button>
+                </td>
+				<td style="width: 50%;" align="right">
+                    <button id="confirmPopupOkButton" name="" type="button" value="">OK</button>
+                </td>
+		</tr>
+</tbody>
+        </table>
+        <div style="clear:both;"></div>
+</div>
+</div>
+
+</div>
+<div id="guidancePopup" class="popup" style="display:none;">
+    <div id="pupdiv003" class="wrap ">
+    <div id="guidanceBody" class="body ">
+</div>
+        <div id="pupdiv004" class="footer ">
+            <table id="puptbl002" class="screenname-table">
+                <tbody>
+		<tr>
+				<td>
+                        <button id="pupbtn002" name="" type="button" onclick="confirmPopup.hide();" value="">OK</button>
+                    </td>
+		</tr>
+</tbody>
+            </table>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- トップメニューレイアウト -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="./トップページ_files/gnavi-sp.js.ダウンロード"></script>
+<!-- 入力情報初期化警告メッセージ表示フラグ -->
+<input type="hidden" id="inputingflg" value="false">
+
+<div class="frame-base noprint" id="frame-gnav">
+	<div class="frame-content">
+		<div id="contents-gnav-area" class="contents-gnav-no-menu">
+			<nav>
+				<ul>
+					<!-- ホームエリア -->
+					<li id="gnavi1" class="menu-list home">
+						<form method="post" action="https://www.parasol.anser.ne.jp/ib/BGLOBALNAVIDSP?ServerID=RSRA0306&amp;B=2951&amp;PT=BS"><div id="backward_compatible_filler"></div>
+							<input type="hidden" name="S" value="EB6A9FC5E2A828FBB3EB8AE72BCD88F7338818ADD53F8C74FA73">
+							<input type="hidden" name="BHD0000" value="BCM001">
+							<input type="hidden" name="BHD0001" value="2">
+							<span class="target">
+								<button id="cs_grpname_home_sp" name="forward_BSM0002" type="submit" class="home-buttonA01 " onclick="return dispTokenAppConfirmPopup(this) &amp;&amp; initinput(this) &amp;&amp; loading(this);" value=""><span>ホーム</span></button>
+							</span>
+							<span class="title-home">お取引メニュー</span>
+						</form>
+					</li>
+					<!-- 業務グループ＆業務メニューエリア -->
+					
+						
+							<!-- 業務グループ -->
+							
+								
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li id="gnavi_01" class="menu-list menu-list-open">
+<dl class="close">
+<dt style="text-align:center">
+<span id="cs_grpname_01_sp">残高照会<br>明細照会</span>
+</dt>
+</dl></li>
+
+
+							
+						
+							<!-- 業務グループ -->
+							
+								
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li id="gnavi_02" class="menu-list menu-list-open">
+<dl class="close">
+<dt style="text-align:center">
+<span id="cs_grpname_02_sp">振込振替<br>ペイジー</span>
+</dt>
+</dl></li>
+
+
+							
+						
+							<!-- 業務グループ -->
+							
+								
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li id="gnavi_03" class="menu-list menu-list-open">
+<dl class="close">
+<dt style="text-align:center">
+<span id="cs_grpname_03_sp">定期・エース<br>財形預金</span>
+</dt>
+</dl></li>
+
+
+							
+						
+							<!-- 業務グループ -->
+							
+								
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li id="gnavi_04" class="menu-list menu-list-open">
+<dl class="close">
+<dt style="text-align:center">
+<span id="cs_grpname_04_sp" style="line-height:33px">投資信託</span>
+</dt>
+</dl></li>
+
+
+							
+						
+							<!-- 業務グループ -->
+							
+								
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li id="gnavi_05" class="menu-list menu-list-open">
+<dl class="close">
+<dt style="text-align:center">
+<span id="cs_grpname_05_sp" style="line-height:33px">ローン</span>
+</dt>
+</dl></li>
+
+
+							
+						
+							<!-- 業務グループ -->
+							
+								
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li id="gnavi_06" class="menu-list menu-list-open">
+<dl class="close">
+<dt style="text-align:center">
+<span id="cs_grpname_06_sp">Webお知らせ<br>諸届受付</span>
+</dt>
+</dl></li>
+
+
+							
+						
+							<!-- 業務グループ -->
+							
+								
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li id="gnavi_07" class="menu-list menu-list-open">
+<dl class="close">
+<dt style="text-align:center">
+<span id="cs_grpname_07_sp" style="line-height:33px">利用設定</span>
+</dt>
+</dl></li>
+
+
+							
+						
+							<!-- 業務グループ -->
+							
+								
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							
+						
+							<!-- 業務グループ -->
+							
+								
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							
+						
+							<!-- 業務グループ -->
+							
+								
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							
+						
+					
+				</ul>
+			</nav>
+		<!-- /body-gnav --></div>
+	<!-- /frame-content --></div>
+</div>
+
+<div id="gnav-overlay-sp" style="height:1828px; width:824px">	</div><div class="frame-base" id="frame-body">
+	<div class="frame-content">
+		
+
+
+
+
+
+
+
+
+
+
+<noscript><p><span class="noscript-msg">お客様がご利用のブラウザは、ＪａｖａＳｃｒｉｐｔが無効に設定されている、もしくは、ＪａｖａＳｃｒｉｐｔがサポートされていないため、一部機能が正常に動作しない可能性があります。<br>サービスをご利用になるためには、ＪａｖａＳｃｒｉｐｔを有効にする、また、ＪａｖａＳｃｒｉｐｔ対応ブラウザでのご利用をお願いいたします。</span></p></noscript>
+
+<script type="text/javascript">
+<!-- 
+
+$(document).ready(function()
+  {
+    var aaui026_checkFlag=false;
+    if(aaui026_checkFlag==true){
+        initBrowserCheck('false');
+    }
+  }
+);
+
+// -->
+</script>
+
+		<div id="body-pagecontent">
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+<script type="text/javascript">
+    <!--
+    $(function(){
+        detailPopup.init();
+        $('#camplink001').click(function(){
+            showCampaignPopupWindow();
+        })
+        $('#btn611').click(function(){
+         closePopup();
+        })
+        $('#tblDtl002 tr.row').click(function(){
+         showDetailPopup($('#tblDtl002 tr.row').index(this));
+        })
+        $('#tblDtl003 tr.row').click(function(){
+         showDetailPopup($('#tblDtl003 tr.row').index(this));
+        })
+        $('#tblDtl004 tr.row').click(function(){
+         showDetailPopup($('#tblDtl004 tr.row').index(this));
+        })
+        $('#tblDtl005 tr.row').click(function(){
+         showDetailPopup($('#tblDtl005 tr.row').index(this));
+        })
+        $('#detailPopupBackButton').click(function(){
+         back();
+        })
+        $('#btn999').click(function(){
+         closePopup();
+        })
+        $('#detailPopupNextButton').click(function(){
+         next();
+        })
+    });
+    -->
+</script>
+
+
+<script type="text/javascript">
+ <!--
+ var details = [];
+ 
+ var hiddenRows = {};
+ hiddenRows.detailDiv = '1';
+ hiddenRows.initialDateOfReckoning = '1';
+ hiddenRows.paperMoney = '1';
+ hiddenRows.customerNum = '1';
+ //-->
+ </script>
+
+  
+  
+  
+  
+
+  <div id="swpBlkParent001">
+    <div id="swpBlkChild018">
+      
+      <div id="blk023" class="sidebar-accountA01 ">
+        <p id="guidance004">
+<span id="msg056" class="">竹本　智貴　<span id="msg191" class=" ">様</span></span>
+<span id="msg057" class=" "> いつもご利用ありがとうございます。</span>
+        </p><!-- guidance004 -->
+</div>
+<!-- blk023 -->
+      
+    </div>
+    <div id="swpBlkChild027">
+      
+
+    <table id="tblLen001" class="top-informationA01">
+      
+      <tbody><tr>
+        <td style="white-space: nowrap">
+        <span id="msg899" class=" ">登録メールアドレス </span>
+        </td>
+        <td class="tablestyleth" align="right" style="word-break:break-all">
+        tomoki0914@hotmail.co.jp
+        </td>
+      </tr>
+      
+      
+      <tr>
+        <td style="white-space: nowrap">
+        <span id="msg065" class=" ">前回ログイン日時 </span>
+        </td>
+        <td class="tablestyleth" align="right">
+          
+            <span id="msg062" class="tablestyleth">2023年11月19日</span><span id="msg800" class="tablestyleth "> </span><span id="msg063" class="tablestyleth">18時41分31秒</span>
+          
+        </td>
+      </tr>
+    </tbody></table><!-- tblLen001 -->  
+
+
+
+
+
+
+
+    </div>
+
+
+    <div id="swpBlkChild999">
+      
+      
+      
+    </div>
+    <div id="swpBlkChild301">
+
+
+
+    </div>
+    <div id="swpBlkChild511">
+      
+
+
+
+    </div>
+    <div id="swpBlkChild100">
+      
+
+
+  <div id="blk600" class="whatsnew-blockA01 ">
+  <a id="camplink001">【重要】iCloud等の一部のアドレスへメールが届かない事象について</a>
+</div>
+
+
+
+    </div>
+    <div id="swpBlkChild101">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div style="margin: 2em 0px 0px;"></div>
+      <div id="blk400" class="heading-areaA02 ">
+        <h2 id="h030" class="headingA02">
+          <span id="h030_heading">各種お取引</span>
+        </h2><!-- h030 -->
+        <p id="guidance400" class="guidanceA01">
+<span id="msg402" class=" "></span></p><div style="margin: 0.5em 0px 0px;">下記以外のお取引は、<span style="font-weight: 800;">画面左上の「お取引」ボタン</span>からお手続きください。</div>
+        <p></p><!-- guidance400 -->
+</div>
+<!-- blk400 -->
+
+<table id="tbl004" class="sp-menuA01">
+
+
+
+ <tbody><tr><td class="td-widthA01"></td>
+   
+     
+       
+        
+		</tr><tr>
+				<td class="td-buttonA01">
+             <div id="blk527" class="wrapper-main-buttonA01 ">
+             <form method="post" action="https://www.parasol.anser.ne.jp/ib/SLISmAccountSelect?ServerID=RSRA0306&amp;B=2951&amp;PT=BS" target="_top"><div id="backward_compatible_filler"></div>
+               <input type="hidden" name="S" value="EB6A9FC5E2A828FBB3EB8AE72BCD88F7338818ADD53F8C74FA73">
+               <input type="hidden" id="hide601" name="BHD0000" tabindex="" value="BPT001">
+               <input type="hidden" id="hide602" name="BHD0001" tabindex="" value="2">
+               <button id="btn003" name="forward_BSM3020" type="submit" class="main-buttonA01 " value="">残高照会</button>
+             </form>     
+</div>
+
+         </td>
+				<td class="td-widthA02"></td>
+				<td class="td-buttonA01">
+         <div id="blk528" class="wrapper-main-buttonA01 ">
+             <form method="post" action="https://www.parasol.anser.ne.jp/ib/SLISmAccountSelect?ServerID=RSRA0306&amp;B=2951&amp;PT=BS" target="_top"><div id="backward_compatible_filler"></div>
+               <input type="hidden" name="S" value="EB6A9FC5E2A828FBB3EB8AE72BCD88F7338818ADD53F8C74FA73">
+               <input type="hidden" id="hide603" name="BHD0000" tabindex="" value="BPT001">
+               <input type="hidden" id="hide604" name="BHD0001" tabindex="" value="2">
+               <button id="btn006" name="forward_BSM3030" type="submit" class="main-buttonA01 " value="">入出金明細照会<br>（普通・貯蓄）</button>
+             </form>
+</div>
+
+         </td>
+				<td class="td-widthA01"></td>
+		</tr>
+
+        
+       
+     
+     
+
+    
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+    
+    
+              
+  
+     
+     
+     
+       
+  
+		<tr>
+				<td class="td-buttonA01">
+         <div id="blk529" class="wrapper-main-buttonA01 ">
+             <form method="post" action="https://www.parasol.anser.ne.jp/ib/SPT001Dispatch?ServerID=RSRA0306&amp;B=2951&amp;PT=BS" target="_top"><div id="backward_compatible_filler"></div>
+               <input type="hidden" name="S" value="EB6A9FC5E2A828FBB3EB8AE72BCD88F7338818ADD53F8C74FA73">
+               <input type="hidden" id="hide605" name="BHD0000" tabindex="" value="BPT001">
+               <input type="hidden" id="hide606" name="BHD0001" tabindex="" value="2">
+                     <button id="btn009" name="forward_BSM3040" type="submit" class="main-buttonA01 " value="">振込</button>
+             </form>
+</div>
+
+         </td>
+				<td class="td-widthA02"></td>
+				<td class="td-buttonA01"> 
+         <div id="blk530" class="wrapper-main-buttonA01 ">
+             <form method="post" action="https://www.parasol.anser.ne.jp/ib/SPT001Dispatch?ServerID=RSRA0306&amp;B=2951&amp;PT=BS" target="_top"><div id="backward_compatible_filler"></div>
+               <input type="hidden" name="S" value="EB6A9FC5E2A828FBB3EB8AE72BCD88F7338818ADD53F8C74FA73">
+               <input type="hidden" id="hide607" name="BHD0000" tabindex="" value="BPT001">
+               <input type="hidden" id="hide608" name="BHD0001" tabindex="" value="2">
+                     <button id="btn012" name="forward_BSM3041" type="submit" class="main-buttonA01 " value="">振替</button>
+             </form>
+</div>
+
+         </td>
+				<td class="td-widthA01"></td>
+		</tr>
+
+        
+       
+       
+      
+      
+     
+
+    
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+    
+    
+              
+  
+     
+     
+     
+
+      
+  
+		<tr>
+				<td class="td-buttonA01"> 
+ <div id="blk546" class="wrapper-main-buttonA01 ">
+        <form method="post" action="https://www.parasol.anser.ne.jp/ib/BOPSelect?ServerID=RSRA0306&amp;B=2951&amp;PT=BS" target="_top"><div id="backward_compatible_filler"></div>
+        <input type="hidden" name="S" value="EB6A9FC5E2A828FBB3EB8AE72BCD88F7338818ADD53F8C74FA73">
+          <input type="hidden" id="hide015" name="BHD1160" tabindex="" value="AB00030">
+          <input type="hidden" id="hide016" name="BHD0000" tabindex="" value="BPT001">
+          <input type="hidden" id="hide017" name="BSM0310" tabindex="" value="">
+          <input type="hidden" id="hide018" name="BHD0001" tabindex="" value="2">
+        </form>
+</div>
+
+    </td>
+				<td class="td-widthA01"></td>
+				<td></td>
+		</tr>
+
+         
+  
+
+</tbody></table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+    </div>
+    <div id="swpBlkChild800">
+      
+
+
+
+
+
+
+
+
+
+      
+    </div>
+    <div id="swpBlkChild021">
+      
+      
+
+
+
+
+
+
+
+
+
+      
+    </div>
+    <div id="swpBlkChild023">
+      <div style="margin: 1.5em 0px 0px;"></div>
+
+
+
+      <div id="blk028" class="sidebar-messageboxA01 ">
+        <div id="blk801" class="heading-areaA02 ">
+          <h2 id="h010" class="headingA02">
+            <span id="h010_heading">メッセージボックス</span>
+          </h2><!-- h010 -->
+</div>
+<!-- blk801 -->
+        <ul id="ul008">
+          <li id="li015" class="list-user">
+<a href="https://www.parasol.anser.ne.jp/ib/SPT001Dispatch?forward_BSM0600&amp;BHD0030=1&amp;BHD0000=BPT001&amp;BHD0001=2&amp;S=EB6A9FC5E2A828FBB3EB8AE72BCD88F7338818ADD53F8C74FA73&amp;ServerID=RSRA0306&amp;B=2951&amp;PT=BS"><span id="msg202">重要なお知らせ</span></a>
+            <ul id="ul200">
+              <li id="li200">
+<span id="msg250" class=" ">未読のお知らせはありません。</span>
+              </li><!-- li200 -->
+            </ul><!-- ul200 -->
+          </li><!-- li015 -->
+          <li id="li016" class="list-bank">
+<a href="https://www.parasol.anser.ne.jp/ib/SPT001Dispatch?forward_BSM0600&amp;BHD0030=0&amp;BHD0000=BPT001&amp;BHD0001=2&amp;S=EB6A9FC5E2A828FBB3EB8AE72BCD88F7338818ADD53F8C74FA73&amp;ServerID=RSRA0306&amp;B=2951&amp;PT=BS"><span id="msg203">ろうきんからのお知らせ</span></a>
+            <ul id="ul201">
+              <li id="li201">
+<span id="msg251" class=" ">未読のお知らせはありません。</span>
+              </li><!-- li201 -->
+            </ul><!-- ul201 -->
+          </li><!-- li016 -->
+        </ul><!-- ul008 -->
+</div>
+<!-- blk028 -->
+
+
+
+      
+    </div>
+
+    <div id="swpBlkChild006">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div style="margin: 1.5em 0px 0px;"></div>
+
+
+
+
+
+
+
+
+
+      <div id="blk005" class="heading-areaA02 ">
+        <h2 id="h002" class="headingA02">
+          <span id="h002_heading">口座情報（普通預金・貯蓄預金）</span>
+        </h2><!-- h002 -->
+</div>
+<!-- blk005 -->
+      
+      <p id="guidance001">
+        <span id="guidance001_guidance"></span>
+      </p><!-- guidance001 -->
+
+ 
+
+      
+      <dl id="dl001" class="sortlinkA01">
+        <dt id="dt001">
+<span id="msg002" class=" ">並べ替え：</span>
+        </dt><!-- dt001 -->
+        <dd id="dd700">
+          
+          <div id="blk802" class="pseude-first-child ">
+<a href="https://www.parasol.anser.ne.jp/ib/SPT001Dispatch?forward_BSM0500&amp;BUTTON_NAME=BSM0500&amp;BHD0000=BPT001&amp;BHD0001=2&amp;S=EB6A9FC5E2A828FBB3EB8AE72BCD88F7338818ADD53F8C74FA73&amp;ServerID=RSRA0306&amp;B=2951&amp;PT=BS"><span id="msg200">支店名</span></a>
+</div>
+<!-- blk802 -->
+          
+          
+          
+          
+          
+          <div id="blk806" class="active02 ">
+<a href="https://www.parasol.anser.ne.jp/ib/SPT001Dispatch?forward_BSM0501&amp;BUTTON_NAME=BSM0501&amp;BHD0000=BPT001&amp;BHD0001=2&amp;S=EB6A9FC5E2A828FBB3EB8AE72BCD88F7338818ADD53F8C74FA73&amp;ServerID=RSRA0306&amp;B=2951&amp;PT=BS"><span id="msg211">科目</span></a>
+</div>
+<!-- blk806 -->
+          
+          
+        </dd><!-- dd700 -->
+      </dl><!-- dl001 -->
+      
+      
+      <ul id="ul002" class="accountA01 branch-name-JS01">
+        
+        
+        <li id="li002-1" class="private-section account_row_odd">
+          <div id="blk006-1" class="private-column-wrapper ">
+            <div id="blk007-1" class="private-column-account ">
+              <div id="blk108-1" class="private-column-title ">
+                <div id="blk008-1" class="private-header ">
+                  <ul id="ul101-1" class="item-listN01 branch-name-JS02" style="">
+                    <li id="li101-1" class="item-li01 branch-name-JS03">
+                      <h3 id="h003-1">
+                        <span id="h003_heading-1">本店営業部</span>
+                      </h3><!-- h003 -->
+                    </li><!-- li101 -->
+                    <li id="li102-1" class="item-li02">
+<span id="msg003-1">普通</span>
+                    </li><!-- li102 -->
+                    <li id="li103-1" class="item-li03">
+<span id="msg004-1">1110192</span>
+                    </li><!-- li103 -->
+                  </ul><!-- ul101 -->
+</div>
+<!-- blk008 -->
+</div>
+<!-- blk108 -->
+              <form method="post" action="https://www.parasol.anser.ne.jp/ib/SPT001Dispatch?ServerID=RSRA0306&amp;B=2951&amp;PT=BS" class="" id="inputFrm003-1"><div id="backward_compatible_filler"></div>
+                <input type="hidden" name="S" value="EB6A9FC5E2A828FBB3EB8AE72BCD88F7338818ADD53F8C74FA73">
+                  <div id="blk301-1" class="private-column-function ">
+                    <ul id="ul202-1" class="list-info">
+                      <li id="li202-1" class="text-secondary">
+<span id="msg206-1" class=" ">明細保管サービス</span><span id="msg209-1" class=" "></span>
+<span id="msg207-1" class=" ">利用あり</span>
+                    </li></ul><!-- ul202 -->
+</div>
+<!-- blk301 -->
+              </form><!-- inputFrm003 -->
+</div>
+<!-- blk007 -->
+            <div id="blk009-1" class="private-column-balance ">
+              <dl id="dl003-1" class="list-amount">
+                <dt id="dt101-1" class="term-01">
+<span id="msg108-1" class=" ">残高</span>
+                </dt><!-- dt101 -->
+                <dd id="dd104-1" class="description-01">
+<span id="msg107-1">1,702,654円</span>
+                </dd><!-- dd104 -->
+              </dl><!-- dl003 -->
+</div>
+<!-- blk009 -->
+</div>
+<!-- blk006 -->
+          
+<!-- blk201 -->
+        </li><!-- li002 -->
+        
+        
+      </ul><!-- ul002 -->
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+      <div style="margin: 2em 0px 0px;"></div>
+
+
+
+
+    </div>
+    <div id="swpBlkChild011">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+      <div id="swpBlkParent999">
+        <div id="swpBlkChild998">
+          
+
+
+
+          
+        </div>
+        <div id="swpBlkChild997">
+          
+
+
+
+          
+          
+          
+        </div>
+        <div id="swpBlkChild014">
+          
+          
+          
+        </div>
+      </div>
+
+
+
+
+    </div>
+    <div id="swpBlkChild102">
+      
+
+
+
+    </div>
+    <div id="swpBlkChild900">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+      
+
+
+
+
+    </div>
+
+    <div id="swpBlkChild901">
+      
+      
+        
+        
+
+<div id="campaignPopup" class="popup " style="display:none;">
+          <div id="blk300" class="wrap ">
+            <div id="blk351" class="body ">
+              <div id="msg670">
+<pre>平素より＜ろうきんダイレクト＞をご利用いただき、誠にありがとうございます。
+&nbsp;
+現在、一部のメールドメイン（@icloud.com、@me.com、および@mac.com）において、＜ろうきん＞からお送りしたメールを受信いただけない事象が発生しております。
+&nbsp;
+該当のメールドメイン（@icloud.com、@me.com、および@mac.com）を＜ろうきんダイレクト＞に登録して利用されているお客さまにおかれましては、ご登録のメールアドレスを他のドメインのものに変更していただきますようお願いいたします。
+&nbsp;
+【メールアドレスの変更方法】
+＜ろうきんダイレクト＞にログイン後、「利用設定」メニューの「［利用設定］メール設定」からお手続きください。</pre>
+</div>
+<!-- msg670 -->
+</div>
+<!-- blk351 -->
+            <div id="blk353" class="position-right ">
+</div>
+<!-- blk353 -->
+</div>
+<!-- blk300 -->
+          <div id="blk354" class="footer ">
+            <table id="tblLen100" class="width-wide">
+              <tbody><tr>
+                <td class="cell_b cell_b_1_1_1 col_1_1 row_1_1 position-center" colspan="1" rowspan="1"><!-- ボディ -->
+                <button id="btn611" name="" type="submit" class=" " value="">OK</button>
+                </td>
+              </tr>
+            </tbody></table><!-- tblLen100 -->
+</div>
+<!-- blk354 -->
+</div>
+
+
+        
+        
+      
+      
+    </div>
+    <div id="swpBlkChild902">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+    </div>
+    <div id="swpBlkChild904">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div id="swpBlkChild903">
+      <div class="sidebar-messageboxA01">
+<h3 class="h3_roukin"><span>ろうきんインフォメーション</span></h3>
+<ul>
+<li class="list-user">
+<ul>
+<li><a class="a_roukin" href="http://ib.rokin.jp/time/?bid=1&amp;src=tt" target="_blank"><span>サービス時間のご案内</span></a></li>
+<li><a class="a_roukin" href="http://www.rokin-hokkaido.or.jp/rate/rate-01.php" target="_blank"><span>預金の金利</span></a></li>
+<li><a class="a_roukin" href="http://www.rokin-hokkaido.or.jp/rate/rate-02.php" target="_blank"><span>ローンの金利</span></a></li>
+<li><a class="a_roukin" href="http://www.rokin-hokkaido.or.jp/service/pdf/rd-kuriagehensai.pdf" target="_blank"><span>繰上返済時の留意事項</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+
+
+
+
+
+      <div id="blk406" class="button-main-areaA01 ">
+        <div id="blk045" class="wrapper-link-buttonA01 ">
+          <form method="post" action="https://www.parasol.anser.ne.jp/ib/SLINSwitchMenu?ServerID=RSRA0306&amp;B=2951&amp;PT=BS" class="" id="inputFrm909"><div id="backward_compatible_filler"></div>
+            <input type="hidden" name="S" value="EB6A9FC5E2A828FBB3EB8AE72BCD88F7338818ADD53F8C74FA73">
+            <button id="btn605" name="BSM3050" type="submit" class="link-buttonA03 disp-pc-icon " value="">ＰＣサイトへ</button>
+            <input type="hidden" id="hide140" name="BHD0001" class="" tabindex="" value="2" title="">
+            <input type="hidden" id="hide141" name="BHD0000" class="" tabindex="" value="BPT001" title="">
+          </form><!-- inputFrm909 -->
+</div>
+<!-- blk045 -->
+</div>
+<!-- blk406 -->
+
+
+
+
+
+
+    </div>
+  </div>
+  
+  <p id="pgId" class="page-identifierA01">
+<span id="msgFix001">画面ID：SPT001</span>
+  </p><!-- pgId -->
+  
+  <div id="blk999" class="sidebar-leftcolumnA01 ">
+    <ul id="ul999" class="helpnoteguide">
+      <li id="li995">
+<span id="lnk997" class=" "></span>
+      </li><!-- li995 -->
+      <li id="li994">
+      </li><!-- li994 -->
+      <li id="li993">
+      </li><!-- li993 -->
+    </ul><!-- ul999 -->
+</div>
+<!-- blk999 -->
+  
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="contentsfooter_sp" class="noprint">
+     
+<div id="contentsfooter_sp2" class="noprint">
+<div class="frame-base" id="frame-infomation">
+      <div class="frame-content">
+        <section>
+          <h1>
+            <span>ろうきんダイレクトに関するお問い合わせ</span>
+          </h1>
+          <div class="information-multicol">
+            <div class="information-column">
+              <h2>
+                <span>ろうきんダイレクトヘルプデスク</span>
+              </h2>
+              <div class="information-text-tell">
+                <p>
+                  <span>
+                    <img src="./トップページ_files/icon_freehone.png" alt="フリーダイヤル" title="フリーダイヤル" width="37" height="21">0120-609-335
+                  </span>
+                </p>
+              </div>
+              <dl class="information-deflist">
+                <dt>
+                  <span>受付時間</span>
+                </dt>
+                <dd>
+                  <span>全日 9：00 ～ 21：00</span>
+                </dd>
+              </dl>
+              <div class="information-text" style="font-size: 85%;">
+                <table><tbody><tr><td valign="top">※</td><td>投資信託の制度・商品に関するお問い合わせ<br>受付時間：平日 9:00～17:00（土日祝日・12月31日～1月3日を除く）</td></tr><tr><td valign="top">※</td><td>1月1日～1月3日、定期メンテナンス時はご利用いただけません。</td></tr></tbody></table>
+              </div>
+            </div>
+            <div class="information-column">
+              <h2>
+                <span>よくあるご質問（Ｑ＆Ａ）</span>
+              </h2>
+              <div class="information-text">
+                <p>
+                  <span>ろうきんダイレクトの各種操作方法・お手続きに関するお問い合わせをまとめましたのでご確認ください。<br>
+                    <br>
+                    <a href="http://ib.rokin.jp/qa/?bid=1" target="_blank">よくあるお問い合わせ（Ｑ＆Ａ）はこちら</a>
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="commonfooter_sp" class="noprint">
+
+
+<div class="frame-base" id="frame-footer"><div class="frame-content"><footer><div class="footer"><img src="./トップページ_files/footer.png"></div><p><small>Copyright &#169;  Rokin All rights reserved.</small></p></footer><!-- /frame-content --></div><!-- /frame-footer --></div>
+</div>
+
+
+
+
+
+
+
+
+<div id="timeoutNoticeMsg" title="お取引継続確認" style="display : none;">一定時間お客様からの操作が行われませんでした。<br>引き続きご利用いただく場合は「OK」ボタンを押してください。<br><br>自動的に切断するまでの時間　：<span id="countdown">60</span>秒</div><div id="timeoutMsg" title="切断通知" style="display : none;">一定時間お客様からの操作が行われなかったため、<br>自動的に切断させていただきました。<br>ご利用ありがとうございました。</div><div id="attentionPopup" class="popup" style="position: absolute; top: 424px; left: 54px; opacity: 1; display: none;">
+	<div id="pupdiv006" class="wrap ">
+		<div id="attentionBody" class="body "><span id="msg001">ガイダンス出力について</span></div>
+        <div id="pupdiv007" class="footer ">
+            <div id="pupdiv008" class="position-center ">
+                    <button id="pupbtn003" name="" type="button" value="">OK</button>
+			</div>
+			
+			<table id="puptbl003" class="screenname-table"></table>
+		</div>
+	</div>
+</div><div tabindex="-1" role="dialog" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front noDialog ui-dialog-buttons" aria-describedby="laylerDialog" aria-labelledby="ui-id-1" style="display: none;"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix"><span id="ui-id-1" class="ui-dialog-title">&nbsp;</span><button type="button" class="ui-button ui-corner-all ui-widget ui-button-icon-only ui-dialog-titlebar-close" title="Close"><span class="ui-button-icon ui-icon ui-icon-closethick"></span><span class="ui-button-icon-space"> </span>Close</button></div><div id="laylerDialog" class="ui-dialog-content ui-widget-content"></div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button type="button" class="ui-button ui-corner-all ui-widget">ok</button><button type="button" class="ui-button ui-corner-all ui-widget">キャンセル</button></div></div></div><div tabindex="-1" role="dialog" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front noDialog ui-dialog-buttons" aria-describedby="laylerDialog" aria-labelledby="ui-id-2" style="display: none;"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix"><span id="ui-id-2" class="ui-dialog-title">&nbsp;</span><button type="button" class="ui-button ui-corner-all ui-widget ui-button-icon-only ui-dialog-titlebar-close" title="Close"><span class="ui-button-icon ui-icon ui-icon-closethick"></span><span class="ui-button-icon-space"> </span>Close</button></div><div id="laylerDialog" class="ui-dialog-content ui-widget-content"></div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button type="button" class="ui-button ui-corner-all ui-widget">ok</button><button type="button" class="ui-button ui-corner-all ui-widget">キャンセル</button></div></div></div><deepl-input-controller><template shadowrootmode="open"><link rel="stylesheet" href="chrome-extension://cofdbpoegempjloogbagkncekinflcnj/build/content.css"><div><div class="dl-input-translation-container svelte-ju4595"><div></div></div></div></template></deepl-input-controller></body></html>

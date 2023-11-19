@@ -1,0 +1,564 @@
+.clearFloat {
+    clear:both;
+}
+
+.clearFloat .keyboard_table{
+    padding-top:0px;
+    width:100%;
+}
+
+.div_parts{
+    padding-top:5px;
+    *height: 165px;
+}
+
+.keyboard_comment input[type="checkbox"]{
+    height:13px;
+    width:13px;
+    border:none;
+
+}
+
+.keyboard_comment input[type="checkbox"]:focus{
+    border:none;
+}
+
+td div.keyboard_comment {
+    font-size: 87.5% !important
+}
+
+.keyboard_frame{
+    margin-left:auto;
+    margin-right:auto;
+    height:165px;
+    width:710px;
+    position:relative;
+    *position:absolute;
+    background: #E6E6E6;
+    border:2px solid #B3B3B3;
+    /* Safari,Google Chrome用 */
+    -webkit-border-radius:10px;
+    /* Firefox用 */
+    -moz-border-radius: 10px;
+}
+
+.keyboard_position{
+    width:450px;
+    *width:600px;
+}
+
+.keyboard_keybotton{
+    position:absolute; 
+    top:8px; 
+    left:115px;
+    display: block;    
+}
+
+.keyboard_button_clear{
+    position:absolute; 
+    top:8px; 
+    left:575px;
+    display: block;
+}
+
+.keyboard_button_close{
+    bottom: 2px;
+    height: 29px;
+    position: absolute;
+    right: 2px;
+    width: 29px;
+}
+
+.keyboard_button_moji{
+    height:165px;
+    width:120px;
+    position:absolute; 
+    top:0px;
+    left:0px;
+    background: #999999;
+    display: block;
+    /* Safari,Google Chrome用 */
+    -webkit-border-top-left-radius:7px;
+    -webkit-border-bottom-left-radius: 7px;
+    /* Firefox用 */    
+    -moz-border-radius-topleft: 7px;    
+    -moz-border-radius-bottomleft: 7px;
+}
+.keyboard_arrow {
+    width:40px;
+    height:40px;
+    display: block;
+    position: absolute; top: -14px; left: 210px;
+    clip: rect(auto auto 13px auto);
+    /* For Internet Explorer*/
+    top: -14px \9;
+    width:0px \9;
+    height:0px \9;
+    background-color:transparent \9;
+    border-right: 40px solid transparent \9;
+    border-bottom: 55px solid  #B3B3B3 \9;
+    border-left: 40px solid transparent \9;
+}
+
+.keyboard_arrow:after{    
+    content: ' '; 
+    top: 10px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    position:absolute;
+    /* For WebKit (Safari, Google Chrome etc) */
+    background: -webkit-gradient(linear, right top,left bottom,from(#333333), color-stop(0.2,#B3B3B3));
+    /* For Mozilla/Gecko (Firefox etc) */
+    background: -moz-linear-gradient(right top, #333333, #B3B3B3 20%);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+}
+
+.keyboard_button ul {
+    list-style:none;
+    padding:0px;
+    margin: 0px;
+}
+
+.keyboard_frame .keyboard_position input.keybtn {
+    font-size: 100%;
+    border-top: 1px solid #8C8C8C;  
+    border-right: 1px solid #8C8C8C;  
+    border-bottom: 1px solid #181818;  
+    border-left: 1px solid #8C8C8C;  
+    cursor: pointer;  
+    color: #000000;  
+    width: 40px;
+    height: 30px;
+    -webkit-border-radius:6px;    /* Safari,Google Chrome用 */
+    -moz-border-radius: 6px;    /* Firefox用 */
+    /* グラデーション未対応ブラウザ */
+    background: #9B9B9B;
+    /* For WebKit (Safari, Google Chrome etc) */
+    background: -webkit-gradient(linear, left top, left bottom, from(#F9F9F9), to(#9B9B9B));
+    /* For Mozilla/Gecko (Firefox etc) */
+    background: -moz-linear-gradient(top, #F9F9F9, #9B9B9B);
+    /* For Internet Explorer 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#F9F9F9, endColorstr=#9B9B9B);
+    /* For Internet Explorer 8,9 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#F9F9F9, endColorstr=#9B9B9B)";    
+    /* For Internet Explorer 10 */
+    background: linear-gradient(to bottom, #F9F9F9, #9B9B9B);
+}
+
+.keyboard_frame .keyboard_position input.keybtn:focus {
+    border-top: 1px solid #8C8C8C  !important;
+    border-right: 1px solid #8C8C8C !important;
+    border-bottom: 1px solid #181818 !important;
+    border-left: 1px solid #8C8C8C !important;
+}
+
+.keyboard_frame .keyboard_position input.keybtn:hover {
+    border-top: 1px solid #8C8C8C;  
+    border-right: 1px solid #8C8C8C;  
+    border-bottom: 1px solid #181818;  
+    border-left: 1px solid #8C8C8C;   
+    cursor: pointer;  
+    color: #000000;  
+    width: 40px;
+    height: 30px;
+    -webkit-border-radius:6px;    /* Safari,Google Chrome用 */
+    -moz-border-radius: 6px;    /* Firefox用 */    
+    /* グラデーション未対応ブラウザ */
+    background: #4664fa;
+    /* For WebKit (Safari, Google Chrome etc) */
+    background: -webkit-gradient(linear, left top, left bottom, from(#b2d1ff), to(#4664fa));
+    /* For Mozilla/Gecko (Firefox etc) */
+    background: -moz-linear-gradient(top, #b2d1ff, #4664fa);
+    /* For Internet Explorer 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#b2d1ff, endColorstr=#4664fa);
+    /* For Internet Explorer 8,9 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#b2d1ff, endColorstr=#4664fa)";   
+    /* For Internet Explorer 10 */
+    background: linear-gradient(to bottom, #b2d1ff, #4664fa);
+}
+
+.keyboard_frame .keyboard_position input.cleabtn {
+    font-size: 100%;
+    border-top: 1px solid #ccc;  
+    border-right: 1px solid #ccc;  
+    border-bottom: 1px solid #000;  
+    border-left: 1px solid #ccc;  
+    font-weight: bold;  
+    cursor: pointer;  
+    color: #ffffff;  
+    width: 118px;
+    height: 30px;
+    margin-bottom:6px;
+    -webkit-border-radius:5px;    /* Safari,Google Chrome用 */
+    -moz-border-radius: 5px;    /* Firefox用 */
+    /* グラデーション未対応ブラウザ */
+    background: #333333;
+    /* For WebKit (Safari, Google Chrome etc) */
+    background: -webkit-gradient(linear, left top, left bottom, from(#B5B5B5), to(#333333));
+    /* For Mozilla/Gecko (Firefox etc) */
+    background: -moz-linear-gradient(top, #B5B5B5, #333333);
+    /* For Internet Explorer 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#B5B5B5, endColorstr=#333333);
+    /* For Internet Explorer 8,9 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#B5B5B5, endColorstr=#333333)";
+    /* For Internet Explorer 10 */
+    background: linear-gradient(to bottom, #B5B5B5, #333333);
+}
+
+.keyboard_frame .keyboard_position input.closebtn{
+    display: block;
+    background: url(../images/keyboard/btn_skb_01.png) no-repeat left top;
+    padding: 0;
+    margin: 0;
+    border: none;
+    width: 29px;
+    height: 29px;
+    text-indent: -999999px;
+}
+
+.keyboard_frame .keyboard_position input.closebtn:focus {
+    border-top: none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+    border-left: none !important;
+}
+
+.keyboard_frame .keyboard_position input.closebtn:hover {
+    background-position: left bottom;  
+}
+
+.keyboard_frame .keyboard_position input.cleabtn:focus {
+    border-top: 1px solid #ccc !important;
+    border-right: 1px solid #ccc !important;
+    border-bottom: 1px solid #000 !important;
+    border-left: 1px solid #ccc !important;
+}
+
+.keyboard_frame .keyboard_position input.cleabtn:hover {
+    border-top: 1px solid #ccc;  
+    border-right: 1px solid #999;  
+    border-bottom: 1px solid #999;  
+    border-left: 1px solid #ccc;  
+    font-weight: bold;  
+    cursor: pointer;  
+    color: #4682B4;  
+    /* グラデーション未対応ブラウザ */
+    background: #87CEEB;
+    /* For WebKit (Safari, Google Chrome etc) */
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#87CEEB));
+    /* For Mozilla/Gecko (Firefox etc) */
+    background: -moz-linear-gradient(top, #ffffff, #87CEEB);
+    /* For Internet Explorer 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#87CEEB);
+    /* For Internet Explorer 8,9 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#87CEEB)";
+    /* For Internet Explorer 10 */
+    background: linear-gradient(to bottom, #ffffff, #87CEEB);
+}
+
+.keyboard_frame .keyboard_position input.moji1 {
+    font-size: 100%;
+    border:none;
+    width: 110px;
+    height: 30px;
+    margin-top: 8px;
+    *margin-top: 4px;
+    font-weight: bold; 
+    text-align: center;
+    text-decoration: none;
+    -webkit-border-top-left-radius:6px;    /* Safari,Google Chrome用 */
+    -moz-border-radius-topleft: 6px;    /* Firefox用 */
+    -webkit-border-bottom-left-radius: 6px;    /* Safari,Google Chrome用 */
+    -moz-border-radius-bottomleft: 6px;    /* Firefox用 */    
+    color: #FFFFFF;
+    background: #666666;
+}
+
+.keyboard_frame .keyboard_position input.moji1:focus {
+    border:none !important;
+}
+
+.keyboard_frame .keyboard_position input.moji2 {
+    font-size: 100%;
+    border:none;
+    width: 110px;
+    height: 30px;
+    margin-top: 8px;
+    *margin-top: 4px;
+    font-weight: bold; 
+    text-align: center;
+    text-decoration: none;
+    -webkit-border-top-left-radius: 6px;    /* Safari,Google Chrome用 */
+    -moz-border-radius-topleft: 6px;    /* Firefox用 */
+    -webkit-border-bottom-left-radius: 6px;    /* Safari,Google Chrome用 */
+    -moz-border-radius-bottomleft: 6px;    /* Firefox用 */    
+    color: #000000;
+    background: #E6E6E6;
+}
+
+.keyboard_frame .keyboard_position input.moji2:focus {
+    border:none !important;
+}
+
+li.keyboard_list {
+    float:left;
+    display: inline;
+    padding: 0px 0px 6px 5px;
+    margin: 0px;
+}
+
+li.keyboard_list_last {
+    clear: left; 
+    display: inline;
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+}
+
+li.keyboard_list_marginright {
+    float:left;
+    display: inline;
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+}
+
+.keyboard_button_prev {
+    float:left;
+}
+
+.keyboard_button {
+    padding: 0px 0px 0px 10px;
+}
+
+/* IE6 */
+* html .table_parts {
+    height: 165px;
+    position: relative;
+    left: 120px;
+}
+
+/*  JA個別対応 開始 */
+
+.keyboard_frame_wide{
+    margin-left:auto;
+    margin-right:auto;
+    height:300px;
+    width:710px;
+    position:relative;
+    *position:absolute;
+    background: #E6E6E6;
+    border:2px solid #B3B3B3;
+    /* Safari,Google Chrome用 */
+    -webkit-border-radius:10px;
+    /* Firefox用 */
+    -moz-border-radius: 10px;
+}
+
+.keyboard_button_moji_wide{
+    height:300px;
+    width:120px;
+    position:absolute; 
+    top:0px;
+    left:0px;
+    background: #999999;
+    display: block;
+    /* Safari,Google Chrome用 */
+    -webkit-border-top-left-radius:7px;
+    -webkit-border-bottom-left-radius: 7px;
+    /* Firefox用 */    
+    -moz-border-radius-topleft: 7px;    
+    -moz-border-radius-bottomleft: 7px;
+}
+
+.keyboard_keybotton_wide{
+    position:absolute; 
+    top:8px; 
+    left: 140px;
+    display: block;    
+}
+
+.keyboard_frame_wide .keyboard_position input.moji1 {
+    font-size: 100%;
+    border:none;
+    width: 110px;
+    height: 30px;
+    margin-top: 8px;
+    *margin-top: 4px;
+    font-weight: bold; 
+    text-align: center;
+    text-decoration: none;
+    -webkit-border-top-left-radius:6px;    /* Safari,Google Chrome用 */
+    -moz-border-radius-topleft: 6px;    /* Firefox用 */
+    -webkit-border-bottom-left-radius: 6px;    /* Safari,Google Chrome用 */
+    -moz-border-radius-bottomleft: 6px;    /* Firefox用 */    
+    color: #FFFFFF;
+    background: #666666;
+}
+
+.keyboard_frame_wide .keyboard_position input.moji1:focus {
+    border:none !important;
+}
+
+.keyboard_frame_wide .keyboard_position input.moji2 {
+    font-size: 100%;
+    border:none;
+    width: 110px;
+    height: 30px;
+    margin-top: 8px;
+    *margin-top: 4px;
+    font-weight: bold; 
+    text-align: center;
+    text-decoration: none;
+    -webkit-border-top-left-radius: 6px;    /* Safari,Google Chrome用 */
+    -moz-border-radius-topleft: 6px;    /* Firefox用 */
+    -webkit-border-bottom-left-radius: 6px;    /* Safari,Google Chrome用 */
+    -moz-border-radius-bottomleft: 6px;    /* Firefox用 */    
+    color: #000000;
+    background: #E6E6E6;
+}
+
+.keyboard_frame_wide .keyboard_position input.moji2:focus {
+    border:none !important;
+}
+
+.keyboard_frame_wide .keyboard_position input.keybtn {
+    font-size: 100%;
+    border-top: 1px solid #8C8C8C;  
+    border-right: 1px solid #8C8C8C;  
+    border-bottom: 1px solid #181818;  
+    border-left: 1px solid #8C8C8C;  
+    cursor: pointer;  
+    color: #000000;  
+    width: 40px;
+    height: 30px;
+    -webkit-border-radius:6px;    /* Safari,Google Chrome用 */
+    -moz-border-radius: 6px;    /* Firefox用 */
+    /* グラデーション未対応ブラウザ */
+    background: #9B9B9B;
+    /* For WebKit (Safari, Google Chrome etc) */
+    background: -webkit-gradient(linear, left top, left bottom, from(#F9F9F9), to(#9B9B9B));
+    /* For Mozilla/Gecko (Firefox etc) */
+    background: -moz-linear-gradient(top, #F9F9F9, #9B9B9B);
+    /* For Internet Explorer 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#F9F9F9, endColorstr=#9B9B9B);
+    /* For Internet Explorer 8,9 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#F9F9F9, endColorstr=#9B9B9B)";    
+    /* For Internet Explorer 10 */
+    background: linear-gradient(to bottom, #F9F9F9, #9B9B9B);
+}
+
+.keyboard_frame_wide .keyboard_position input.keybtn:focus {
+    border-top: 1px solid #8C8C8C  !important;
+    border-right: 1px solid #8C8C8C !important;
+    border-bottom: 1px solid #181818 !important;
+    border-left: 1px solid #8C8C8C !important;
+}
+
+.keyboard_frame_wide .keyboard_position input.keybtn:hover {
+    border-top: 1px solid #8C8C8C;  
+    border-right: 1px solid #8C8C8C;  
+    border-bottom: 1px solid #181818;  
+    border-left: 1px solid #8C8C8C;   
+    cursor: pointer;  
+    color: #000000;  
+    width: 40px;
+    height: 30px;
+    -webkit-border-radius:6px;    /* Safari,Google Chrome用 */
+    -moz-border-radius: 6px;    /* Firefox用 */    
+    /* グラデーション未対応ブラウザ */
+    background: #4664fa;
+    /* For WebKit (Safari, Google Chrome etc) */
+    background: -webkit-gradient(linear, left top, left bottom, from(#b2d1ff), to(#4664fa));
+    /* For Mozilla/Gecko (Firefox etc) */
+    background: -moz-linear-gradient(top, #b2d1ff, #4664fa);
+    /* For Internet Explorer 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#b2d1ff, endColorstr=#4664fa);
+    /* For Internet Explorer 8,9 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#b2d1ff, endColorstr=#4664fa)";   
+    /* For Internet Explorer 10 */
+    background: linear-gradient(to bottom, #b2d1ff, #4664fa);
+}
+
+.keyboard_frame_wide .keyboard_position input.cleabtn {
+    font-size: 100%;
+    border-top: 1px solid #ccc;  
+    border-right: 1px solid #ccc;  
+    border-bottom: 1px solid #000;  
+    border-left: 1px solid #ccc;  
+    font-weight: bold;  
+    cursor: pointer;  
+    color: #ffffff;  
+    width: 118px;
+    height: 30px;
+    margin-bottom:6px;
+    -webkit-border-radius:5px;    /* Safari,Google Chrome用 */
+    -moz-border-radius: 5px;    /* Firefox用 */
+    /* グラデーション未対応ブラウザ */
+    background: #333333;
+    /* For WebKit (Safari, Google Chrome etc) */
+    background: -webkit-gradient(linear, left top, left bottom, from(#B5B5B5), to(#333333));
+    /* For Mozilla/Gecko (Firefox etc) */
+    background: -moz-linear-gradient(top, #B5B5B5, #333333);
+    /* For Internet Explorer 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#B5B5B5, endColorstr=#333333);
+    /* For Internet Explorer 8,9 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#B5B5B5, endColorstr=#333333)";
+    /* For Internet Explorer 10 */
+    background: linear-gradient(to bottom, #B5B5B5, #333333);
+}
+
+.keyboard_frame_wide .keyboard_position input.closebtn{
+    display: block;
+    background: url(../images/keyboard/btn_skb_01.png) no-repeat left top;
+    padding: 0;
+    margin: 0;
+    border: none;
+    width: 29px;
+    height: 29px;
+    text-indent: -999999px;
+}
+
+.keyboard_frame_wide .keyboard_position input.closebtn:focus {
+    border-top: none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+    border-left: none !important;
+}
+
+.keyboard_frame_wide .keyboard_position input.closebtn:hover {
+    background-position: left bottom;  
+}
+
+.keyboard_frame_wide .keyboard_position input.cleabtn:focus {
+    border-top: 1px solid #ccc !important;
+    border-right: 1px solid #ccc !important;
+    border-bottom: 1px solid #000 !important;
+    border-left: 1px solid #ccc !important;
+}
+
+.keyboard_frame_wide .keyboard_position input.cleabtn:hover {
+    border-top: 1px solid #ccc;  
+    border-right: 1px solid #999;  
+    border-bottom: 1px solid #999;  
+    border-left: 1px solid #ccc;  
+    font-weight: bold;  
+    cursor: pointer;  
+    color: #4682B4;  
+    /* グラデーション未対応ブラウザ */
+    background: #87CEEB;
+    /* For WebKit (Safari, Google Chrome etc) */
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#87CEEB));
+    /* For Mozilla/Gecko (Firefox etc) */
+    background: -moz-linear-gradient(top, #ffffff, #87CEEB);
+    /* For Internet Explorer 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#87CEEB);
+    /* For Internet Explorer 8,9 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#87CEEB)";
+    /* For Internet Explorer 10 */
+    background: linear-gradient(to bottom, #ffffff, #87CEEB);
+}
+
+/*  JA個別対応 終了 */
